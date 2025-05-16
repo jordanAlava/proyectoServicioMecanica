@@ -8,6 +8,7 @@ namespace capaLogica
 {
     internal class classPuente
     {
-        int comit_prueba = 0;
+
+
     }
 }
