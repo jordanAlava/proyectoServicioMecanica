@@ -8,6 +8,6 @@ namespace capaLogica
 {
     internal class classPuente
     {
-        int tipo = 2;
+        
     }
 }
