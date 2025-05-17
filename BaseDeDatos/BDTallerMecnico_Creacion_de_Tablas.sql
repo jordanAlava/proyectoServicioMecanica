@@ -79,6 +79,7 @@ CREATE TABLE Repuesto (
 CREATE TABLE Vehiculo_Servicio (
     placa VARCHAR(8),
     idServicio INT,
+    fechaServicio DATE,
     FOREIGN KEY (placa) REFERENCES Vehiculo(placa),
     FOREIGN KEY (idServicio) REFERENCES Servicio(idServicio),
     PRIMARY KEY (placa, idServicio)
