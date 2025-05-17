@@ -25,5 +25,10 @@ namespace capaPresentacion
         {
             pctrLogotipo.Image = Image.FromFile( "Recursos/Imagenes/logotipo.jpg");
         }
+
+        private void frmIniciarSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
