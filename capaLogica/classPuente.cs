@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using capaDato;
+using capaEntidad;
 
 namespace capaLogica
 {
-    internal class classPuente
+    public class classPuente
     {
-
 
     }
 }
