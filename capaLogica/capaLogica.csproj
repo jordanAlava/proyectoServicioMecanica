@@ -44,5 +44,15 @@
     <Compile Include="classPuente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capaDato\capaDato.csproj">
+      <Project>{b22e994b-a6fa-409f-943a-451d2d2850f6}</Project>
+      <Name>capaDato</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capaEntidad\capaEntidad.csproj">
+      <Project>{37193068-f518-45d0-bb86-3c7e0c0314f5}</Project>
+      <Name>capaEntidad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

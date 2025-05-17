@@ -1,3 +1,4 @@
+
 CREATE DATABASE BDTallerMecanico
 
 USE BDTallerMecanico;
@@ -109,3 +110,4 @@ CREATE TABLE Servicio_Repuesto (
 --Sección de cambios suscitados durante el avance del proyecto a la base de datos 
 --El caso real ecuatoriano es de 9 pero ahí se aceptan en caso de haber usuarios internacionales
 ALTER TABLE Cliente ADD pasaporte varchar(15);
+
