@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace capaEntidad
 {
-    public class Cliente
+    public class clienteTelefono
     {
         public int idCliente {  get; set; }
-        public string cedulaCliente { get; set; }
+        public string telefonoCliente { get; set; }
     }
 }
