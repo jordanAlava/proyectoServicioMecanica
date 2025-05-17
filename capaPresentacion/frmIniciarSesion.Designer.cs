@@ -118,9 +118,10 @@
             // pctrLogotipo
             // 
             this.pctrLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pctrLogotipo.Location = new System.Drawing.Point(372, 81);
+            this.pctrLogotipo.Location = new System.Drawing.Point(343, 22);
             this.pctrLogotipo.Name = "pctrLogotipo";
-            this.pctrLogotipo.Size = new System.Drawing.Size(271, 161);
+            this.pctrLogotipo.Size = new System.Drawing.Size(333, 287);
+            this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrLogotipo.TabIndex = 8;
             this.pctrLogotipo.TabStop = false;
             // 
@@ -130,11 +131,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1006, 721);
-            this.Controls.Add(this.pctrLogotipo);
             this.Controls.Add(this.linkRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.pctrLogotipo);
             this.Name = "frmIniciarSesion";
             this.Text = "frmIniciarSesion";
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
