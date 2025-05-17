@@ -46,17 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmPaginaInicio.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPaginaInicio.Designer.cs">
-      <DependentUpon>frmPaginaInicio.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmPaginaInicio.resx">
-      <DependentUpon>frmPaginaInicio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,16 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\capaEntidad\capaEntidad.csproj">
-      <Project>{37193068-f518-45d0-bb86-3c7e0c0314f5}</Project>
-      <Name>capaEntidad</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\capaLogica\capaLogica.csproj">
-      <Project>{681a246b-c776-4cfb-be63-5b1c4e1217ca}</Project>
-      <Name>capaLogica</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
