@@ -8,6 +8,6 @@ namespace capaEntidad
 {
     internal class Usuario
     {
-        int tipo = 2
+
     }
 }

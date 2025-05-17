@@ -14,7 +14,6 @@ namespace capaPresentacion
 {
     public partial class frmIniciarSesion : Form
     {
-        public string rutaRepositorio = "https://raw.githubusercontent.com/jordanAlava/proyectoServicioMecanica/";
         public frmIniciarSesion()
         {
 
@@ -24,7 +23,7 @@ namespace capaPresentacion
 
         public void inicializarFormulario()
         {
-            pctrLogotipo.Image = Image.FromFile(rutaRepositorio + "main/Recursos/Imagenes/logotipo.jpg");
+            pctrLogotipo.Image = Image.FromFile( "Recursos/Imagenes/logotipo.jpg");
         }
     }
 }
