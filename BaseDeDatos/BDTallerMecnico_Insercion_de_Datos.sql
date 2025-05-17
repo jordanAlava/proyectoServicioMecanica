@@ -51,3 +51,6 @@ VALUES('0208759645','1');
 -- Inserción de datos en la Tabla Servicio_Repuesto
 INSERT INTO Servicio_Repuesto(idServicio, idRepuesto, fechaInstalacion, fechaCambio, cantidad)
 VALUES('1','1', '2025-05-15', '2026-05-15', 1);
+
+--select c.nombreCli + ' ' + c.apellidoCli as Propietario,  v.placa as Placa, v.modelo + ', ' + v.marca as Carro
+--From Vehiculo as v inner join Cliente as c on v.idCliente = c.idCliente
