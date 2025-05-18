@@ -111,3 +111,10 @@ CREATE TABLE Servicio_Repuesto (
 --El caso real ecuatoriano es de 9 pero ahí se aceptan en caso de haber usuarios internacionales
 ALTER TABLE Cliente ADD pasaporte varchar(15);
 
+
+-- Jordan Alava: Altere el tamaño del usuario
+ALTER TABLE Administrador
+ALTER COLUMN userName varchar(20)
+
+ALTER TABLE Administrador
+ALTER COLUMN passAdmin varchar(20)

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using capaEntidad;
 
+
 namespace capaDato
 {
     public class ClassOperacionesBD
@@ -43,8 +44,7 @@ namespace capaDato
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex.Message);
-                return false;
+                throw new Exception("Error al insertar administrador: " + ex.Message);
             }
         }
 
@@ -257,7 +257,7 @@ namespace capaDato
                 bool tieneCedula = !string.IsNullOrWhiteSpace(cliente.cedulaCliente);
                 bool tienePasaporte = !string.IsNullOrWhiteSpace(cliente.pasaporteCliente);
 
-                if (tieneCedula == tienePasaporte) return false;
+                if (!tieneCedula && !tienePasaporte) return false;
 
                 objConnect.Abrir();
                 SqlCommand sqlC = new SqlCommand("INSERT INTO Cliente(cedula, nombreCli, apellidoCli, genero, Direccion, ciudadCli, provinciaCli, e_mail, userCliente, passCli, pasaporte) VALUES(@cedula, @nombre, @apellido, @genero, @direccion, @ciudad, @provinci, @correo, @usuario, @contra, @passport)", objConnect.conectar);
@@ -278,8 +278,8 @@ namespace capaDato
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex.Message);
-                return false;
+                throw new Exception("Error al insertar cliente: " + ex.Message);
+                //return false;
             }
         }
 
@@ -346,30 +346,6 @@ namespace capaDato
             {
                 Console.WriteLine("Error: " + ex.Message);
                 return false;
-            }
-        }
-
-        public bool autenticarcionliente(string usuario, string contra)
-        {
-            try
-            {
-                objConnect.Abrir();
-                SqlCommand sqlC = new SqlCommand(@"
-                SELECT COUNT(*)
-                FROM Cliente
-                WHERE userCliente = @usuario AND passCli = @contra", objConnect.conectar);
-                sqlC.Parameters.AddWithValue("@usuario", usuario);
-                sqlC.Parameters.AddWithValue("@contra", contra);
-                int clienteEncontradp = (int)sqlC.ExecuteScalar();
-                return clienteEncontradp == 1;
-            }catch(Exception ex)
-            {
-                Console.WriteLine("Error: " + ex.Message);
-                return false;
-            }
-            finally
-            {
-                objConnect.Cerrar();
             }
         }
         public bool validarCedula(string cedula)

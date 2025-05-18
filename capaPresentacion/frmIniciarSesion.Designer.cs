@@ -47,7 +47,7 @@
             this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
             this.linkRegistrarse.Location = new System.Drawing.Point(683, 519);
             this.linkRegistrarse.Name = "linkRegistrarse";
-            this.linkRegistrarse.Size = new System.Drawing.Size(81, 17);
+            this.linkRegistrarse.Size = new System.Drawing.Size(96, 20);
             this.linkRegistrarse.TabIndex = 7;
             this.linkRegistrarse.TabStop = true;
             this.linkRegistrarse.Text = "Registrarse";
@@ -67,9 +67,9 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(522, 451);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(384, 450);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(250, 38);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(333, 47);
             this.btnIniciarSesion.TabIndex = 6;
             this.btnIniciarSesion.Text = "Iniciar Sesión";
             this.btnIniciarSesion.TextColor = System.Drawing.Color.White;
@@ -86,15 +86,15 @@
             this.txtContrasenia.BorderSize = 1;
             this.txtContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.White;
-            this.txtContrasenia.Location = new System.Drawing.Point(522, 381);
-            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContrasenia.Location = new System.Drawing.Point(384, 380);
+            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContrasenia.Multiline = false;
             this.txtContrasenia.Name = "txtContrasenia";
-            this.txtContrasenia.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.txtContrasenia.Padding = new System.Windows.Forms.Padding(17, 11, 17, 11);
             this.txtContrasenia.PasswordChar = true;
             this.txtContrasenia.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtContrasenia.PlaceholderText = "Contraseña";
-            this.txtContrasenia.Size = new System.Drawing.Size(250, 36);
+            this.txtContrasenia.Size = new System.Drawing.Size(333, 43);
             this.txtContrasenia.TabIndex = 5;
             this.txtContrasenia.Texts = "";
             this.txtContrasenia.UnderlinedStyle = false;
@@ -110,15 +110,15 @@
             this.txtUsuario.BorderSize = 1;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(522, 313);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Location = new System.Drawing.Point(384, 312);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Multiline = false;
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.txtUsuario.Padding = new System.Windows.Forms.Padding(17, 11, 17, 11);
             this.txtUsuario.PasswordChar = false;
             this.txtUsuario.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtUsuario.PlaceholderText = "Usuario";
-            this.txtUsuario.Size = new System.Drawing.Size(250, 36);
+            this.txtUsuario.Size = new System.Drawing.Size(333, 43);
             this.txtUsuario.TabIndex = 4;
             this.txtUsuario.Texts = "";
             this.txtUsuario.UnderlinedStyle = false;
@@ -128,10 +128,10 @@
             // 
             this.pctrLogotipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pctrLogotipo.Location = new System.Drawing.Point(522, 90);
-            this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2);
+            this.pctrLogotipo.Location = new System.Drawing.Point(384, 89);
+            this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctrLogotipo.Name = "pctrLogotipo";
-            this.pctrLogotipo.Size = new System.Drawing.Size(250, 287);
+            this.pctrLogotipo.Size = new System.Drawing.Size(333, 353);
             this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrLogotipo.TabIndex = 8;
             this.pctrLogotipo.TabStop = false;
@@ -142,28 +142,26 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(519, 519);
+            this.label1.Location = new System.Drawing.Point(381, 518);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 17);
+            this.label1.Size = new System.Drawing.Size(177, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "¿No tiene una cuenta?";
             // 
             // frmIniciarSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.linkRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.pctrLogotipo);
             this.Controls.Add(this.label1);
-            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmIniciarSesion";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIniciarSesion";
             this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();

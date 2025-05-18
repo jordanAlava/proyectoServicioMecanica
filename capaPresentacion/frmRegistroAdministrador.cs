@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
+using capaLogica;
 
 namespace capaPresentacion
 {
@@ -18,6 +20,8 @@ namespace capaPresentacion
         {
             InitializeComponent();
         }
+
+        classPuente operacion = new classPuente();
 
         private void txtCedulaAdministrador__TextChanged(object sender, EventArgs e)
         {
@@ -137,5 +141,58 @@ namespace capaPresentacion
         {
             txtContraseniaUsuarioAdministrador.PasswordChar = true;
         }
+
+        private void btnCrearUsuarioAdministrador_Click(object sender, EventArgs e)
+        {
+            if (operacion.validarCedulaa(txtCedulaAdministrador.Texts))
+            {
+                if(!string.IsNullOrWhiteSpace(txtNombreAdministrador.Texts) && !string.IsNullOrWhiteSpace(txtApellidoAdministrador.Texts) && !string.IsNullOrWhiteSpace(txtEmailAdministracion.Texts) && !string.IsNullOrWhiteSpace(txtNombreUsuarioAdministrador.Texts) && !string.IsNullOrWhiteSpace(txtContraseniaUsuarioAdministrador.Texts))
+                {
+                    if(!operacion.autenticarAdmin(txtNombreUsuarioAdministrador.Texts, txtContraseniaUsuarioAdministrador.Texts) && !operacion.autenticarCliente(txtNombreUsuarioAdministrador.Texts, txtContraseniaUsuarioAdministrador.Texts))
+                    {
+                        Administrador admin = new Administrador
+                        {
+                            cedulaAdmin = txtCedulaAdministrador.Texts,
+                            nombreAdmin = txtNombreAdministrador.Texts,
+                            apellidoAdmin = txtApellidoAdministrador.Texts,
+                            userAdmin = txtNombreUsuarioAdministrador.Texts,
+                            passAdmin = txtContraseniaUsuarioAdministrador.Texts,
+                            correoAdmin = txtEmailAdministracion.Texts
+                        };
+                        if (operacion.ingresarAdmin(admin))
+                        {
+                            MessageBox.Show("Nuevo administrador agregado");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se agrego al nuevo administrador agregado");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ya existe un administrador con ese Usuario");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("LLene todos los campos");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cedula invalida");
+            }
+        }
+
+        private void txtContraseniaUsuarioAdministrador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)Keys.Enter)
+            {
+                btnCrearUsuarioAdministrador.PerformClick();
+            }
+        }
+
+        
     }
 }
