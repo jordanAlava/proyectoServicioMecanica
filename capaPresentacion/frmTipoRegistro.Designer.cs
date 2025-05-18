@@ -57,7 +57,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(470, 162);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -74,11 +74,11 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.iconPictureBox1.IconColor = System.Drawing.Color.DimGray;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 188;
+            this.iconPictureBox1.IconSize = 140;
             this.iconPictureBox1.Location = new System.Drawing.Point(531, 257);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(209, 188);
+            this.iconPictureBox1.Size = new System.Drawing.Size(140, 140);
             this.iconPictureBox1.TabIndex = 2;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -90,11 +90,11 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.iconPictureBox2.IconColor = System.Drawing.Color.DimGray;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 188;
-            this.iconPictureBox2.Location = new System.Drawing.Point(815, 257);
+            this.iconPictureBox2.IconSize = 140;
+            this.iconPictureBox2.Location = new System.Drawing.Point(703, 257);
             this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(209, 188);
+            this.iconPictureBox2.Size = new System.Drawing.Size(140, 140);
             this.iconPictureBox2.TabIndex = 3;
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
@@ -111,10 +111,10 @@
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Location = new System.Drawing.Point(815, 573);
+            this.btnSiguiente.Location = new System.Drawing.Point(727, 504);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(209, 49);
+            this.btnSiguiente.Size = new System.Drawing.Size(141, 38);
             this.btnSiguiente.TabIndex = 4;
             this.btnSiguiente.Text = "&Siguiente";
             this.btnSiguiente.TextColor = System.Drawing.Color.White;
@@ -126,7 +126,7 @@
             this.lblRegistrarse.AutoSize = true;
             this.lblRegistrarse.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegistrarse.ForeColor = System.Drawing.Color.LightGray;
-            this.lblRegistrarse.Location = new System.Drawing.Point(583, 449);
+            this.lblRegistrarse.Location = new System.Drawing.Point(565, 416);
             this.lblRegistrarse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistrarse.Name = "lblRegistrarse";
             this.lblRegistrarse.Size = new System.Drawing.Size(58, 20);
@@ -139,7 +139,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(831, 449);
+            this.label2.Location = new System.Drawing.Point(723, 416);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 20);

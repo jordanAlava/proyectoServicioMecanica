@@ -45,7 +45,7 @@
             this.linkRegistrarse.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegistrarse.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
-            this.linkRegistrarse.Location = new System.Drawing.Point(506, 518);
+            this.linkRegistrarse.Location = new System.Drawing.Point(545, 518);
             this.linkRegistrarse.Name = "linkRegistrarse";
             this.linkRegistrarse.Size = new System.Drawing.Size(89, 20);
             this.linkRegistrarse.TabIndex = 7;
