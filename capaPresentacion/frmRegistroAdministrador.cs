@@ -12,6 +12,8 @@ namespace capaPresentacion
 {
     public partial class frmRegistroAdministrador : Form
     {
+
+        int cedula;
         public frmRegistroAdministrador()
         {
             InitializeComponent();
@@ -26,50 +28,27 @@ namespace capaPresentacion
         {
             try
             {
-                TextBox txt = sender as TextBox;
-                if (txt == null) return;
 
-                // Bloquear Ctrl + V (pegar)
-                if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22))
+                if (e.KeyChar == (Char)Keys.Enter)
                 {
-                    e.Handled = true;
-                    MessageBox.Show("No se permite pegar en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Permitir teclas de control excepto Enter (que manejamos aparte)
-                if (char.IsControl(e.KeyChar) && e.KeyChar != (char)Keys.Enter)
-                {
-                    return;
-                }
-
-                // Solo números permitidos
-                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Enter)
-                {
-                    e.Handled = true;
-                    MessageBox.Show("Solo se permiten números en la cédula.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Cuando se presiona Enter, validar longitud y mover foco
-                if (e.KeyChar == (char)Keys.Enter)
-                {
-                    e.Handled = true; // Evita el beep
-
-                    if (txt.Text.Length == 10)
+                    cedula = int.Parse(txtCedulaAdministrador.Text);
+                    if (txtCedulaAdministrador.Text.Length <= 10 || txtCedulaAdministrador.Text.Length >= 10)
                     {
-                        txtNombreAdministrador.Focus();
+                        MessageBox.Show("La cedula debe tener 10 digitoos");
+                        txtCedulaAdministrador.Text = "";
                     }
                     else
                     {
-                        MessageBox.Show("La cédula debe tener exactamente 10 dígitos para continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtNombreAdministrador.Focus();
                     }
                 }
+
             }
-            catch (Exception)
+            catch
             {
-                // En caso de error, pasar foco para no trabar la app
-                txtNombreAdministrador.Focus();
+                MessageBox.Show("Ingrese valores númericos");
+                txtCedulaAdministrador.Texts = "";
+
             }
         }
 
