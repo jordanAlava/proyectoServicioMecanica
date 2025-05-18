@@ -29,5 +29,10 @@ namespace capaPresentacion
             frmRegistroAdministrador obj = new frmRegistroAdministrador();
             obj.ShowDialog();
         }
+
+        private void frmTipoRegistro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
