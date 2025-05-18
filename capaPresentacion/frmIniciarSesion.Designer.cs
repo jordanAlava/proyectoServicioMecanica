@@ -152,7 +152,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.linkRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.txtContrasenia);
@@ -161,6 +162,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmIniciarSesion";
             this.Text = "frmIniciarSesion";
+
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

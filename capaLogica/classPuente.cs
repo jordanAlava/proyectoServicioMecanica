@@ -10,6 +10,18 @@ namespace capaLogica
 {
     public class classPuente
     {
-
+        ClassOperacionesBD operacion = new ClassOperacionesBD();
+        public bool validarCedulaa(string cedula)
+        {
+            return operacion.validarCedula(cedula);
+        }
+        public bool ingrarCliente(Cliente cliente)
+        {
+            return operacion.ingresarCliente(cliente);
+        }
+        public bool existeCliente(string cedulaE)
+        {
+            return operacion.existeCliente(cedulaE);
+        }
     }
 }

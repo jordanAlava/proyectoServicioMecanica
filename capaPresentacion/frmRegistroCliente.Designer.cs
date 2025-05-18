@@ -426,7 +426,7 @@
             this.label2.Location = new System.Drawing.Point(376, 407);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 24);
+            this.label2.Size = new System.Drawing.Size(229, 26);
             this.label2.TabIndex = 59;
             this.label2.Text = "Creación de Usuario";
             // 
@@ -438,7 +438,7 @@
             this.label1.Location = new System.Drawing.Point(97, 141);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 24);
+            this.label1.Size = new System.Drawing.Size(200, 26);
             this.label1.TabIndex = 58;
             this.label1.Text = "Datos Personales";
             // 
@@ -461,6 +461,7 @@
             this.btnCrearUsuarioCliente.Text = "Crear Usuario";
             this.btnCrearUsuarioCliente.TextColor = System.Drawing.Color.White;
             this.btnCrearUsuarioCliente.UseVisualStyleBackColor = false;
+            this.btnCrearUsuarioCliente.Click += new System.EventHandler(this.btnCrearUsuarioCliente_Click_1);
             // 
             // txtContraseniaUsuarioCliente
             // 
@@ -594,6 +595,7 @@
             this.Controls.Add(this.txtEmailCliente);
             this.Controls.Add(this.txtApellidoCliente);
             this.Controls.Add(this.rjCircularPictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmRegistroCliente";
             this.Text = "frmRegistroCliente";
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
