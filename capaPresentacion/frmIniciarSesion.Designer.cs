@@ -163,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmIniciarSesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIniciarSesion";
             this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();

@@ -268,6 +268,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmTipoRegistro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTipoRegistro";
             this.Resize += new System.EventHandler(this.frmTipoRegistro_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).EndInit();

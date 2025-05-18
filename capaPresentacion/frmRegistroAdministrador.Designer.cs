@@ -405,6 +405,7 @@
             this.Controls.Add(this.rjCircularPictureBox1);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmRegistroAdministrador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistroAdministrador";
             this.Load += new System.EventHandler(this.frmRegistroAdministrador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

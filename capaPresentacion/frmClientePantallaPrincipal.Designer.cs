@@ -38,6 +38,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmClientePantallaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmClientePantallaPrincipal";
             this.ResumeLayout(false);
 

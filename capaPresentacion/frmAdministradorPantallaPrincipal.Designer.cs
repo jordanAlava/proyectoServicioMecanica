@@ -182,6 +182,7 @@
             this.Controls.Add(this.pnlMenuLateral);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmAdministradorPantallaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdministradorPantallaPrincipal";
             this.pnlMenuLateral.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
