@@ -138,6 +138,7 @@
             // 
             // lblRegistrarse
             // 
+            /*
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,6 +149,7 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "¿No tiene una cuenta?";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            */
             // 
             // frmIniciarSesion
             // 
@@ -155,7 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1006, 721);
-            this.Controls.Add(this.label1);
+            //this.Controls.Add(this.label1);
             this.Controls.Add(this.linkRegistrarse);
             this.Controls.Add(this.lblRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
@@ -165,7 +167,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmIniciarSesion";
             this.Text = "frmIniciarSesion";
-            this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
+            //this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
