@@ -49,10 +49,6 @@ namespace capaPresentacion
             }
         }
 
-        private void btnIniciarSesion_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void linkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -61,10 +57,6 @@ namespace capaPresentacion
 
         }
 
-        private void frmIniciarSesion_Load(object sender, EventArgs e)
-        {
-
-        }
 
         public bool esAdmin { get; private set; }
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
@@ -93,7 +85,7 @@ namespace capaPresentacion
             }
         }
 
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             frmAdministradorPantallaPrincipal obj = new frmAdministradorPantallaPrincipal();
             obj.ShowDialog();
