@@ -245,6 +245,7 @@
             this.txtNombreUsuarioAdministrador.TabIndex = 24;
             this.txtNombreUsuarioAdministrador.Texts = "";
             this.txtNombreUsuarioAdministrador.UnderlinedStyle = true;
+            this.txtNombreUsuarioAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreUsuarioAdministrador_KeyPress);
             // 
             // txtEmailAdministracion
             // 
@@ -267,6 +268,7 @@
             this.txtEmailAdministracion.TabIndex = 23;
             this.txtEmailAdministracion.Texts = "";
             this.txtEmailAdministracion.UnderlinedStyle = true;
+            this.txtEmailAdministracion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmailAdministracion_KeyPress);
             // 
             // txtApellidoAdministrador
             // 
@@ -289,6 +291,7 @@
             this.txtApellidoAdministrador.TabIndex = 22;
             this.txtApellidoAdministrador.Texts = "";
             this.txtApellidoAdministrador.UnderlinedStyle = true;
+            this.txtApellidoAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidoAdministrador_KeyPress);
             // 
             // txtNombreAdministrador
             // 
@@ -311,6 +314,7 @@
             this.txtNombreAdministrador.TabIndex = 21;
             this.txtNombreAdministrador.Texts = "";
             this.txtNombreAdministrador.UnderlinedStyle = true;
+            this.txtNombreAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreAdministrador_KeyPress);
             // 
             // txtCedulaAdministrador
             // 
@@ -333,6 +337,8 @@
             this.txtCedulaAdministrador.TabIndex = 20;
             this.txtCedulaAdministrador.Texts = "";
             this.txtCedulaAdministrador.UnderlinedStyle = true;
+            this.txtCedulaAdministrador._TextChanged += new System.EventHandler(this.txtCedulaAdministrador__TextChanged);
+            this.txtCedulaAdministrador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedulaAdministrador_KeyPress);
             // 
             // rjCircularPictureBox1
             // 
@@ -373,7 +379,7 @@
             this.Controls.Add(this.txtNombreAdministrador);
             this.Controls.Add(this.txtCedulaAdministrador);
             this.Controls.Add(this.rjCircularPictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRegistroAdministrador";
             this.Text = "frmRegistroAdministrador";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
