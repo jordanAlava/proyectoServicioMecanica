@@ -51,18 +51,14 @@ namespace capaPresentacion
 
         private void linkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-        }
-
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkRegistrarse_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
             frmTipoRegistro obj = new frmTipoRegistro();
             obj.ShowDialog();
+
+        }
+
+        private void lblRegistrarse_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
