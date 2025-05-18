@@ -15,6 +15,14 @@ namespace capaPresentacion
         public frmTipoRegistro()
         {
             InitializeComponent();
+            inicializarFormulario();
         }
+
+        public void inicializarFormulario()
+        {
+            this.ActiveControl = btnSiguiente;
+            pctrImagenFondo.Image = Image.FromFile("Recursos/Imagenes/carroFondo1.jpg");
+        }
+
     }
 }
