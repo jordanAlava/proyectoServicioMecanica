@@ -49,9 +49,9 @@
             // 
             this.pctrImagenFondo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-447, 24);
+            this.pctrImagenFondo.Location = new System.Drawing.Point(-431, 0);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
-            this.pctrImagenFondo.Size = new System.Drawing.Size(1562, 729);
+            this.pctrImagenFondo.Size = new System.Drawing.Size(1562, 681);
             this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
