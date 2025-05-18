@@ -45,7 +45,7 @@
             this.linkRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegistrarse.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
-            this.linkRegistrarse.Location = new System.Drawing.Point(442, 421);
+            this.linkRegistrarse.Location = new System.Drawing.Point(697, 468);
             this.linkRegistrarse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkRegistrarse.Name = "linkRegistrarse";
             this.linkRegistrarse.Size = new System.Drawing.Size(81, 17);
@@ -68,8 +68,8 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(288, 366);
-            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(543, 413);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(250, 38);
             this.btnIniciarSesion.TabIndex = 6;
@@ -88,7 +88,8 @@
             this.txtContrasenia.BorderSize = 1;
             this.txtContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.White;
-            this.txtContrasenia.Location = new System.Drawing.Point(288, 309);
+            this.txtContrasenia.Location = new System.Drawing.Point(543, 356);
+            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(4);
             this.txtContrasenia.Multiline = false;
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -111,7 +112,8 @@
             this.txtUsuario.BorderSize = 1;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(288, 254);
+            this.txtUsuario.Location = new System.Drawing.Point(543, 301);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Multiline = false;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -128,7 +130,7 @@
             // 
             this.pctrLogotipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pctrLogotipo.Location = new System.Drawing.Point(288, 72);
+            this.pctrLogotipo.Location = new System.Drawing.Point(544, 73);
             this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2);
             this.pctrLogotipo.Name = "pctrLogotipo";
             this.pctrLogotipo.Size = new System.Drawing.Size(250, 287);
@@ -142,7 +144,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(286, 421);
+            this.label1.Location = new System.Drawing.Point(541, 468);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 17);
@@ -154,14 +156,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(754, 586);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.linkRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.pctrLogotipo);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmIniciarSesion";
             this.Text = "frmIniciarSesion";
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();

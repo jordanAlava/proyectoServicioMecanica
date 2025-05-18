@@ -76,10 +76,10 @@
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 31;
-            this.iconPictureBox4.Location = new System.Drawing.Point(64, 237);
+            this.iconPictureBox4.Location = new System.Drawing.Point(48, 193);
             this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox4.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox4.TabIndex = 78;
             this.iconPictureBox4.TabStop = false;
             // 
@@ -91,10 +91,10 @@
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 31;
-            this.iconPictureBox3.Location = new System.Drawing.Point(64, 190);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox3.Location = new System.Drawing.Point(48, 154);
+            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox3.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox3.TabIndex = 77;
             this.iconPictureBox3.TabStop = false;
             // 
@@ -107,14 +107,14 @@
             this.txtNombreCliente.BorderSize = 1;
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCliente.ForeColor = System.Drawing.Color.White;
-            this.txtNombreCliente.Location = new System.Drawing.Point(100, 237);
+            this.txtNombreCliente.Location = new System.Drawing.Point(75, 193);
             this.txtNombreCliente.Multiline = false;
             this.txtNombreCliente.Name = "txtNombreCliente";
-            this.txtNombreCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtNombreCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtNombreCliente.PasswordChar = false;
             this.txtNombreCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNombreCliente.PlaceholderText = "Nombre";
-            this.txtNombreCliente.Size = new System.Drawing.Size(261, 35);
+            this.txtNombreCliente.Size = new System.Drawing.Size(196, 30);
             this.txtNombreCliente.TabIndex = 76;
             this.txtNombreCliente.Texts = "";
             this.txtNombreCliente.UnderlinedStyle = true;
@@ -128,14 +128,14 @@
             this.txtCedulaCliente.BorderSize = 1;
             this.txtCedulaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaCliente.ForeColor = System.Drawing.Color.White;
-            this.txtCedulaCliente.Location = new System.Drawing.Point(100, 190);
+            this.txtCedulaCliente.Location = new System.Drawing.Point(75, 154);
             this.txtCedulaCliente.Multiline = false;
             this.txtCedulaCliente.Name = "txtCedulaCliente";
-            this.txtCedulaCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtCedulaCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtCedulaCliente.PasswordChar = false;
             this.txtCedulaCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCedulaCliente.PlaceholderText = "Cédula";
-            this.txtCedulaCliente.Size = new System.Drawing.Size(261, 35);
+            this.txtCedulaCliente.Size = new System.Drawing.Size(196, 30);
             this.txtCedulaCliente.TabIndex = 75;
             this.txtCedulaCliente.Texts = "";
             this.txtCedulaCliente.UnderlinedStyle = true;
@@ -148,10 +148,10 @@
             this.iconPictureBox10.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox10.IconSize = 31;
-            this.iconPictureBox10.Location = new System.Drawing.Point(599, 294);
-            this.iconPictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox10.Location = new System.Drawing.Point(449, 239);
+            this.iconPictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox10.Name = "iconPictureBox10";
-            this.iconPictureBox10.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox10.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox10.TabIndex = 74;
             this.iconPictureBox10.TabStop = false;
             // 
@@ -164,14 +164,14 @@
             this.txtDireccionCliente.BorderSize = 1;
             this.txtDireccionCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionCliente.ForeColor = System.Drawing.Color.White;
-            this.txtDireccionCliente.Location = new System.Drawing.Point(635, 294);
+            this.txtDireccionCliente.Location = new System.Drawing.Point(476, 239);
             this.txtDireccionCliente.Multiline = false;
             this.txtDireccionCliente.Name = "txtDireccionCliente";
-            this.txtDireccionCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtDireccionCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtDireccionCliente.PasswordChar = false;
             this.txtDireccionCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtDireccionCliente.PlaceholderText = "Dirección";
-            this.txtDireccionCliente.Size = new System.Drawing.Size(315, 35);
+            this.txtDireccionCliente.Size = new System.Drawing.Size(236, 30);
             this.txtDireccionCliente.TabIndex = 73;
             this.txtDireccionCliente.Texts = "";
             this.txtDireccionCliente.UnderlinedStyle = true;
@@ -214,12 +214,12 @@
             "Galápagos (Puerto Ayora, Puerto Baquerizo Moreno)"});
             this.cmbxCuidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxCuidad.ListTextColor = System.Drawing.Color.DarkGray;
-            this.cmbxCuidad.Location = new System.Drawing.Point(635, 246);
-            this.cmbxCuidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbxCuidad.MinimumSize = new System.Drawing.Size(150, 24);
+            this.cmbxCuidad.Location = new System.Drawing.Point(476, 200);
+            this.cmbxCuidad.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbxCuidad.MinimumSize = new System.Drawing.Size(112, 20);
             this.cmbxCuidad.Name = "cmbxCuidad";
             this.cmbxCuidad.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbxCuidad.Size = new System.Drawing.Size(249, 30);
+            this.cmbxCuidad.Size = new System.Drawing.Size(187, 24);
             this.cmbxCuidad.TabIndex = 72;
             this.cmbxCuidad.Texts = "Ciudad";
             // 
@@ -231,10 +231,10 @@
             this.iconPictureBox9.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox9.IconSize = 31;
-            this.iconPictureBox9.Location = new System.Drawing.Point(597, 246);
-            this.iconPictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox9.Location = new System.Drawing.Point(448, 200);
+            this.iconPictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox9.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox9.TabIndex = 71;
             this.iconPictureBox9.TabStop = false;
             // 
@@ -274,12 +274,12 @@
             "Zamora Chinchipe"});
             this.cmbxProvincia.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxProvincia.ListTextColor = System.Drawing.Color.DarkGray;
-            this.cmbxProvincia.Location = new System.Drawing.Point(635, 199);
-            this.cmbxProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbxProvincia.MinimumSize = new System.Drawing.Size(150, 24);
+            this.cmbxProvincia.Location = new System.Drawing.Point(476, 162);
+            this.cmbxProvincia.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbxProvincia.MinimumSize = new System.Drawing.Size(112, 20);
             this.cmbxProvincia.Name = "cmbxProvincia";
             this.cmbxProvincia.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbxProvincia.Size = new System.Drawing.Size(249, 30);
+            this.cmbxProvincia.Size = new System.Drawing.Size(187, 24);
             this.cmbxProvincia.TabIndex = 70;
             this.cmbxProvincia.Texts = "Provincia";
             // 
@@ -291,10 +291,10 @@
             this.iconPictureBox8.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox8.IconSize = 31;
-            this.iconPictureBox8.Location = new System.Drawing.Point(597, 199);
-            this.iconPictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox8.Location = new System.Drawing.Point(448, 162);
+            this.iconPictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox8.Name = "iconPictureBox8";
-            this.iconPictureBox8.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox8.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox8.TabIndex = 69;
             this.iconPictureBox8.TabStop = false;
             // 
@@ -312,12 +312,12 @@
             "Femenino"});
             this.cmbxGeneroCliente.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxGeneroCliente.ListTextColor = System.Drawing.Color.DarkGray;
-            this.cmbxGeneroCliente.Location = new System.Drawing.Point(102, 289);
-            this.cmbxGeneroCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbxGeneroCliente.MinimumSize = new System.Drawing.Size(150, 24);
+            this.cmbxGeneroCliente.Location = new System.Drawing.Point(76, 235);
+            this.cmbxGeneroCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbxGeneroCliente.MinimumSize = new System.Drawing.Size(112, 20);
             this.cmbxGeneroCliente.Name = "cmbxGeneroCliente";
             this.cmbxGeneroCliente.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbxGeneroCliente.Size = new System.Drawing.Size(249, 30);
+            this.cmbxGeneroCliente.Size = new System.Drawing.Size(187, 24);
             this.cmbxGeneroCliente.TabIndex = 68;
             this.cmbxGeneroCliente.Texts = "Género";
             // 
@@ -329,19 +329,19 @@
             this.iconPictureBox7.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox7.IconSize = 31;
-            this.iconPictureBox7.Location = new System.Drawing.Point(64, 289);
-            this.iconPictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox7.Location = new System.Drawing.Point(48, 235);
+            this.iconPictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox7.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox7.TabIndex = 67;
             this.iconPictureBox7.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(786, 36);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(590, 29);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(169, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 66;
             this.pictureBox1.TabStop = false;
@@ -354,10 +354,10 @@
             this.iconPictureBox6.IconColor = System.Drawing.Color.Brown;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 40;
-            this.iconPictureBox6.Location = new System.Drawing.Point(58, 43);
-            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox6.Location = new System.Drawing.Point(44, 35);
+            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(53, 60);
+            this.iconPictureBox6.Size = new System.Drawing.Size(40, 49);
             this.iconPictureBox6.TabIndex = 64;
             this.iconPictureBox6.TabStop = false;
             // 
@@ -366,9 +366,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.03478F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Brown;
-            this.label3.Location = new System.Drawing.Point(157, 53);
+            this.label3.Location = new System.Drawing.Point(118, 43);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(471, 39);
+            this.label3.Size = new System.Drawing.Size(380, 31);
             this.label3.TabIndex = 63;
             this.label3.Text = "Creación de Usuario Cliente";
             // 
@@ -380,10 +381,10 @@
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 31;
-            this.iconPictureBox5.Location = new System.Drawing.Point(343, 502);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox5.Location = new System.Drawing.Point(257, 408);
+            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox5.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox5.TabIndex = 62;
             this.iconPictureBox5.TabStop = false;
             // 
@@ -395,10 +396,10 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 31;
-            this.iconPictureBox2.Location = new System.Drawing.Point(343, 455);
-            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox2.Location = new System.Drawing.Point(257, 370);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox2.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox2.TabIndex = 61;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -410,10 +411,10 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 31;
-            this.iconPictureBox1.Location = new System.Drawing.Point(64, 338);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Location = new System.Drawing.Point(48, 275);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(41, 41);
+            this.iconPictureBox1.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox1.TabIndex = 60;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -422,9 +423,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(501, 501);
+            this.label2.Location = new System.Drawing.Point(376, 407);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 26);
+            this.label2.Size = new System.Drawing.Size(201, 24);
             this.label2.TabIndex = 59;
             this.label2.Text = "Creación de Usuario";
             // 
@@ -433,9 +435,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(129, 174);
+            this.label1.Location = new System.Drawing.Point(97, 141);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 26);
+            this.label1.Size = new System.Drawing.Size(172, 24);
             this.label1.TabIndex = 58;
             this.label1.Text = "Datos Personales";
             // 
@@ -450,10 +453,9 @@
             this.btnCrearUsuarioCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuarioCliente.Location = new System.Drawing.Point(379, 559);
-            this.btnCrearUsuarioCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrearUsuarioCliente.Location = new System.Drawing.Point(284, 454);
             this.btnCrearUsuarioCliente.Name = "btnCrearUsuarioCliente";
-            this.btnCrearUsuarioCliente.Size = new System.Drawing.Size(261, 47);
+            this.btnCrearUsuarioCliente.Size = new System.Drawing.Size(196, 38);
             this.btnCrearUsuarioCliente.TabIndex = 57;
             this.btnCrearUsuarioCliente.Text = "Crear Usuario";
             this.btnCrearUsuarioCliente.TextColor = System.Drawing.Color.White;
@@ -469,14 +471,14 @@
             this.txtContraseniaUsuarioCliente.BorderSize = 1;
             this.txtContraseniaUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseniaUsuarioCliente.ForeColor = System.Drawing.Color.White;
-            this.txtContraseniaUsuarioCliente.Location = new System.Drawing.Point(379, 502);
+            this.txtContraseniaUsuarioCliente.Location = new System.Drawing.Point(284, 408);
             this.txtContraseniaUsuarioCliente.Multiline = false;
             this.txtContraseniaUsuarioCliente.Name = "txtContraseniaUsuarioCliente";
-            this.txtContraseniaUsuarioCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtContraseniaUsuarioCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtContraseniaUsuarioCliente.PasswordChar = false;
             this.txtContraseniaUsuarioCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtContraseniaUsuarioCliente.PlaceholderText = "Contraseña";
-            this.txtContraseniaUsuarioCliente.Size = new System.Drawing.Size(261, 35);
+            this.txtContraseniaUsuarioCliente.Size = new System.Drawing.Size(196, 30);
             this.txtContraseniaUsuarioCliente.TabIndex = 56;
             this.txtContraseniaUsuarioCliente.Texts = "";
             this.txtContraseniaUsuarioCliente.UnderlinedStyle = true;
@@ -490,14 +492,14 @@
             this.txtNombreUsuarioCliente.BorderSize = 1;
             this.txtNombreUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuarioCliente.ForeColor = System.Drawing.Color.White;
-            this.txtNombreUsuarioCliente.Location = new System.Drawing.Point(379, 455);
+            this.txtNombreUsuarioCliente.Location = new System.Drawing.Point(284, 370);
             this.txtNombreUsuarioCliente.Multiline = false;
             this.txtNombreUsuarioCliente.Name = "txtNombreUsuarioCliente";
-            this.txtNombreUsuarioCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtNombreUsuarioCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtNombreUsuarioCliente.PasswordChar = false;
             this.txtNombreUsuarioCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNombreUsuarioCliente.PlaceholderText = "Nombre de Usuario";
-            this.txtNombreUsuarioCliente.Size = new System.Drawing.Size(261, 35);
+            this.txtNombreUsuarioCliente.Size = new System.Drawing.Size(196, 30);
             this.txtNombreUsuarioCliente.TabIndex = 55;
             this.txtNombreUsuarioCliente.Texts = "";
             this.txtNombreUsuarioCliente.UnderlinedStyle = true;
@@ -511,14 +513,14 @@
             this.txtEmailCliente.BorderSize = 1;
             this.txtEmailCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailCliente.ForeColor = System.Drawing.Color.White;
-            this.txtEmailCliente.Location = new System.Drawing.Point(100, 338);
+            this.txtEmailCliente.Location = new System.Drawing.Point(75, 275);
             this.txtEmailCliente.Multiline = false;
             this.txtEmailCliente.Name = "txtEmailCliente";
-            this.txtEmailCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtEmailCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtEmailCliente.PasswordChar = false;
             this.txtEmailCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtEmailCliente.PlaceholderText = "Email";
-            this.txtEmailCliente.Size = new System.Drawing.Size(261, 35);
+            this.txtEmailCliente.Size = new System.Drawing.Size(196, 30);
             this.txtEmailCliente.TabIndex = 54;
             this.txtEmailCliente.Texts = "";
             this.txtEmailCliente.UnderlinedStyle = true;
@@ -532,14 +534,14 @@
             this.txtApellidoCliente.BorderSize = 1;
             this.txtApellidoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoCliente.ForeColor = System.Drawing.Color.White;
-            this.txtApellidoCliente.Location = new System.Drawing.Point(302, 232);
+            this.txtApellidoCliente.Location = new System.Drawing.Point(226, 188);
             this.txtApellidoCliente.Multiline = false;
             this.txtApellidoCliente.Name = "txtApellidoCliente";
-            this.txtApellidoCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
+            this.txtApellidoCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.txtApellidoCliente.PasswordChar = false;
             this.txtApellidoCliente.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtApellidoCliente.PlaceholderText = "Apellido";
-            this.txtApellidoCliente.Size = new System.Drawing.Size(261, 35);
+            this.txtApellidoCliente.Size = new System.Drawing.Size(196, 30);
             this.txtApellidoCliente.TabIndex = 53;
             this.txtApellidoCliente.Texts = "";
             this.txtApellidoCliente.UnderlinedStyle = true;
@@ -552,20 +554,20 @@
             this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.rjCircularPictureBox1.BorderSize = 2;
             this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(40, 24);
-            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(30, 20);
+            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(99, 99);
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(74, 74);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 65;
             this.rjCircularPictureBox1.TabStop = false;
             // 
             // frmRegistroCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.iconPictureBox4);
             this.Controls.Add(this.iconPictureBox3);
             this.Controls.Add(this.txtNombreCliente);
@@ -592,7 +594,7 @@
             this.Controls.Add(this.txtEmailCliente);
             this.Controls.Add(this.txtApellidoCliente);
             this.Controls.Add(this.rjCircularPictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmRegistroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistroCliente";
