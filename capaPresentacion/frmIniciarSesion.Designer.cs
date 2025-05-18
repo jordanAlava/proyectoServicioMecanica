@@ -52,6 +52,7 @@
             this.linkRegistrarse.TabStop = true;
             this.linkRegistrarse.Text = "Registrarse";
             this.linkRegistrarse.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.linkRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegistrarse_LinkClicked);
             // 
             // btnIniciarSesion
             // 
@@ -73,6 +74,7 @@
             this.btnIniciarSesion.Text = "Iniciar Sesión";
             this.btnIniciarSesion.TextColor = System.Drawing.Color.White;
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // txtContrasenia
             // 
@@ -96,6 +98,7 @@
             this.txtContrasenia.TabIndex = 5;
             this.txtContrasenia.Texts = "";
             this.txtContrasenia.UnderlinedStyle = false;
+            this.txtContrasenia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenia_KeyPress);
             // 
             // txtUsuario
             // 
@@ -119,7 +122,7 @@
             this.txtUsuario.TabIndex = 4;
             this.txtUsuario.Texts = "";
             this.txtUsuario.UnderlinedStyle = false;
-            
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // pctrLogotipo
             // 
