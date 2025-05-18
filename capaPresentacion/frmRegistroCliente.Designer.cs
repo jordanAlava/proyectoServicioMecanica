@@ -360,7 +360,7 @@
             this.label3.ForeColor = System.Drawing.Color.Brown;
             this.label3.Location = new System.Drawing.Point(158, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(443, 37);
+            this.label3.Size = new System.Drawing.Size(471, 39);
             this.label3.TabIndex = 63;
             this.label3.Text = "Creación de Usuario Cliente";
             // 
@@ -413,7 +413,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(501, 501);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 26);
+            this.label2.Size = new System.Drawing.Size(252, 29);
             this.label2.TabIndex = 59;
             this.label2.Text = "Creación de Usuario";
             // 
@@ -424,7 +424,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(129, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 26);
+            this.label1.Size = new System.Drawing.Size(219, 29);
             this.label1.TabIndex = 58;
             this.label1.Text = "Datos Personales";
             // 
@@ -447,6 +447,7 @@
             this.btnCrearUsuarioCliente.Text = "Crear Usuario";
             this.btnCrearUsuarioCliente.TextColor = System.Drawing.Color.White;
             this.btnCrearUsuarioCliente.UseVisualStyleBackColor = false;
+            this.btnCrearUsuarioCliente.Click += new System.EventHandler(this.btnCrearUsuarioCliente_Click_1);
             // 
             // txtContraseniaUsuarioCliente
             // 
@@ -583,7 +584,7 @@
             this.Controls.Add(this.txtEmailCliente);
             this.Controls.Add(this.txtApellidoCliente);
             this.Controls.Add(this.rjCircularPictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRegistroCliente";
             this.Text = "frmRegistroCliente";
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();

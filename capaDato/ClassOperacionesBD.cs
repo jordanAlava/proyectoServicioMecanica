@@ -177,10 +177,34 @@ namespace capaDato
          * 1    bool ingresarCliente
          * 2    Cliente buscarCliente - retorna un cliente o null
          * 3    bool modificarCliente
+         * 6    bool existeCliente
          * 4    bool autenticacion del cliente
          * 5    bool cedulaValida - verifica si es una cedula valida
          */
 
+
+        public bool existeCliente(string cedulaR)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT COUNT(*) 
+                FROM Cliente    
+                WHERE cedula = @cedulaR", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@cedulaR", cedulaR);
+                int clienteEncontrado = (int)sqlC.ExecuteScalar();
+                return clienteEncontrado == 1;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
         public bool ingresarCliente(Cliente cliente)
         {
             try
