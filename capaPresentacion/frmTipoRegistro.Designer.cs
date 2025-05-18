@@ -221,6 +221,7 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAtras.BackColor = System.Drawing.Color.Black;
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
