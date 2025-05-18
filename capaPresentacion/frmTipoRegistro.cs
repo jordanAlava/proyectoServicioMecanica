@@ -24,5 +24,10 @@ namespace capaPresentacion
             pctrImagenFondo.Image = Image.FromFile("Recursos/Imagenes/carroFondo1.jpg");
         }
 
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            frmRegistroAdministrador obj = new frmRegistroAdministrador();
+            obj.ShowDialog();
+        }
     }
 }

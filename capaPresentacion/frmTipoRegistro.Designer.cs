@@ -44,56 +44,64 @@
             // 
             // pctrImagenFondo
             // 
-            this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-417, 0);
+            this.pctrImagenFondo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pctrImagenFondo.Location = new System.Drawing.Point(0, 0);
+            this.pctrImagenFondo.Margin = new System.Windows.Forms.Padding(4);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
-            this.pctrImagenFondo.Size = new System.Drawing.Size(1064, 721);
-            this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrImagenFondo.Size = new System.Drawing.Size(1500, 729);
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(477, 196);
+            this.label1.Location = new System.Drawing.Point(470, 162);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 32);
+            this.label1.Size = new System.Drawing.Size(166, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tipo de Uusario";
             // 
             // iconPictureBox1
             // 
+            this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconPictureBox1.ForeColor = System.Drawing.Color.DimGray;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.iconPictureBox1.IconColor = System.Drawing.Color.DimGray;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 153;
-            this.iconPictureBox1.Location = new System.Drawing.Point(523, 273);
+            this.iconPictureBox1.IconSize = 140;
+            this.iconPictureBox1.Location = new System.Drawing.Point(531, 257);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(157, 153);
+            this.iconPictureBox1.Size = new System.Drawing.Size(140, 140);
             this.iconPictureBox1.TabIndex = 2;
             this.iconPictureBox1.TabStop = false;
             // 
             // iconPictureBox2
             // 
+            this.iconPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconPictureBox2.ForeColor = System.Drawing.Color.DimGray;
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.iconPictureBox2.IconColor = System.Drawing.Color.DimGray;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 153;
-            this.iconPictureBox2.Location = new System.Drawing.Point(736, 273);
+            this.iconPictureBox2.IconSize = 140;
+            this.iconPictureBox2.Location = new System.Drawing.Point(703, 257);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(157, 153);
+            this.iconPictureBox2.Size = new System.Drawing.Size(140, 140);
             this.iconPictureBox2.TabIndex = 3;
             this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
             // btnSiguiente
             // 
+            this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSiguiente.BackColor = System.Drawing.Color.Firebrick;
             this.btnSiguiente.BackgroundColor = System.Drawing.Color.Firebrick;
             this.btnSiguiente.BorderColor = System.Drawing.Color.Firebrick;
@@ -103,9 +111,10 @@
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Location = new System.Drawing.Point(736, 530);
+            this.btnSiguiente.Location = new System.Drawing.Point(727, 504);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(157, 40);
+            this.btnSiguiente.Size = new System.Drawing.Size(141, 38);
             this.btnSiguiente.TabIndex = 4;
             this.btnSiguiente.Text = "&Siguiente";
             this.btnSiguiente.TextColor = System.Drawing.Color.White;
@@ -117,9 +126,10 @@
             this.lblRegistrarse.AutoSize = true;
             this.lblRegistrarse.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegistrarse.ForeColor = System.Drawing.Color.LightGray;
-            this.lblRegistrarse.Location = new System.Drawing.Point(562, 429);
+            this.lblRegistrarse.Location = new System.Drawing.Point(565, 416);
+            this.lblRegistrarse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistrarse.Name = "lblRegistrarse";
-            this.lblRegistrarse.Size = new System.Drawing.Size(71, 24);
+            this.lblRegistrarse.Size = new System.Drawing.Size(58, 20);
             this.lblRegistrarse.TabIndex = 10;
             this.lblRegistrarse.Text = "Cliente";
             // 
@@ -129,26 +139,28 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(748, 429);
+            this.label2.Location = new System.Drawing.Point(723, 416);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 24);
+            this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Administrador";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pctrImagenFondo);
-            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(432, 724);
+            this.panel1.Size = new System.Drawing.Size(397, 729);
             this.panel1.TabIndex = 12;
             // 
             // frmTipoRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRegistrarse);
@@ -156,6 +168,7 @@
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTipoRegistro";
             this.Text = "frmTipoRegistro";
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).EndInit();
