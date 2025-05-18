@@ -16,7 +16,6 @@ namespace capaPresentacion
     {
         public frmIniciarSesion()
         {
-
             InitializeComponent();
             inicializarFormulario();
         }
@@ -27,14 +26,43 @@ namespace capaPresentacion
             pctrLogotipo.Image = Image.FromFile( "Recursos/Imagenes/logotipo.jpg");
         }
 
-        private void frmIniciarSesion_Load(object sender, EventArgs e)
+
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtContrasenia.Focus();
+            }
+        }
+
+        private void txtContrasenia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnIniciarSesion_Click(sender, e);
+            }
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void linkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkRegistrarse_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmTipoRegistro obj = new frmTipoRegistro();
+            obj.Show();
         }
     }
 }

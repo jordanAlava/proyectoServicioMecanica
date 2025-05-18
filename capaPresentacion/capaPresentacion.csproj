@@ -62,10 +62,37 @@
     <Compile Include="frmIniciarSesion.Designer.cs">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistroAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroAdministrador.Designer.cs">
+      <DependentUpon>frmRegistroAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroCliente.Designer.cs">
+      <DependentUpon>frmRegistroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoRegistro.Designer.cs">
+      <DependentUpon>frmTipoRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmIniciarSesion.resx">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroAdministrador.resx">
+      <DependentUpon>frmRegistroAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroCliente.resx">
+      <DependentUpon>frmRegistroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoRegistro.resx">
+      <DependentUpon>frmTipoRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +128,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Recursos\Imagenes\carroFondo1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Recursos\Imagenes\logotipo.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

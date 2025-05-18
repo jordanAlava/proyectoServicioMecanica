@@ -33,7 +33,7 @@
             this.txtContrasenia = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtUsuario = new RJCodeAdvance.RJControls.RJTextBox();
             this.pctrLogotipo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRegistrarse = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,17 +42,18 @@
             this.linkRegistrarse.ActiveLinkColor = System.Drawing.Color.Red;
             this.linkRegistrarse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkRegistrarse.AutoSize = true;
-            this.linkRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegistrarse.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegistrarse.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
-            this.linkRegistrarse.Location = new System.Drawing.Point(661, 679);
-            this.linkRegistrarse.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.linkRegistrarse.Location = new System.Drawing.Point(500, 552);
+            this.linkRegistrarse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkRegistrarse.Name = "linkRegistrarse";
-            this.linkRegistrarse.Size = new System.Drawing.Size(107, 20);
+            this.linkRegistrarse.Size = new System.Drawing.Size(106, 24);
             this.linkRegistrarse.TabIndex = 7;
             this.linkRegistrarse.TabStop = true;
             this.linkRegistrarse.Text = "Registrarse";
             this.linkRegistrarse.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.linkRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkRegistrarse_LinkClicked_1);
             // 
             // btnIniciarSesion
             // 
@@ -64,16 +65,17 @@
             this.btnIniciarSesion.BorderSize = 0;
             this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(457, 575);
-            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(343, 467);
+            this.btnIniciarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(444, 54);
             this.btnIniciarSesion.TabIndex = 6;
             this.btnIniciarSesion.Text = "Iniciar Sesión";
             this.btnIniciarSesion.TextColor = System.Drawing.Color.White;
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click_1);
             // 
             // txtContrasenia
             // 
@@ -83,20 +85,21 @@
             this.txtContrasenia.BorderFocusColor = System.Drawing.Color.Brown;
             this.txtContrasenia.BorderRadius = 10;
             this.txtContrasenia.BorderSize = 1;
-            this.txtContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasenia.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.White;
-            this.txtContrasenia.Location = new System.Drawing.Point(457, 468);
-            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtContrasenia.Location = new System.Drawing.Point(343, 380);
+            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtContrasenia.Multiline = false;
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Padding = new System.Windows.Forms.Padding(17, 11, 17, 11);
             this.txtContrasenia.PasswordChar = true;
             this.txtContrasenia.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtContrasenia.PlaceholderText = "Contraseña";
-            this.txtContrasenia.Size = new System.Drawing.Size(444, 43);
+            this.txtContrasenia.Size = new System.Drawing.Size(333, 39);
             this.txtContrasenia.TabIndex = 5;
             this.txtContrasenia.Texts = "";
             this.txtContrasenia.UnderlinedStyle = false;
+            this.txtContrasenia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenia_KeyPress);
             // 
             // txtUsuario
             // 
@@ -106,41 +109,40 @@
             this.txtUsuario.BorderFocusColor = System.Drawing.Color.Brown;
             this.txtUsuario.BorderRadius = 10;
             this.txtUsuario.BorderSize = 1;
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(457, 366);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtUsuario.Location = new System.Drawing.Point(343, 297);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtUsuario.Multiline = false;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Padding = new System.Windows.Forms.Padding(17, 11, 17, 11);
             this.txtUsuario.PasswordChar = false;
             this.txtUsuario.PlaceholderColor = System.Drawing.Color.DimGray;
             this.txtUsuario.PlaceholderText = "Usuario";
-            this.txtUsuario.Size = new System.Drawing.Size(444, 43);
+            this.txtUsuario.Size = new System.Drawing.Size(333, 39);
             this.txtUsuario.TabIndex = 4;
             this.txtUsuario.Texts = "";
             this.txtUsuario.UnderlinedStyle = false;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // pctrLogotipo
             // 
             this.pctrLogotipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pctrLogotipo.Location = new System.Drawing.Point(457, 27);
-            this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctrLogotipo.Location = new System.Drawing.Point(343, 22);
             this.pctrLogotipo.Name = "pctrLogotipo";
             this.pctrLogotipo.Size = new System.Drawing.Size(444, 353);
             this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrLogotipo.TabIndex = 8;
             this.pctrLogotipo.TabStop = false;
             // 
-            // label1
+            // lblRegistrarse
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(453, 679);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(340, 552);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 20);
             this.label1.TabIndex = 9;
@@ -152,9 +154,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1341, 887);
+            this.ClientSize = new System.Drawing.Size(1006, 721);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.linkRegistrarse);
+            this.Controls.Add(this.lblRegistrarse);
             this.Controls.Add(this.btnIniciarSesion);
             this.Controls.Add(this.txtContrasenia);
             this.Controls.Add(this.txtUsuario);
@@ -162,7 +165,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmIniciarSesion";
             this.Text = "frmIniciarSesion";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
             this.ResumeLayout(false);
@@ -177,6 +179,6 @@
         private RJCodeAdvance.RJControls.RJTextBox txtContrasenia;
         private RJCodeAdvance.RJControls.RJTextBox txtUsuario;
         private System.Windows.Forms.PictureBox pctrLogotipo;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRegistrarse;
     }
 }
