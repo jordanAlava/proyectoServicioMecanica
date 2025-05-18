@@ -42,13 +42,13 @@
             this.linkRegistrarse.ActiveLinkColor = System.Drawing.Color.Red;
             this.linkRegistrarse.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkRegistrarse.AutoSize = true;
-            this.linkRegistrarse.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegistrarse.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegistrarse.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
             this.linkRegistrarse.Location = new System.Drawing.Point(500, 552);
             this.linkRegistrarse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkRegistrarse.Name = "linkRegistrarse";
-            this.linkRegistrarse.Size = new System.Drawing.Size(111, 24);
+            this.linkRegistrarse.Size = new System.Drawing.Size(106, 24);
             this.linkRegistrarse.TabIndex = 7;
             this.linkRegistrarse.TabStop = true;
             this.linkRegistrarse.Text = "Registrarse";
