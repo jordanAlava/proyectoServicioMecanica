@@ -44,16 +44,16 @@
             // 
             // pctrImagenFondo
             // 
-            this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-417, 0);
+            this.pctrImagenFondo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pctrImagenFondo.Location = new System.Drawing.Point(0, 0);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
             this.pctrImagenFondo.Size = new System.Drawing.Size(1064, 721);
-            this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -66,6 +66,7 @@
             // 
             // iconPictureBox1
             // 
+            this.iconPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconPictureBox1.ForeColor = System.Drawing.Color.DimGray;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
@@ -80,6 +81,7 @@
             // 
             // iconPictureBox2
             // 
+            this.iconPictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconPictureBox2.ForeColor = System.Drawing.Color.DimGray;
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserTie;
@@ -91,9 +93,11 @@
             this.iconPictureBox2.Size = new System.Drawing.Size(157, 153);
             this.iconPictureBox2.TabIndex = 3;
             this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
             // btnSiguiente
             // 
+            this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSiguiente.BackColor = System.Drawing.Color.Firebrick;
             this.btnSiguiente.BackgroundColor = System.Drawing.Color.Firebrick;
             this.btnSiguiente.BorderColor = System.Drawing.Color.Firebrick;
@@ -138,9 +142,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.pctrImagenFondo);
-            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(432, 724);
+            this.panel1.Size = new System.Drawing.Size(432, 721);
             this.panel1.TabIndex = 12;
             // 
             // frmTipoRegistro
