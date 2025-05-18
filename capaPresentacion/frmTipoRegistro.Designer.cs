@@ -69,7 +69,7 @@
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(166, 26);
             this.lblTitulo.TabIndex = 1;
-            this.lblTitulo.Text = "Tipo de Uusario";
+            this.lblTitulo.Text = "Tipo de Usuario";
             // 
             // pctrCliente
             // 
