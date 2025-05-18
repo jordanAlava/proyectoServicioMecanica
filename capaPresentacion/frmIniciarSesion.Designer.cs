@@ -162,7 +162,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmIniciarSesion";
             this.Text = "frmIniciarSesion";
-            this.Load += new System.EventHandler(this.frmIniciarSesion_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
