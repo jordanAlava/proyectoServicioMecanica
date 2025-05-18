@@ -27,30 +27,7 @@ namespace capaPresentacion
             pctrLogotipo.Image = Image.FromFile( "Recursos/Imagenes/logotipo.jpg");
         }
 
-
-
-        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                txtContrasenia.Focus();
-            }
-        }
-
-        private void txtContrasenia_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                btnIniciarSesion_Click(sender, e);
-            }
-        }
-
-        private void btnIniciarSesion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void linkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void frmIniciarSesion_Load(object sender, EventArgs e)
         {
 
         }
