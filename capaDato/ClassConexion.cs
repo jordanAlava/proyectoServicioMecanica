@@ -8,7 +8,9 @@ using System.Data.SqlClient; // para conexion
 namespace capaDato
 {
     public class ClassConexion
+
     {
+        private string serverJOrdan = "DESKTOP-EO71RE8";
         // en Data Source poner el nombre del servidor de su maquina
         // en Initial Catalog poner el nombre del base de datos que crearon, aunque debe ser la misma BDTallerMecanico
         private string cadena = "Data Source = DESKTOP-EO71RE8; Initial Catalog = BDTallerMecanico; Integrated Security = True";
