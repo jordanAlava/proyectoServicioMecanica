@@ -75,6 +75,7 @@
             // 
             this.pctrCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrCliente.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pctrCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctrCliente.ForeColor = System.Drawing.Color.DimGray;
             this.pctrCliente.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.pctrCliente.IconColor = System.Drawing.Color.DimGray;
@@ -94,6 +95,7 @@
             // 
             this.pctrAdministrador.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrAdministrador.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pctrAdministrador.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctrAdministrador.ForeColor = System.Drawing.Color.DimGray;
             this.pctrAdministrador.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.pctrAdministrador.IconColor = System.Drawing.Color.DimGray;
@@ -117,6 +119,7 @@
             this.btnSiguiente.BorderColor = System.Drawing.Color.Firebrick;
             this.btnSiguiente.BorderRadius = 10;
             this.btnSiguiente.BorderSize = 0;
+            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguiente.FlatAppearance.BorderSize = 0;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,6 +226,7 @@
             // 
             this.btnAtras.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAtras.BackColor = System.Drawing.Color.Black;
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
