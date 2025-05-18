@@ -12,37 +12,28 @@ namespace capaPresentacion
 {
     public partial class frmTipoRegistro : Form
     {
+        //Inicialización
+
+        private string itemSeleccionado;
         private Image imagenOriginal;
+
+
         public frmTipoRegistro()
         {
             InitializeComponent();
             inicializarFormulario();
         }
-
         public void inicializarFormulario()
         {
-            this.ActiveControl = btnSiguiente;
+            this.ActiveControl = null;
 
             imagenOriginal = Image.FromFile("Recursos/Imagenes/carroFondo1.jpg");
             pctrImagenFondo.Image = imagenOriginal;
-
-            //pctrImagenFondo.Image = Image.FromFile("Recursos/Imagenes/carroFondo1.jpg");
-
-        }
-
-        private void iconPictureBox2_Click(object sender, EventArgs e)
-        {
-            frmRegistroAdministrador obj = new frmRegistroAdministrador();
-            obj.ShowDialog();
-        }
-
-        private void frmTipoRegistro_Load(object sender, EventArgs e)
-        {
-
         }
 
 
 
+        //Responsive
         private void frmTipoRegistro_Resize(object sender, EventArgs e)
         {
             // Ajusta ancho del panel al 40% del ancho del formulario
@@ -52,10 +43,10 @@ namespace capaPresentacion
 
         private void pnlContenedor_Resize(object sender, EventArgs e)
         {
-            EscalarImagen();
+            escalarImagen();
         }
 
-        private void EscalarImagen()
+        private void escalarImagen()
         {
             if (imagenOriginal == null)
                 return;
@@ -76,6 +67,107 @@ namespace capaPresentacion
                 (pnlContenedor.Height - nuevoAlto) / 2
             );
         }
+
+        //Efecto Hover y Lógica de Selección
+        private void pctrAdministrador_MouseEnter(object sender, EventArgs e)
+        {
+            if (itemSeleccionado != pctrAdministrador.Name)
+                pctrAdministrador.IconColor = Color.Silver;
+        }
+
+        private void pctrAdministrador_MouseLeave(object sender, EventArgs e)
+        {
+            if (itemSeleccionado != pctrAdministrador.Name)
+                pctrAdministrador.IconColor = Color.DimGray;
+        }
+
+        private void pctrCliente_MouseEnter(object sender, EventArgs e)
+        {
+            if (itemSeleccionado != pctrCliente.Name)
+                pctrCliente.IconColor = Color.Silver;
+        }
+
+        private void pctrCliente_MouseLeave(object sender, EventArgs e)
+        {
+            if (itemSeleccionado != pctrCliente.Name)
+                pctrCliente.IconColor = Color.DimGray;
+        }
+
+
+
+   
+
+        private void pctrCliente_Click(object sender, EventArgs e)
+        {
+            itemSeleccionado = pctrCliente.Name;
+
+            pctrClienteMarco.Visible = true;
+            lblCliente.Font = new Font(lblCliente.Font, FontStyle.Bold);
+            pctrCliente.IconColor = Color.Silver;
+
+            pctrAdministradorMarco.Visible = false;
+            lblAdministrador.Font = new Font(lblAdministrador.Font, FontStyle.Regular);
+            pctrAdministrador.IconColor = Color.DimGray;
+        }
+
+        private void pctrAdministrador_Click(object sender, EventArgs e)
+        {
+            itemSeleccionado = pctrAdministrador.Name;
+
+            pctrAdministradorMarco.Visible = true;
+            pctrAdministrador.IconColor = Color.Silver;
+            lblAdministrador.Font = new Font(lblAdministrador.Font, FontStyle.Bold);
+
+            pctrClienteMarco.Visible = false;
+            lblCliente.Font = new Font(lblCliente.Font, FontStyle.Regular);
+            pctrCliente.IconColor = Color.DimGray;
+
+        }
+
+
+
+        private void btnAtras_MouseEnter(object sender, EventArgs e)
+        {
+            btnAtras.Font = new Font(btnAtras.Font, FontStyle.Underline);
+
+        }
+
+        private void btnAtras_MouseLeave(object sender, EventArgs e)
+        {
+            btnAtras.Font = new Font(btnAtras.Font, FontStyle.Regular);
+        }
+
+        private void btnAtras_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnAtras.ForeColor = Color.Firebrick;
+            btnAtras.IconColor = Color.Firebrick;
+        }
+
+        
+        
+        // Clicks
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            if(itemSeleccionado == pctrAdministrador.Name)
+            {
+                frmRegistroAdministrador obj = new frmRegistroAdministrador();
+                obj.ShowDialog();
+            }
+            else if(itemSeleccionado == pctrCliente.Name)
+            {
+                frmRegistroCliente obj = new frmRegistroCliente();
+                obj.ShowDialog();
+            }
+                
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
 
     }
 }
