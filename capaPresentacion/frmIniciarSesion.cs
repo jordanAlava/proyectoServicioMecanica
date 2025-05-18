@@ -23,6 +23,7 @@ namespace capaPresentacion
 
         public void inicializarFormulario()
         {
+            this.ActiveControl = btnIniciarSesion;
             pctrLogotipo.Image = Image.FromFile( "Recursos/Imagenes/logotipo.jpg");
         }
 
