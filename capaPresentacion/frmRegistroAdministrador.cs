@@ -52,9 +52,14 @@ namespace capaPresentacion
             {
                 e.Handled = true;
                 MessageBox.Show("No se permite pegar en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                txtNombreAdministrador.Focus();
             }
 
-            txtNombreAdministrador.Focus();
+            
         }
 
         private void txtNombreAdministrador_KeyPress(object sender, KeyPressEventArgs e)
@@ -79,7 +84,11 @@ namespace capaPresentacion
                 e.Handled = true;
                 MessageBox.Show("No se permite pegar texto en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            txtApellidoAdministrador.Focus();
+            else
+            {
+                txtApellidoAdministrador.Focus();
+            }
+            
         }
 
         private void txtApellidoAdministrador_KeyPress(object sender, KeyPressEventArgs e)
@@ -104,7 +113,10 @@ namespace capaPresentacion
                 e.Handled = true;
                 MessageBox.Show("No se permite pegar texto en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            txtEmailAdministracion.Focus(); 
+            else
+            {
+                txtEmailAdministracion.Focus();
+            }
         }
 
 
@@ -143,7 +155,10 @@ namespace capaPresentacion
                 e.Handled = true;
                 MessageBox.Show("No se permite pegar texto en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            txtNombreUsuarioAdministrador.Focus();
+            else
+            {
+                txtNombreUsuarioAdministrador.Focus();
+            }
         }
 
         private void txtNombreUsuarioAdministrador_KeyPress(object sender, KeyPressEventArgs e)
@@ -170,8 +185,11 @@ namespace capaPresentacion
                 MessageBox.Show("No se permite pegar texto en este campo.",
                     "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            txtContraseniaUsuarioAdministrador.Focus();
+            else
+            {
+                txtContraseniaUsuarioAdministrador.Focus();
+            }
+            
         }
 
     }
