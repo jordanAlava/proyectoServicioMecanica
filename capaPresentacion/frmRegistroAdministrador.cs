@@ -28,84 +28,61 @@ namespace capaPresentacion
         {
             try
             {
-
-                if (e.KeyChar == (Char)Keys.Enter)
+                if (e.KeyChar == (char)Keys.Enter)
                 {
-                    cedula = int.Parse(txtCedulaAdministrador.Text);
-                    if (txtCedulaAdministrador.Text.Length <= 10 || txtCedulaAdministrador.Text.Length >= 10)
+                    if (txtCedulaAdministrador.Texts.Length != 10)
                     {
-                        MessageBox.Show("La cedula debe tener 10 digitoos");
-                        txtCedulaAdministrador.Text = "";
+                        MessageBox.Show("La cédula debe tener exactamente 10 dígitos.");
+                        txtCedulaAdministrador.ResetText();
+                        return;
                     }
-                    else
-                    {
-                        txtNombreAdministrador.Focus();
-                    }
-                }
 
+                    cedula = int.Parse(txtCedulaAdministrador.Texts);
+                    txtNombreAdministrador.Focus();
+                }
+                else if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true; // Bloquea letras o símbolos
+                }
             }
             catch
             {
-                MessageBox.Show("Ingrese valores númericos");
-                txtCedulaAdministrador.Texts = "";
-
+                MessageBox.Show("Ingrese solo valores numéricos.");
+                txtCedulaAdministrador.ResetText();
             }
         }
+
 
 
 
         private void txtNombreAdministrador_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permitir teclas de control como Backspace
-            if (char.IsControl(e.KeyChar))
+            // Solo se permiten letras, espacios y teclas de control como Backspace
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                return;
+                e.Handled = true; // Bloquear entrada
+                MessageBox.Show("Solo se permiten letras.");
             }
 
-            // Permitir letras y espacio
-            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            // Si presiona Enter, mover el foco al siguiente campo
+            if (e.KeyChar == (char)Keys.Enter)
             {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten letras y espacios en el nombre.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                txtApellidoAdministrador.Focus(); // Cambia esto según tu formulario
             }
-
-            // Bloquear combinación Ctrl + V (pegar)
-            if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22)) // Ctrl+V = ASCII 22
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permite pegar texto en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                txtApellidoAdministrador.Focus();
-            }
-            
         }
+
 
         private void txtApellidoAdministrador_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permitir teclas de control como Backspace
-            if (char.IsControl(e.KeyChar))
+            // Solo se permiten letras, espacios y teclas de control
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                return;
+                e.Handled = true; // Bloquear el carácter no válido
+                MessageBox.Show("Solo se permiten letras.");
             }
 
-            // Permitir letras y espacio
-            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten letras y espacios en el apellido.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Bloquear combinación Ctrl + V (pegar)
-            if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22)) // Ctrl+V = ASCII 22
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permite pegar texto en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
+            // Al presionar Enter, pasar al siguiente campo
+            if (e.KeyChar == (char)Keys.Enter)
             {
                 txtEmailAdministracion.Focus();
             }
@@ -113,76 +90,52 @@ namespace capaPresentacion
 
 
 
+
         private void txtEmailAdministracion_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permitir teclas de control como Backspace, Supr, flechas, etc.
-            if (char.IsControl(e.KeyChar))
+            if (e.KeyChar == (char)Keys.Enter)
             {
-                return;
-            }
+                string email = txtEmailAdministracion.Texts.Trim(); // o txtEmailAdministracion.Text si es un TextBox estándar
 
-            // Permitir letras, dígitos, @, ., guion y guion bajo
-            if (!char.IsLetterOrDigit(e.KeyChar) &&
-                e.KeyChar != '@' &&
-                e.KeyChar != '.' &&
-                e.KeyChar != '-' &&
-                e.KeyChar != '_')
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten letras, números y los siguientes caracteres: @ . - _", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                // Validación básica de correo electrónico
+                if (!System.Text.RegularExpressions.Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                {
+                    MessageBox.Show("Ingrese un correo electrónico válido.");
+                    txtEmailAdministracion.ResetText(); // Limpiar el campo
+                    return;
+                }
 
-            // Bloquear espacios
-            if (char.IsWhiteSpace(e.KeyChar))
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permiten espacios en el correo electrónico.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Bloquear Ctrl + V (pegar)
-            if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22)) // ASCII de Ctrl+V
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permite pegar texto en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
+                // Si el correo es válido, pasar al siguiente campo
                 txtNombreUsuarioAdministrador.Focus();
             }
         }
 
+
         private void txtNombreUsuarioAdministrador_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permitir teclas de control como Backspace
-            if (char.IsControl(e.KeyChar))
+            // Caracteres permitidos: letras, dígitos y algunos caracteres especiales (ejemplo: _ y . y -)
+            // No se permiten espacios.
+            if (!char.IsLetterOrDigit(e.KeyChar) && e.KeyChar != '_' && e.KeyChar != '.' && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
             {
-                return;
+                e.Handled = true; // Bloquear carácter no permitido
+                MessageBox.Show("Solo se permiten letras, números y los caracteres '_', '.', '-' (sin espacios).");
             }
 
-            // Permitir solo letras y números
-            if (!char.IsLetterOrDigit(e.KeyChar))
-            {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten letras y números. No se permiten espacios ni caracteres especiales.",
-                    "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Bloquear combinación Ctrl + V (pegar)
-            if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22)) // Ctrl+V = ASCII 22
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permite pegar texto en este campo.",
-                    "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
+            if (e.KeyChar == (char)Keys.Enter)
             {
                 txtContraseniaUsuarioAdministrador.Focus();
             }
-            
         }
 
+        private void frmRegistroAdministrador_Load(object sender, EventArgs e)
+        {
+            lbl_Invisible.Focus();
+            this.ActiveControl = null;
+        }
+
+        private void txtContraseniaUsuarioAdministrador__TextChanged(object sender, EventArgs e)
+        {
+            txtContraseniaUsuarioAdministrador.PasswordChar = true;
+        }
     }
 }
