@@ -19,5 +19,6 @@ namespace capaEntidad
         public string correoCliente { get; set; }
         public string userCliente { get; set; }
         public string passCliente { get; set; }
+        public string pasaporteCliente { get; set; }
     }
 }
