@@ -46,10 +46,10 @@
             // 
             this.pctrImagenFondo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-639, -136);
+            this.pctrImagenFondo.Location = new System.Drawing.Point(-596, 0);
             this.pctrImagenFondo.Margin = new System.Windows.Forms.Padding(4);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
-            this.pctrImagenFondo.Size = new System.Drawing.Size(1562, 1024);
+            this.pctrImagenFondo.Size = new System.Drawing.Size(1562, 729);
             this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
@@ -150,13 +150,15 @@
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlContenedor.Controls.Add(this.pctrImagenFondo);
-            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(397, 729);
+            this.pnlContenedor.Size = new System.Drawing.Size(409, 729);
             this.pnlContenedor.TabIndex = 12;
+            this.pnlContenedor.Resize += new System.EventHandler(this.pnlContenedor_Resize);
             // 
             // frmTipoRegistro
             // 
@@ -175,6 +177,7 @@
             this.Name = "frmTipoRegistro";
             this.Text = "frmTipoRegistro";
             this.Load += new System.EventHandler(this.frmTipoRegistro_Load);
+            this.Resize += new System.EventHandler(this.frmTipoRegistro_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrAdministrador)).EndInit();
