@@ -77,7 +77,7 @@
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 31;
             this.iconPictureBox4.Location = new System.Drawing.Point(64, 237);
-            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox4.TabIndex = 78;
@@ -92,7 +92,7 @@
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 31;
             this.iconPictureBox3.Location = new System.Drawing.Point(64, 190);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox3.TabIndex = 77;
@@ -108,6 +108,7 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCliente.ForeColor = System.Drawing.Color.White;
             this.txtNombreCliente.Location = new System.Drawing.Point(100, 237);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreCliente.Multiline = false;
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -129,6 +130,7 @@
             this.txtCedulaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaCliente.ForeColor = System.Drawing.Color.White;
             this.txtCedulaCliente.Location = new System.Drawing.Point(100, 190);
+            this.txtCedulaCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedulaCliente.Multiline = false;
             this.txtCedulaCliente.Name = "txtCedulaCliente";
             this.txtCedulaCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -149,7 +151,7 @@
             this.iconPictureBox10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox10.IconSize = 31;
             this.iconPictureBox10.Location = new System.Drawing.Point(599, 294);
-            this.iconPictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox10.Name = "iconPictureBox10";
             this.iconPictureBox10.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox10.TabIndex = 74;
@@ -165,6 +167,7 @@
             this.txtDireccionCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionCliente.ForeColor = System.Drawing.Color.White;
             this.txtDireccionCliente.Location = new System.Drawing.Point(635, 294);
+            this.txtDireccionCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccionCliente.Multiline = false;
             this.txtDireccionCliente.Name = "txtDireccionCliente";
             this.txtDireccionCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -215,7 +218,7 @@
             this.cmbxCuidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxCuidad.ListTextColor = System.Drawing.Color.DarkGray;
             this.cmbxCuidad.Location = new System.Drawing.Point(635, 246);
-            this.cmbxCuidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbxCuidad.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxCuidad.MinimumSize = new System.Drawing.Size(150, 24);
             this.cmbxCuidad.Name = "cmbxCuidad";
             this.cmbxCuidad.Padding = new System.Windows.Forms.Padding(1);
@@ -232,7 +235,7 @@
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox9.IconSize = 31;
             this.iconPictureBox9.Location = new System.Drawing.Point(597, 246);
-            this.iconPictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox9.Name = "iconPictureBox9";
             this.iconPictureBox9.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox9.TabIndex = 71;
@@ -275,7 +278,7 @@
             this.cmbxProvincia.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxProvincia.ListTextColor = System.Drawing.Color.DarkGray;
             this.cmbxProvincia.Location = new System.Drawing.Point(635, 199);
-            this.cmbxProvincia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbxProvincia.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxProvincia.MinimumSize = new System.Drawing.Size(150, 24);
             this.cmbxProvincia.Name = "cmbxProvincia";
             this.cmbxProvincia.Padding = new System.Windows.Forms.Padding(1);
@@ -292,7 +295,7 @@
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox8.IconSize = 31;
             this.iconPictureBox8.Location = new System.Drawing.Point(597, 199);
-            this.iconPictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox8.Name = "iconPictureBox8";
             this.iconPictureBox8.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox8.TabIndex = 69;
@@ -313,7 +316,7 @@
             this.cmbxGeneroCliente.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxGeneroCliente.ListTextColor = System.Drawing.Color.DarkGray;
             this.cmbxGeneroCliente.Location = new System.Drawing.Point(102, 289);
-            this.cmbxGeneroCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbxGeneroCliente.Margin = new System.Windows.Forms.Padding(2);
             this.cmbxGeneroCliente.MinimumSize = new System.Drawing.Size(150, 24);
             this.cmbxGeneroCliente.Name = "cmbxGeneroCliente";
             this.cmbxGeneroCliente.Padding = new System.Windows.Forms.Padding(1);
@@ -330,7 +333,7 @@
             this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox7.IconSize = 31;
             this.iconPictureBox7.Location = new System.Drawing.Point(64, 289);
-            this.iconPictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox7.Name = "iconPictureBox7";
             this.iconPictureBox7.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox7.TabIndex = 67;
@@ -339,7 +342,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(786, 36);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -355,7 +358,7 @@
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 40;
             this.iconPictureBox6.Location = new System.Drawing.Point(58, 43);
-            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(40, 49);
             this.iconPictureBox6.TabIndex = 64;
@@ -382,7 +385,7 @@
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 31;
             this.iconPictureBox5.Location = new System.Drawing.Point(343, 502);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox5.TabIndex = 62;
@@ -397,7 +400,7 @@
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 31;
             this.iconPictureBox2.Location = new System.Drawing.Point(343, 455);
-            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox2.TabIndex = 61;
@@ -412,7 +415,7 @@
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 31;
             this.iconPictureBox1.Location = new System.Drawing.Point(64, 338);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox1.TabIndex = 60;
@@ -426,7 +429,7 @@
             this.label2.Location = new System.Drawing.Point(376, 407);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 26);
+            this.label2.Size = new System.Drawing.Size(201, 24);
             this.label2.TabIndex = 59;
             this.label2.Text = "Creación de Usuario";
             // 
@@ -438,7 +441,7 @@
             this.label1.Location = new System.Drawing.Point(97, 141);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 26);
+            this.label1.Size = new System.Drawing.Size(172, 24);
             this.label1.TabIndex = 58;
             this.label1.Text = "Datos Personales";
             // 
@@ -454,7 +457,7 @@
             this.btnCrearUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioCliente.ForeColor = System.Drawing.Color.White;
             this.btnCrearUsuarioCliente.Location = new System.Drawing.Point(379, 559);
-            this.btnCrearUsuarioCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrearUsuarioCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearUsuarioCliente.Name = "btnCrearUsuarioCliente";
             this.btnCrearUsuarioCliente.Size = new System.Drawing.Size(196, 38);
             this.btnCrearUsuarioCliente.TabIndex = 57;
@@ -473,6 +476,7 @@
             this.txtContraseniaUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseniaUsuarioCliente.ForeColor = System.Drawing.Color.White;
             this.txtContraseniaUsuarioCliente.Location = new System.Drawing.Point(379, 502);
+            this.txtContraseniaUsuarioCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseniaUsuarioCliente.Multiline = false;
             this.txtContraseniaUsuarioCliente.Name = "txtContraseniaUsuarioCliente";
             this.txtContraseniaUsuarioCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -494,6 +498,7 @@
             this.txtNombreUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuarioCliente.ForeColor = System.Drawing.Color.White;
             this.txtNombreUsuarioCliente.Location = new System.Drawing.Point(379, 455);
+            this.txtNombreUsuarioCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreUsuarioCliente.Multiline = false;
             this.txtNombreUsuarioCliente.Name = "txtNombreUsuarioCliente";
             this.txtNombreUsuarioCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -515,6 +520,7 @@
             this.txtEmailCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailCliente.ForeColor = System.Drawing.Color.White;
             this.txtEmailCliente.Location = new System.Drawing.Point(100, 338);
+            this.txtEmailCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmailCliente.Multiline = false;
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -536,6 +542,7 @@
             this.txtApellidoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoCliente.ForeColor = System.Drawing.Color.White;
             this.txtApellidoCliente.Location = new System.Drawing.Point(302, 232);
+            this.txtApellidoCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoCliente.Multiline = false;
             this.txtApellidoCliente.Name = "txtApellidoCliente";
             this.txtApellidoCliente.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -556,7 +563,7 @@
             this.rjCircularPictureBox1.BorderSize = 2;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Location = new System.Drawing.Point(40, 24);
-            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(74, 74);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -568,7 +575,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.iconPictureBox4);
             this.Controls.Add(this.iconPictureBox3);
             this.Controls.Add(this.txtNombreCliente);
@@ -595,7 +602,8 @@
             this.Controls.Add(this.txtEmailCliente);
             this.Controls.Add(this.txtApellidoCliente);
             this.Controls.Add(this.rjCircularPictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmRegistroCliente";
             this.Text = "frmRegistroCliente";
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
