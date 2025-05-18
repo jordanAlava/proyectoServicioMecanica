@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using capaEntidad;
@@ -175,6 +176,9 @@ namespace capaDato
         /* Metodos
          * 1    bool ingresarCliente
          * 2    Cliente buscarCliente - retorna un cliente o null
+         * 3    bool modificarCliente
+         * 4    bool autenticacion del cliente
+         * 5    bool cedulaValida - verifica si es una cedula valida
          */
 
         public bool ingresarCliente(Cliente cliente)
@@ -209,6 +213,126 @@ namespace capaDato
                 return false;
             }
         }
+
+        public Cliente buscarCliente(int idR)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand("SELECT * FROM Cliente WHERE idCliente = @idR", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@idR", idR);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                if (reader.Read())
+                {
+                    Cliente clienteEncontrado = new Cliente
+                    {
+                        idCliente = Convert.ToInt32(reader["idCliente"]),
+                        cedulaCliente = Convert.ToString(reader["cedula"]),
+                        nombreCliente = Convert.ToString(reader["nombreCli"]),
+                        apellidoCliente = Convert.ToString(reader["apellidoCli"]),
+                        generoCliente = Convert.ToChar(reader["genero"]),
+                        direccionCliente = Convert.ToString(reader["direccion"]),
+                        ciudadCliente = Convert.ToString(reader["ciudadCli"]),
+                        provinciaCliente = Convert.ToString(reader["provinciaCli"]),
+                        correoCliente = Convert.ToString(reader["e_mail"]),
+                        userCliente = Convert.ToString(reader["userCliente"]),
+                        passCliente = Convert.ToString(reader["passCli"]),
+                        pasaporteCliente = Convert.ToString(reader["pasaporte"])
+                    };
+                    reader.Close();
+                    objConnect.Cerrar();
+                    return clienteEncontrado; ;
+                }
+                else
+                {
+                    reader.Close();
+                    objConnect.Cerrar();
+                    return null;
+                }
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+        }
+        public bool modificarCliente(Cliente cliente)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"UPDATE Cliente SET nombreCli = @nombre, apellidoCli = @apellido, direccion = @direccion, ciudadCli = @ciudad, provinciaCli = @provincia, e_mail = @correo, userCliente = @usuario, passCli = @contra WHERE idCliente = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@nombre", cliente.nombreCliente);
+                sqlC.Parameters.AddWithValue("@apellido", cliente.apellidoCliente);
+                sqlC.Parameters.AddWithValue("@direccion", cliente.direccionCliente);
+                sqlC.Parameters.AddWithValue("@ciudad", cliente.ciudadCliente);
+                sqlC.Parameters.AddWithValue("@provincia", cliente.provinciaCliente);
+                sqlC.Parameters.AddWithValue("@correo", cliente.correoCliente);
+                sqlC.Parameters.AddWithValue("@usuario", cliente.userCliente);
+                sqlC.Parameters.AddWithValue("@contra", cliente.passCliente);
+                sqlC.Parameters.AddWithValue("@id", cliente.idCliente);
+                int clienteModificado = sqlC.ExecuteNonQuery();
+                objConnect.Cerrar();
+                return clienteModificado == 1;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool autenticarcionliente(string usuario, string contra)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT COUNT(*)
+                FROM Cliente
+                WHERE userCliente = @usuario AND passCli = @contra", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@usuario", usuario);
+                sqlC.Parameters.AddWithValue("@contra", contra);
+                int clienteEncontradp = (int)sqlC.ExecuteScalar();
+                return clienteEncontradp == 1;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public bool validarCedula(string cedula)
+        {
+            if (cedula.Length == 10 && cedula.All(char.IsDigit))
+            {
+                int provincia = int.Parse(cedula.Substring(0, 2));
+                if (provincia >= 1 && provincia <= 24)
+                {
+                    int suma = 0;
+                    for (int i = 0; i < 9; i++)
+                    {
+                        int digito = int.Parse(cedula[i].ToString());
+                        if (i % 2 == 0)
+                        {
+                            digito *= 2;
+                            if (digito > 9)
+                                digito -= 9;
+                        }
+                        suma += digito;
+                    }
+
+                    int verificador = (10 - (suma % 10)) % 10;
+                    int ultimoDigito = int.Parse(cedula[9].ToString());
+
+                    return verificador == ultimoDigito;
+                }
+            }
+
+            return false;
+        }
+
 
     }
 }
