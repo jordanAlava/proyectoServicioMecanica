@@ -60,5 +60,10 @@ namespace capaPresentacion
         {
 
         }
+
+        private void frmIniciarSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

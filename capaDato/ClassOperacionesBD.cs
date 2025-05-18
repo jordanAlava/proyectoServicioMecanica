@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace capaDato
          * 4    bool eliminarAdministrador
          * 5    bool autenticarAdmin
          * 6    List listaAdministradores - retorna una lista 
+         * 7    List listaClientes - retorna una lista
          */
         
         public bool ingresarAdmin(Administrador nuevoAdmin)
@@ -171,15 +173,58 @@ namespace capaDato
                 return null;
             }
         }
+        public List<Cliente> listarClientes()
+        {
+            List<Cliente> listaCliente = new List<Cliente>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT * 
+                FROM Cliente", objConnect.conectar);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    Cliente cliente = new Cliente
+                    {
+                        idCliente = Convert.ToInt32(reader["idCliente"]),
+                        cedulaCliente = Convert.ToString(reader["cedula"]),
+                        nombreCliente = Convert.ToString(reader["nombreCli"]),
+                        apellidoCliente = Convert.ToString(reader["apellidoCli"]),
+                        generoCliente = Convert.ToChar(reader["genero"]),
+                        direccionCliente = Convert.ToString(reader["direccion"]),
+                        ciudadCliente = Convert.ToString(reader["ciudadCli"]),
+                        provinciaCliente = Convert.ToString(reader["provinciaCli"]),
+                        correoCliente = Convert.ToString(reader["e_mail"]),
+                        userCliente = Convert.ToString(reader["userCliente"]),
+                        passCliente = Convert.ToString(reader["passCli"]),
+                        pasaporteCliente = Convert.ToString(reader["pasaporte"])
+                    };
+                    listaCliente.Add(cliente);
+                }
+                reader.Close();
+                return listaCliente;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
 
         ///////////////// OPERACIONESS DE CLIENTE //////////////////////////
         /* Metodos
          * 1    bool ingresarCliente
          * 2    Cliente buscarCliente - retorna un cliente o null
          * 3    bool modificarCliente
-         * 6    bool existeCliente
          * 4    bool autenticacion del cliente
          * 5    bool cedulaValida - verifica si es una cedula valida
+         * 6    bool existeCliente 
+         * 7    bool autenticacionCliente
          */
 
 
@@ -194,7 +239,7 @@ namespace capaDato
                 WHERE cedula = @cedulaR", objConnect.conectar);
                 sqlC.Parameters.AddWithValue("@cedulaR", cedulaR);
                 int clienteEncontrado = (int)sqlC.ExecuteScalar();
-                return clienteEncontrado == 1;
+                return clienteEncontrado == 1;  
             }catch(Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
@@ -357,6 +402,29 @@ namespace capaDato
             return false;
         }
 
-
+        public bool autenticacionCliente(string usuario, string contra)
+        {
+            try
+            {
+                objConnect.Abrir();
+                string sentencia = @"
+                SELECT COUNT(*)
+                FROM Cliente
+                WHERE userCliente = @usuario AND passCli = @contra";
+                SqlCommand sqlC = new SqlCommand(sentencia, objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@usuario", usuario);
+                sqlC.Parameters.AddWithValue("@contra", contra);
+                int clienteEncontrado = (int)sqlC.ExecuteScalar();
+                return clienteEncontrado == 1;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
     }
 }
