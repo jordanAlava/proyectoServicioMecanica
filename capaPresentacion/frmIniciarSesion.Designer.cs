@@ -166,6 +166,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmIniciarSesion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIniciarSesion";
             ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
             this.ResumeLayout(false);
