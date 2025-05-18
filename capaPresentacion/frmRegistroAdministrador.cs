@@ -24,43 +24,56 @@ namespace capaPresentacion
 
         private void txtCedulaAdministrador_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permitir teclas de control como Backspace
-            if (char.IsControl(e.KeyChar))
+            try
             {
-                return;
-            }
+                TextBox txt = sender as TextBox;
+                if (txt == null) return;
 
-            // Validar que solo se ingresen números
-            if (!char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true; // Evita que se muestre el carácter
-                MessageBox.Show("Solo se permiten números en el campo de cédula.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                // Bloquear Ctrl + V (pegar)
+                if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22))
+                {
+                    e.Handled = true;
+                    MessageBox.Show("No se permite pegar en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-            // Validar longitud máxima de 10 caracteres
-            TextBox txt = sender as TextBox;
-            if (txt != null && txt.Text.Length >= 10)
-            {
-                e.Handled = true;
-                MessageBox.Show("La cédula debe tener máximo 10 dígitos.", "Longitud excedida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                // Permitir teclas de control excepto Enter (que manejamos aparte)
+                if (char.IsControl(e.KeyChar) && e.KeyChar != (char)Keys.Enter)
+                {
+                    return;
+                }
 
-            // Bloquear combinación Ctrl + V (pegar)
-            if ((Control.ModifierKeys == Keys.Control) && (e.KeyChar == 22)) // 22 es el código ASCII de Ctrl+V
-            {
-                e.Handled = true;
-                MessageBox.Show("No se permite pegar en este campo.", "Acción no permitida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Solo números permitidos
+                if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Enter)
+                {
+                    e.Handled = true;
+                    MessageBox.Show("Solo se permiten números en la cédula.", "Entrada no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                // Cuando se presiona Enter, validar longitud y mover foco
+                if (e.KeyChar == (char)Keys.Enter)
+                {
+                    e.Handled = true; // Evita el beep
+
+                    if (txt.Text.Length == 10)
+                    {
+                        txtNombreAdministrador.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("La cédula debe tener exactamente 10 dígitos para continuar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
             }
-            else
+            catch (Exception)
             {
+                // En caso de error, pasar foco para no trabar la app
                 txtNombreAdministrador.Focus();
             }
-
-            
         }
+
+
 
         private void txtNombreAdministrador_KeyPress(object sender, KeyPressEventArgs e)
         {
