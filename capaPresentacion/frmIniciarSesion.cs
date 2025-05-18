@@ -54,5 +54,16 @@ namespace capaPresentacion
         {
 
         }
+
+        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkRegistrarse_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmTipoRegistro obj = new frmTipoRegistro();
+            obj.Show();
+        }
     }
 }
