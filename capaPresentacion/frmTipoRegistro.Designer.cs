@@ -35,16 +35,20 @@
             this.btnSiguiente = new RJCodeAdvance.RJControls.RJButton();
             this.lblRegistrarse = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pctrImagenFondo
             // 
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-1, -1);
+            this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctrImagenFondo.Location = new System.Drawing.Point(-417, 0);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
-            this.pctrImagenFondo.Size = new System.Drawing.Size(414, 727);
+            this.pctrImagenFondo.Size = new System.Drawing.Size(1064, 721);
+            this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
             // 
@@ -131,24 +135,33 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Administrador";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pctrImagenFondo);
+            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(432, 724);
+            this.panel1.TabIndex = 12;
+            // 
             // frmTipoRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1006, 721);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRegistrarse);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pctrImagenFondo);
             this.Name = "frmTipoRegistro";
             this.Text = "frmTipoRegistro";
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +176,6 @@
         private RJCodeAdvance.RJControls.RJButton btnSiguiente;
         private System.Windows.Forms.Label lblRegistrarse;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
