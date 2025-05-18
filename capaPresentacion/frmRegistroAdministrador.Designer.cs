@@ -204,7 +204,7 @@
             this.btnCrearUsuarioAdministrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(503, 702);
+            this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(906, 574);
             this.btnCrearUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.btnCrearUsuarioAdministrador.Name = "btnCrearUsuarioAdministrador";
             this.btnCrearUsuarioAdministrador.Size = new System.Drawing.Size(196, 38);
