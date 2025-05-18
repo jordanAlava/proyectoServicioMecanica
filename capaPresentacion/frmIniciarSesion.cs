@@ -16,7 +16,6 @@ namespace capaPresentacion
     {
         public frmIniciarSesion()
         {
-
             InitializeComponent();
             inicializarFormulario();
         }

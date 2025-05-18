@@ -128,7 +128,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Recursos\Imagenes\carroFondo1.jpg" />
+    <Content Include="Recursos\Imagenes\carroFondo1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Recursos\Imagenes\logotipo.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
