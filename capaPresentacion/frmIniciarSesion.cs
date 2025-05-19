@@ -59,17 +59,20 @@ namespace capaPresentacion
 
 
         public bool esAdmin { get; private set; }
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             try
             {
                 string usuario = txtUsuario.Texts;
                 string contra = txtContrasenia.Texts;
-                if(operacion.autenticarCliente(usuario, contra))
+                if (operacion.autenticarCliente(usuario, contra))
                 {
                     esAdmin = false;
                     this.DialogResult = DialogResult.OK;
-                }else if (operacion.autenticarAdmin(usuario, contra))
+                }
+                else if (operacion.autenticarAdmin(usuario, contra))
                 {
                     esAdmin = true;
                     this.DialogResult = DialogResult.OK;
@@ -79,16 +82,11 @@ namespace capaPresentacion
                     // POR SERGURIDAD, NO SE DEBE DECIR SI ESTA MAL EL USUARIO O CONTRASEÑA
                     MessageBox.Show("USUARIO O CONTRASEÑA INCORRECTO");
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
-
-        private void btnIniciarSesion_Click(object sender, EventArgs e)
-        {
-            frmAdministradorPantallaPrincipal obj = new frmAdministradorPantallaPrincipal();
-            obj.ShowDialog();
         }
     }
 }
