@@ -49,11 +49,6 @@ namespace capaPresentacion
             }
         }
 
-        private void btnIniciarSesion_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void linkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmTipoRegistro obj = new frmTipoRegistro();
@@ -91,12 +86,6 @@ namespace capaPresentacion
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
-
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
-        {
-            frmAdministradorPantallaPrincipal obj = new frmAdministradorPantallaPrincipal();
-            obj.ShowDialog();
         }
     }
 }

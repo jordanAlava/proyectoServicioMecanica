@@ -87,7 +87,7 @@
             this.txtContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.ForeColor = System.Drawing.Color.White;
             this.txtContrasenia.Location = new System.Drawing.Point(384, 380);
-            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContrasenia.Margin = new System.Windows.Forms.Padding(4);
             this.txtContrasenia.Multiline = false;
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Padding = new System.Windows.Forms.Padding(17, 11, 17, 11);
@@ -111,7 +111,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
             this.txtUsuario.Location = new System.Drawing.Point(384, 312);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Multiline = false;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Padding = new System.Windows.Forms.Padding(17, 11, 17, 11);
@@ -129,7 +129,7 @@
             this.pctrLogotipo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrLogotipo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pctrLogotipo.Location = new System.Drawing.Point(384, 89);
-            this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2);
             this.pctrLogotipo.Name = "pctrLogotipo";
             this.pctrLogotipo.Size = new System.Drawing.Size(333, 353);
             this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
