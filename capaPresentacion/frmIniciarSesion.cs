@@ -58,7 +58,9 @@ namespace capaPresentacion
 
 
         public bool esAdmin { get; private set; }
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             try
             {
