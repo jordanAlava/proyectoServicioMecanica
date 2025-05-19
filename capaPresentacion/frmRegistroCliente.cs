@@ -117,5 +117,9 @@ namespace capaPresentacion
             this.Close();
         }
 
+        private void frmRegistroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
