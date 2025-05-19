@@ -337,25 +337,25 @@
             // 
             // lblCreacionUsuario
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(187, 482);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 29);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Creación de Usuario";
+            this.lblCreacionUsuario.AutoSize = true;
+            this.lblCreacionUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreacionUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblCreacionUsuario.Location = new System.Drawing.Point(187, 482);
+            this.lblCreacionUsuario.Name = "lblCreacionUsuario";
+            this.lblCreacionUsuario.Size = new System.Drawing.Size(252, 29);
+            this.lblCreacionUsuario.TabIndex = 59;
+            this.lblCreacionUsuario.Text = "Creación de Usuario";
             // 
             // lblDatosPersonales
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(187, 180);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 29);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Datos Personales";
+            this.lblDatosPersonales.AutoSize = true;
+            this.lblDatosPersonales.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosPersonales.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblDatosPersonales.Location = new System.Drawing.Point(187, 180);
+            this.lblDatosPersonales.Name = "lblDatosPersonales";
+            this.lblDatosPersonales.Size = new System.Drawing.Size(219, 29);
+            this.lblDatosPersonales.TabIndex = 58;
+            this.lblDatosPersonales.Text = "Datos Personales";
             // 
             // btnCrearUsuarioCliente
             // 
@@ -506,14 +506,14 @@
             // 
             // lblTitulo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Brown;
-            this.label4.Location = new System.Drawing.Point(173, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(471, 39);
-            this.label4.TabIndex = 82;
-            this.label4.Text = "Creación de Usuario Cliente\r\n";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Brown;
+            this.lblTitulo.Location = new System.Drawing.Point(173, 86);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(471, 39);
+            this.lblTitulo.TabIndex = 82;
+            this.lblTitulo.Text = "Creación de Usuario Cliente\r\n";
             // 
             // iconPictureBox6
             // 
@@ -548,14 +548,14 @@
             // 
             // lblDatosUbicacion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(936, 180);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(219, 29);
-            this.label3.TabIndex = 85;
-            this.label3.Text = "Datos Personales";
+            this.lblDatosUbicacion.AutoSize = true;
+            this.lblDatosUbicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosUbicacion.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblDatosUbicacion.Location = new System.Drawing.Point(936, 180);
+            this.lblDatosUbicacion.Name = "lblDatosUbicacion";
+            this.lblDatosUbicacion.Size = new System.Drawing.Size(219, 29);
+            this.lblDatosUbicacion.TabIndex = 85;
+            this.lblDatosUbicacion.Text = "Datos Personales";
             // 
             // frmRegistroCliente
             // 
@@ -563,7 +563,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1788, 844);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblDatosUbicacion);
             this.Controls.Add(this.iconPictureBox6);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.lblTitulo);

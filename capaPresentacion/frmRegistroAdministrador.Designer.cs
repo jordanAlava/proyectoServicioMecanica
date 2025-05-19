@@ -378,7 +378,7 @@
             this.lbl_Invisible.Name = "lbl_Invisible";
             this.lbl_Invisible.Size = new System.Drawing.Size(35, 13);
             this.lbl_Invisible.TabIndex = 38;
-            this.lbl_Invisible.Text = "label4";
+            this.lbl_Invisible.Text = "lblTitulo";
             // 
             // btnAtras
             // 
