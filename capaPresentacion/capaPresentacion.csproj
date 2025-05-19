@@ -86,6 +86,12 @@
     <Compile Include="frmRegistroCliente.Designer.cs">
       <DependentUpon>frmRegistroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRespuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespuestos.Designer.cs">
+      <DependentUpon>frmRespuestos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmServicios.cs">
       <SubType>Form</SubType>
     </Compile>
