@@ -56,6 +56,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDTallerMecanicoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDTallerMecanicoDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmAdministradorPantallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +141,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BDTallerMecanicoDataSet.xsc">
+      <DependentUpon>BDTallerMecanicoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDTallerMecanicoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDTallerMecanicoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDTallerMecanicoDataSet.xss">
+      <DependentUpon>BDTallerMecanicoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -21,5 +21,12 @@ namespace capaPresentacion
         {
             this.Close();
         }
+
+        private void frmServicios_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'bDTallerMecanicoDataSet.Servicio' Puede moverla o quitarla según sea necesario.
+            this.servicioTableAdapter.Fill(this.bDTallerMecanicoDataSet.Servicio);
+
+        }
     }
 }
