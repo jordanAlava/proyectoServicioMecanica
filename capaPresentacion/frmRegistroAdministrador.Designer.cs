@@ -47,6 +47,7 @@
             this.txtCedulaAdministrador = new RJCodeAdvance.RJControls.RJTextBox();
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.lbl_Invisible = new System.Windows.Forms.Label();
+            this.btnAtras = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
@@ -59,10 +60,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(709, 134);
+            this.pictureBox1.Location = new System.Drawing.Point(978, 42);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 68);
+            this.pictureBox1.Size = new System.Drawing.Size(169, 119);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
@@ -74,23 +75,23 @@
             this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.iconPictureBox6.IconColor = System.Drawing.Color.Brown;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 40;
-            this.iconPictureBox6.Location = new System.Drawing.Point(146, 154);
+            this.iconPictureBox6.IconSize = 42;
+            this.iconPictureBox6.Location = new System.Drawing.Point(63, 64);
             this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(40, 49);
+            this.iconPictureBox6.Size = new System.Drawing.Size(42, 42);
             this.iconPictureBox6.TabIndex = 35;
             this.iconPictureBox6.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.03478F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Brown;
-            this.label3.Location = new System.Drawing.Point(206, 154);
+            this.label3.Location = new System.Drawing.Point(129, 69);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(468, 31);
+            this.label3.Size = new System.Drawing.Size(520, 37);
             this.label3.TabIndex = 34;
             this.label3.Text = "Creación de Usuario Administrador";
             // 
@@ -102,7 +103,7 @@
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 31;
-            this.iconPictureBox5.Location = new System.Drawing.Point(341, 513);
+            this.iconPictureBox5.Location = new System.Drawing.Point(219, 516);
             this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(31, 33);
@@ -117,7 +118,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 31;
-            this.iconPictureBox4.Location = new System.Drawing.Point(341, 312);
+            this.iconPictureBox4.Location = new System.Drawing.Point(218, 268);
             this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(31, 33);
@@ -132,7 +133,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 31;
-            this.iconPictureBox3.Location = new System.Drawing.Point(341, 265);
+            this.iconPictureBox3.Location = new System.Drawing.Point(218, 219);
             this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(31, 33);
@@ -147,7 +148,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 31;
-            this.iconPictureBox2.Location = new System.Drawing.Point(341, 466);
+            this.iconPictureBox2.Location = new System.Drawing.Point(219, 395);
             this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(31, 33);
@@ -162,7 +163,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 31;
-            this.iconPictureBox1.Location = new System.Drawing.Point(341, 360);
+            this.iconPictureBox1.Location = new System.Drawing.Point(219, 457);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(31, 33);
@@ -174,7 +175,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(374, 418);
+            this.label2.Location = new System.Drawing.Point(172, 350);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(201, 24);
@@ -186,7 +187,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(374, 220);
+            this.label1.Location = new System.Drawing.Point(172, 167);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 24);
@@ -204,10 +205,10 @@
             this.btnCrearUsuarioAdministrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(906, 574);
+            this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(978, 519);
             this.btnCrearUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.btnCrearUsuarioAdministrador.Name = "btnCrearUsuarioAdministrador";
-            this.btnCrearUsuarioAdministrador.Size = new System.Drawing.Size(196, 38);
+            this.btnCrearUsuarioAdministrador.Size = new System.Drawing.Size(158, 38);
             this.btnCrearUsuarioAdministrador.TabIndex = 26;
             this.btnCrearUsuarioAdministrador.Text = "Crear Usuario";
             this.btnCrearUsuarioAdministrador.TextColor = System.Drawing.Color.White;
@@ -223,7 +224,7 @@
             this.txtContraseniaUsuarioAdministrador.BorderSize = 1;
             this.txtContraseniaUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseniaUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
-            this.txtContraseniaUsuarioAdministrador.Location = new System.Drawing.Point(503, 631);
+            this.txtContraseniaUsuarioAdministrador.Location = new System.Drawing.Point(257, 519);
             this.txtContraseniaUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtContraseniaUsuarioAdministrador.Multiline = false;
             this.txtContraseniaUsuarioAdministrador.Name = "txtContraseniaUsuarioAdministrador";
@@ -246,7 +247,7 @@
             this.txtNombreUsuarioAdministrador.BorderSize = 1;
             this.txtNombreUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
-            this.txtNombreUsuarioAdministrador.Location = new System.Drawing.Point(503, 574);
+            this.txtNombreUsuarioAdministrador.Location = new System.Drawing.Point(257, 457);
             this.txtNombreUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreUsuarioAdministrador.Multiline = false;
             this.txtNombreUsuarioAdministrador.Name = "txtNombreUsuarioAdministrador";
@@ -269,7 +270,7 @@
             this.txtEmailAdministracion.BorderSize = 1;
             this.txtEmailAdministracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailAdministracion.ForeColor = System.Drawing.Color.White;
-            this.txtEmailAdministracion.Location = new System.Drawing.Point(503, 443);
+            this.txtEmailAdministracion.Location = new System.Drawing.Point(257, 395);
             this.txtEmailAdministracion.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmailAdministracion.Multiline = false;
             this.txtEmailAdministracion.Name = "txtEmailAdministracion";
@@ -292,7 +293,7 @@
             this.txtApellidoAdministrador.BorderSize = 1;
             this.txtApellidoAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoAdministrador.ForeColor = System.Drawing.Color.White;
-            this.txtApellidoAdministrador.Location = new System.Drawing.Point(772, 384);
+            this.txtApellidoAdministrador.Location = new System.Drawing.Point(462, 271);
             this.txtApellidoAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtApellidoAdministrador.Multiline = false;
             this.txtApellidoAdministrador.Name = "txtApellidoAdministrador";
@@ -315,7 +316,7 @@
             this.txtNombreAdministrador.BorderSize = 1;
             this.txtNombreAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreAdministrador.ForeColor = System.Drawing.Color.White;
-            this.txtNombreAdministrador.Location = new System.Drawing.Point(503, 384);
+            this.txtNombreAdministrador.Location = new System.Drawing.Point(256, 271);
             this.txtNombreAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreAdministrador.Multiline = false;
             this.txtNombreAdministrador.Name = "txtNombreAdministrador";
@@ -338,7 +339,7 @@
             this.txtCedulaAdministrador.BorderSize = 1;
             this.txtCedulaAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaAdministrador.ForeColor = System.Drawing.Color.White;
-            this.txtCedulaAdministrador.Location = new System.Drawing.Point(503, 326);
+            this.txtCedulaAdministrador.Location = new System.Drawing.Point(256, 219);
             this.txtCedulaAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtCedulaAdministrador.Multiline = false;
             this.txtCedulaAdministrador.Name = "txtCedulaAdministrador";
@@ -361,10 +362,10 @@
             this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.rjCircularPictureBox1.BorderSize = 2;
             this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(128, 134);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(42, 42);
             this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(74, 74);
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(83, 83);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 36;
             this.rjCircularPictureBox1.TabStop = false;
@@ -379,12 +380,37 @@
             this.lbl_Invisible.TabIndex = 38;
             this.lbl_Invisible.Text = "label4";
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAtras.BackColor = System.Drawing.Color.Black;
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.ForeColor = System.Drawing.Color.White;
+            this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.btnAtras.IconColor = System.Drawing.Color.White;
+            this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAtras.IconSize = 24;
+            this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtras.Location = new System.Drawing.Point(843, 520);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.TabIndex = 39;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAtras.UseVisualStyleBackColor = false;
+            // 
             // frmRegistroAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.lbl_Invisible);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.iconPictureBox6);
@@ -444,5 +470,6 @@
         private RJCodeAdvance.RJControls.RJTextBox txtCedulaAdministrador;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Label lbl_Invisible;
+        private FontAwesome.Sharp.IconButton btnAtras;
     }
 }
