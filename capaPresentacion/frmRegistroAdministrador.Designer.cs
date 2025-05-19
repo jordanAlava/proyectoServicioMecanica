@@ -30,14 +30,14 @@
         {
             this.pctrLogotipo = new System.Windows.Forms.PictureBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCreacionUsuario = new System.Windows.Forms.Label();
+            this.lblDatosPersonales = new System.Windows.Forms.Label();
             this.btnCrearUsuarioAdministrador = new RJCodeAdvance.RJControls.RJButton();
             this.txtContraseniaUsuarioAdministrador = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtNombreUsuarioAdministrador = new RJCodeAdvance.RJControls.RJTextBox();
@@ -83,17 +83,17 @@
             this.iconPictureBox6.TabIndex = 35;
             this.iconPictureBox6.TabStop = false;
             // 
-            // label3
+            // lblTitulo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Brown;
-            this.label3.Location = new System.Drawing.Point(130, 70);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(520, 37);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "Creación de Usuario Administrador";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.Brown;
+            this.lblTitulo.Location = new System.Drawing.Point(130, 70);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(520, 37);
+            this.lblTitulo.TabIndex = 34;
+            this.lblTitulo.Text = "Creación de Usuario Administrador";
             // 
             // iconPictureBox5
             // 
@@ -170,29 +170,29 @@
             this.iconPictureBox1.TabIndex = 29;
             this.iconPictureBox1.TabStop = false;
             // 
-            // label2
+            // lblCreacionUsuario
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(170, 350);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 24);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Creación de Usuario";
+            this.lblCreacionUsuario.AutoSize = true;
+            this.lblCreacionUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreacionUsuario.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblCreacionUsuario.Location = new System.Drawing.Point(170, 350);
+            this.lblCreacionUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCreacionUsuario.Name = "lblCreacionUsuario";
+            this.lblCreacionUsuario.Size = new System.Drawing.Size(201, 24);
+            this.lblCreacionUsuario.TabIndex = 28;
+            this.lblCreacionUsuario.Text = "Creación de Usuario";
             // 
-            // label1
+            // lblDatosPersonales
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(170, 170);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 24);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Datos Personales";
+            this.lblDatosPersonales.AutoSize = true;
+            this.lblDatosPersonales.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosPersonales.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblDatosPersonales.Location = new System.Drawing.Point(170, 170);
+            this.lblDatosPersonales.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDatosPersonales.Name = "lblDatosPersonales";
+            this.lblDatosPersonales.Size = new System.Drawing.Size(172, 24);
+            this.lblDatosPersonales.TabIndex = 27;
+            this.lblDatosPersonales.Text = "Datos Personales";
             // 
             // btnCrearUsuarioAdministrador
             // 
@@ -210,7 +210,7 @@
             this.btnCrearUsuarioAdministrador.Name = "btnCrearUsuarioAdministrador";
             this.btnCrearUsuarioAdministrador.Size = new System.Drawing.Size(158, 38);
             this.btnCrearUsuarioAdministrador.TabIndex = 26;
-            this.btnCrearUsuarioAdministrador.Text = "Crear Usuario";
+            this.btnCrearUsuarioAdministrador.Text = "&Crear Usuario";
             this.btnCrearUsuarioAdministrador.TextColor = System.Drawing.Color.White;
             this.btnCrearUsuarioAdministrador.UseVisualStyleBackColor = false;
             this.btnCrearUsuarioAdministrador.Click += new System.EventHandler(this.btnCrearUsuarioAdministrador_Click);
@@ -400,7 +400,7 @@
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(72, 38);
             this.btnAtras.TabIndex = 39;
-            this.btnAtras.Text = "Atrás";
+            this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
@@ -418,14 +418,14 @@
             this.Controls.Add(this.lbl_Invisible);
             this.Controls.Add(this.pctrLogotipo);
             this.Controls.Add(this.iconPictureBox6);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.iconPictureBox5);
             this.Controls.Add(this.iconPictureBox4);
             this.Controls.Add(this.iconPictureBox3);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCreacionUsuario);
+            this.Controls.Add(this.lblDatosPersonales);
             this.Controls.Add(this.btnCrearUsuarioAdministrador);
             this.Controls.Add(this.txtContraseniaUsuarioAdministrador);
             this.Controls.Add(this.txtNombreUsuarioAdministrador);
@@ -457,14 +457,14 @@
 
         private System.Windows.Forms.PictureBox pctrLogotipo;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTitulo;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCreacionUsuario;
+        private System.Windows.Forms.Label lblDatosPersonales;
         private RJCodeAdvance.RJControls.RJButton btnCrearUsuarioAdministrador;
         private RJCodeAdvance.RJControls.RJTextBox txtContraseniaUsuarioAdministrador;
         private RJCodeAdvance.RJControls.RJTextBox txtNombreUsuarioAdministrador;
