@@ -37,5 +37,30 @@ namespace capaPresentacion
             // Aquí llamas al método del padre para abrir un nuevo formulario (nieto)
             formularioPadre.abrirFormHijo(new frmServiciosAgregar(formularioPadre));
         }
+
+        private void rjComboBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbxFiltroBusqueda_Enter(object sender, EventArgs e)
+        {
+            cmbxFiltroBusqueda.BorderColor = Color.Firebrick;
+        }
+
+        private void cmbxFiltroBusqueda_Leave(object sender, EventArgs e)
+        {
+            cmbxFiltroBusqueda.BorderColor = Color.Black;
+        }
+
+        private void btn_MouseDown(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn != null)
+            {
+                btn.BackColor = Color.Firebrick;
+
+            }
+        }
     }
 }
