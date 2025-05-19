@@ -129,9 +129,13 @@ namespace capaDato
             try
             {
                 objConnect.Abrir();
-                SqlCommand sqlC = new SqlCommand("SELECT COUNT(*) FROM Administrador WHERE userName = @usuario AND passAdmin = @pass", objConnect.conectar);
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT COUNT(*)
+                FROM Administrador
+                WHERE userName COLLATE Latin1_General_CS_AS = @usuario
+                AND passAdmin COLLATE Latin1_General_CS_AS = @contrasenia ", objConnect.conectar);
                 sqlC.Parameters.AddWithValue("@usuario", usuario);
-                sqlC.Parameters.AddWithValue("pass", pass);
+                sqlC.Parameters.AddWithValue("@contrasenia", pass);
                 int existe = (int)sqlC.ExecuteScalar();
                 objConnect.Cerrar();
                 return existe == 1;
@@ -386,10 +390,11 @@ namespace capaDato
                 string sentencia = @"
                 SELECT COUNT(*)
                 FROM Cliente
-                WHERE userCliente = @usuario AND passCli = @contra";
+                WHERE userCliente COLLATE Latin1_General_CS_AS = @usuario
+                AND passCli COLLATE Latin1_General_CS_AS = @contrasenia ";
                 SqlCommand sqlC = new SqlCommand(sentencia, objConnect.conectar);
                 sqlC.Parameters.AddWithValue("@usuario", usuario);
-                sqlC.Parameters.AddWithValue("@contra", contra);
+                sqlC.Parameters.AddWithValue("@contrasenia", contra);
                 int clienteEncontrado = (int)sqlC.ExecuteScalar();
                 return clienteEncontrado == 1;
             }catch(Exception ex)

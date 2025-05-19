@@ -49,7 +49,6 @@ namespace capaPresentacion
             }
         }
 
-
         private void linkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmTipoRegistro obj = new frmTipoRegistro();
@@ -87,6 +86,11 @@ namespace capaPresentacion
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void frmIniciarSesion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
