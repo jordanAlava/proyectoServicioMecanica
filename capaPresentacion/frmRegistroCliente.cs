@@ -35,7 +35,7 @@ namespace capaPresentacion
         {            
             if (puente.validarCedulaa(txtCedulaCliente.Texts.ToString()))
             {
-                if(!puente.autenticarCliente(txtNombreUsuarioCliente.Texts, txtContraseniaUsuarioCliente.Texts) && !puente.autenticarAdmin(txtNombreUsuarioCliente.Texts, txtContraseniaUsuarioCliente.Texts))
+                if(!puente.existeUsuario(txtNombreUsuarioCliente.Texts))
                 {
                     if (Regex.IsMatch(txtEmailCliente.Texts, patronCorreo))
                     {

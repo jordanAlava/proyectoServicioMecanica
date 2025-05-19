@@ -155,7 +155,7 @@ namespace capaPresentacion
             {
                 if(!string.IsNullOrWhiteSpace(txtNombreAdministrador.Texts) && !string.IsNullOrWhiteSpace(txtApellidoAdministrador.Texts) && !string.IsNullOrWhiteSpace(txtEmailAdministracion.Texts) && !string.IsNullOrWhiteSpace(txtNombreUsuarioAdministrador.Texts) && !string.IsNullOrWhiteSpace(txtContraseniaUsuarioAdministrador.Texts))
                 {
-                    if(!operacion.autenticarAdmin(txtNombreUsuarioAdministrador.Texts, txtContraseniaUsuarioAdministrador.Texts) && !operacion.autenticarCliente(txtNombreUsuarioAdministrador.Texts, txtContraseniaUsuarioAdministrador.Texts))
+                    if(!operacion.existeUsuario(txtNombreUsuarioAdministrador.Texts))
                     {
                         Administrador admin = new Administrador
                         {

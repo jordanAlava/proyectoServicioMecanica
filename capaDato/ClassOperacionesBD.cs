@@ -229,9 +229,46 @@ namespace capaDato
          * 5    bool cedulaValida - verifica si es una cedula valida
          * 6    bool existeCliente 
          * 7    bool autenticacionCliente
+         * 8    bool existeUsuario
          */
 
 
+        public bool existeUsuario(string usuario)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT COUNT(*)
+                FROM Cliente
+                WHERE userCliente COLLATE Latin1_General_CS_AS = @usuario", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@usuario", usuario);
+                int usuarioEncontraC = (int)sqlC.ExecuteScalar();
+                SqlCommand sqlCC = new SqlCommand(@"
+                SELECT COUNT(*)
+                FROM Administrador
+                WHERE userName COLLATE Latin1_General_CS_AS = @user", objConnect.conectar);
+                sqlCC.Parameters.AddWithValue("@user", usuario);
+                int usuarioEncontraA = (int)sqlCC.ExecuteScalar();
+                if(usuarioEncontraA == 1 || usuarioEncontraC == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
         public bool existeCliente(string cedulaR)
         {
             try

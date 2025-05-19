@@ -68,6 +68,10 @@ namespace capaLogica
         {
             return operacion.listarClientes();
         }
+        public bool existeUsuario(string usuario)
+        {
+            return operacion.existeUsuario(usuario);
+        }
 
     }
 }
