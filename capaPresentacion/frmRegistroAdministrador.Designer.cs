@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctrLogotipo = new System.Windows.Forms.PictureBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
@@ -48,7 +48,7 @@
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.lbl_Invisible = new System.Windows.Forms.Label();
             this.btnAtras = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -58,15 +58,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pctrLogotipo
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(978, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 119);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
+            this.pctrLogotipo.Location = new System.Drawing.Point(978, 42);
+            this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2);
+            this.pctrLogotipo.Name = "pctrLogotipo";
+            this.pctrLogotipo.Size = new System.Drawing.Size(169, 119);
+            this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrLogotipo.TabIndex = 37;
+            this.pctrLogotipo.TabStop = false;
             // 
             // iconPictureBox6
             // 
@@ -416,7 +416,7 @@
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.lbl_Invisible);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pctrLogotipo);
             this.Controls.Add(this.iconPictureBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.iconPictureBox5);
@@ -440,7 +440,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistroAdministrador";
             this.Load += new System.EventHandler(this.frmRegistroAdministrador_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrLogotipo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
@@ -455,7 +455,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pctrLogotipo;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;

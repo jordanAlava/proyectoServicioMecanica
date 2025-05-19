@@ -19,9 +19,16 @@ namespace capaPresentacion
         public frmRegistroAdministrador()
         {
             InitializeComponent();
+            inicializarFormulario();
         }
 
         classPuente operacion = new classPuente();
+
+
+        public void inicializarFormulario()
+        {
+            pctrLogotipo.Image = Image.FromFile("Recursos/Imagenes/logotipo.jpg");
+        }
 
         private void txtCedulaAdministrador__TextChanged(object sender, EventArgs e)
         {
