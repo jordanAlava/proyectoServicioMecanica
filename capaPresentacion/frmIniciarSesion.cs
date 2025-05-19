@@ -84,10 +84,9 @@ namespace capaPresentacion
             }
         }
 
-        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        private void frmIniciarSesion_Load(object sender, EventArgs e)
         {
-            frmAdministradorPantallaPrincipal obj = new frmAdministradorPantallaPrincipal();
-            obj.ShowDialog();
+
         }
     }
 }
