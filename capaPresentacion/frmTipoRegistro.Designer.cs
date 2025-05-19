@@ -49,10 +49,10 @@
             // 
             this.pctrImagenFondo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-596, 0);
-            this.pctrImagenFondo.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrImagenFondo.Location = new System.Drawing.Point(-795, 0);
+            this.pctrImagenFondo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
-            this.pctrImagenFondo.Size = new System.Drawing.Size(1562, 729);
+            this.pctrImagenFondo.Size = new System.Drawing.Size(2083, 897);
             this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
@@ -62,12 +62,12 @@
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTitulo.Location = new System.Drawing.Point(470, 162);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(627, 199);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(166, 26);
+            this.lblTitulo.Size = new System.Drawing.Size(201, 29);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Tipo de Usuario";
             // 
@@ -80,14 +80,15 @@
             this.pctrCliente.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.pctrCliente.IconColor = System.Drawing.Color.DimGray;
             this.pctrCliente.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pctrCliente.IconSize = 140;
-            this.pctrCliente.Location = new System.Drawing.Point(537, 257);
-            this.pctrCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrCliente.IconSize = 172;
+            this.pctrCliente.Location = new System.Drawing.Point(716, 316);
+            this.pctrCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pctrCliente.Name = "pctrCliente";
-            this.pctrCliente.Size = new System.Drawing.Size(140, 140);
+            this.pctrCliente.Size = new System.Drawing.Size(187, 172);
             this.pctrCliente.TabIndex = 2;
             this.pctrCliente.TabStop = false;
             this.pctrCliente.Click += new System.EventHandler(this.pctrCliente_Click);
+            this.pctrCliente.DoubleClick += new System.EventHandler(this.pctrCliente_DoubleClick);
             this.pctrCliente.MouseEnter += new System.EventHandler(this.pctrCliente_MouseEnter);
             this.pctrCliente.MouseLeave += new System.EventHandler(this.pctrCliente_MouseLeave);
             // 
@@ -100,14 +101,15 @@
             this.pctrAdministrador.IconChar = FontAwesome.Sharp.IconChar.UserTie;
             this.pctrAdministrador.IconColor = System.Drawing.Color.DimGray;
             this.pctrAdministrador.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pctrAdministrador.IconSize = 140;
-            this.pctrAdministrador.Location = new System.Drawing.Point(703, 257);
-            this.pctrAdministrador.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrAdministrador.IconSize = 172;
+            this.pctrAdministrador.Location = new System.Drawing.Point(937, 316);
+            this.pctrAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pctrAdministrador.Name = "pctrAdministrador";
-            this.pctrAdministrador.Size = new System.Drawing.Size(140, 140);
+            this.pctrAdministrador.Size = new System.Drawing.Size(187, 172);
             this.pctrAdministrador.TabIndex = 3;
             this.pctrAdministrador.TabStop = false;
             this.pctrAdministrador.Click += new System.EventHandler(this.pctrAdministrador_Click);
+            this.pctrAdministrador.DoubleClick += new System.EventHandler(this.pctrAdministrador_DoubleClick);
             this.pctrAdministrador.MouseEnter += new System.EventHandler(this.pctrAdministrador_MouseEnter);
             this.pctrAdministrador.MouseLeave += new System.EventHandler(this.pctrAdministrador_MouseLeave);
             // 
@@ -122,12 +124,12 @@
             this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguiente.FlatAppearance.BorderSize = 0;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Location = new System.Drawing.Point(694, 491);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSiguiente.Location = new System.Drawing.Point(925, 604);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(158, 38);
+            this.btnSiguiente.Size = new System.Drawing.Size(211, 47);
             this.btnSiguiente.TabIndex = 4;
             this.btnSiguiente.Text = "&Siguiente";
             this.btnSiguiente.TextColor = System.Drawing.Color.White;
@@ -138,12 +140,12 @@
             // 
             this.lblCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.Color.LightGray;
-            this.lblCliente.Location = new System.Drawing.Point(578, 401);
-            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCliente.Location = new System.Drawing.Point(771, 494);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(58, 20);
+            this.lblCliente.Size = new System.Drawing.Size(61, 20);
             this.lblCliente.TabIndex = 10;
             this.lblCliente.Text = "Cliente";
             // 
@@ -151,12 +153,12 @@
             // 
             this.lblAdministrador.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdministrador.ForeColor = System.Drawing.Color.LightGray;
-            this.lblAdministrador.Location = new System.Drawing.Point(714, 401);
-            this.lblAdministrador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAdministrador.Location = new System.Drawing.Point(952, 494);
+            this.lblAdministrador.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(111, 20);
+            this.lblAdministrador.Size = new System.Drawing.Size(113, 20);
             this.lblAdministrador.TabIndex = 11;
             this.lblAdministrador.Text = "Administrador";
             // 
@@ -166,9 +168,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlContenedor.Controls.Add(this.pctrImagenFondo);
             this.pnlContenedor.Location = new System.Drawing.Point(0, 0);
-            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(409, 729);
+            this.pnlContenedor.Size = new System.Drawing.Size(545, 897);
             this.pnlContenedor.TabIndex = 12;
             this.pnlContenedor.Resize += new System.EventHandler(this.pnlContenedor_Resize);
             // 
@@ -183,15 +185,15 @@
             this.pctrAdministradorMarco.Enabled = false;
             this.pctrAdministradorMarco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pctrAdministradorMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pctrAdministradorMarco.Location = new System.Drawing.Point(694, 247);
-            this.pctrAdministradorMarco.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrAdministradorMarco.Location = new System.Drawing.Point(925, 304);
+            this.pctrAdministradorMarco.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pctrAdministradorMarco.Multiline = true;
             this.pctrAdministradorMarco.Name = "pctrAdministradorMarco";
-            this.pctrAdministradorMarco.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.pctrAdministradorMarco.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.pctrAdministradorMarco.PasswordChar = false;
             this.pctrAdministradorMarco.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.pctrAdministradorMarco.PlaceholderText = "";
-            this.pctrAdministradorMarco.Size = new System.Drawing.Size(158, 189);
+            this.pctrAdministradorMarco.Size = new System.Drawing.Size(211, 233);
             this.pctrAdministradorMarco.TabIndex = 13;
             this.pctrAdministradorMarco.Texts = "";
             this.pctrAdministradorMarco.UnderlinedStyle = false;
@@ -208,15 +210,15 @@
             this.pctrClienteMarco.Enabled = false;
             this.pctrClienteMarco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pctrClienteMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pctrClienteMarco.Location = new System.Drawing.Point(528, 247);
-            this.pctrClienteMarco.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrClienteMarco.Location = new System.Drawing.Point(704, 304);
+            this.pctrClienteMarco.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pctrClienteMarco.Multiline = true;
             this.pctrClienteMarco.Name = "pctrClienteMarco";
-            this.pctrClienteMarco.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.pctrClienteMarco.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.pctrClienteMarco.PasswordChar = false;
             this.pctrClienteMarco.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.pctrClienteMarco.PlaceholderText = "";
-            this.pctrClienteMarco.Size = new System.Drawing.Size(158, 189);
+            this.pctrClienteMarco.Size = new System.Drawing.Size(211, 233);
             this.pctrClienteMarco.TabIndex = 14;
             this.pctrClienteMarco.Texts = "";
             this.pctrClienteMarco.UnderlinedStyle = false;
@@ -230,16 +232,17 @@
             this.btnAtras.FlatAppearance.BorderSize = 0;
             this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.White;
             this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
             this.btnAtras.IconColor = System.Drawing.Color.White;
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(564, 491);
+            this.btnAtras.Location = new System.Drawing.Point(752, 604);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.Size = new System.Drawing.Size(96, 47);
             this.btnAtras.TabIndex = 17;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -251,10 +254,10 @@
             // 
             // frmTipoRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1344, 897);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.lblAdministrador);
@@ -265,8 +268,9 @@
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pctrAdministradorMarco);
             this.Controls.Add(this.pctrClienteMarco);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmTipoRegistro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTipoRegistro";
             this.Resize += new System.EventHandler(this.frmTipoRegistro_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).EndInit();

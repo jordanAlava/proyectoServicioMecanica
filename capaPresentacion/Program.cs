@@ -16,7 +16,18 @@ namespace capaPresentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmIniciarSesion());
+            frmIniciarSesion inicioSesion = new frmIniciarSesion();
+            if(inicioSesion.ShowDialog() == DialogResult.OK)
+            {
+                if (inicioSesion.esAdmin)
+                {
+                    Application.Run(new frmAdministradorPantallaPrincipal());
+                }
+                else
+                {
+                    Application.Run(new frmClientePantallaPrincipal());
+                }
+            }
         }
     }
 }

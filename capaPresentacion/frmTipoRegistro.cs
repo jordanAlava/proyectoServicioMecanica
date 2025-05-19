@@ -152,11 +152,13 @@ namespace capaPresentacion
             {
                 frmRegistroAdministrador obj = new frmRegistroAdministrador();
                 obj.ShowDialog();
+                this.Close();
             }
             else if(itemSeleccionado == pctrCliente.Name)
             {
                 frmRegistroCliente obj = new frmRegistroCliente();
                 obj.ShowDialog();
+                this.Close();
             }
                 
         }
@@ -166,8 +168,14 @@ namespace capaPresentacion
             this.Close();
         }
 
+        private void pctrCliente_DoubleClick(object sender, EventArgs e)
+        {
+            btnSiguiente.PerformClick();
+        }
 
-
-
+        private void pctrAdministrador_DoubleClick(object sender, EventArgs e)
+        {
+            btnSiguiente.PerformClick();
+        }
     }
 }
