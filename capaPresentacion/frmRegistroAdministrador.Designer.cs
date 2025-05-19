@@ -60,11 +60,11 @@
             // 
             // pctrLogotipo
             // 
-            this.pctrLogotipo.Location = new System.Drawing.Point(978, 42);
+            this.pctrLogotipo.Location = new System.Drawing.Point(978, 11);
             this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2);
             this.pctrLogotipo.Name = "pctrLogotipo";
-            this.pctrLogotipo.Size = new System.Drawing.Size(169, 119);
-            this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrLogotipo.Size = new System.Drawing.Size(240, 150);
+            this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrLogotipo.TabIndex = 37;
             this.pctrLogotipo.TabStop = false;
             // 
