@@ -24,5 +24,28 @@ namespace capaPresentacion
             pctrLogotipo.Image = Image.FromFile("Recursos/Imagenes/logotipo.jpg");
         }
 
+        private Form formularioActivo = null;
+
+        private void abrirFormHijo(Form formularioHijo)
+        {
+            if (formularioActivo == null) 
+            {
+                formularioActivo = new Form();
+            }
+            formularioActivo = formularioHijo;
+            formularioHijo.TopLevel = false;
+            formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            formularioHijo.Dock = DockStyle.Fill;
+            pnlFormulario.Controls.Add(formularioHijo);
+            pnlFormulario.Tag = formularioHijo;
+            formularioHijo.BringToFront();
+            formularioHijo.Show();
+
+        }
+
+        private void btnServicios_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmServicios());
+        }
     }
 }

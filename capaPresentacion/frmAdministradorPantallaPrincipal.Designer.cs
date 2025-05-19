@@ -38,6 +38,7 @@
             this.btnServicios = new System.Windows.Forms.Button();
             this.pnlLogotipo = new System.Windows.Forms.Panel();
             this.pctrLogotipo = new System.Windows.Forms.PictureBox();
+            this.pnlFormulario = new System.Windows.Forms.Panel();
             this.pnlMenuLateral.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlLogotipo.SuspendLayout();
@@ -58,7 +59,7 @@
             this.pnlMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.pnlMenuLateral.Name = "pnlMenuLateral";
-            this.pnlMenuLateral.Size = new System.Drawing.Size(249, 681);
+            this.pnlMenuLateral.Size = new System.Drawing.Size(264, 681);
             this.pnlMenuLateral.TabIndex = 0;
             // 
             // panel2
@@ -67,7 +68,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 588);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 53);
+            this.panel2.Size = new System.Drawing.Size(264, 53);
             this.panel2.TabIndex = 8;
             // 
             // btnCerrarSesion
@@ -85,7 +86,7 @@
             this.btnCerrarSesion.Location = new System.Drawing.Point(0, 0);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(70, 0, 30, 0);
-            this.btnCerrarSesion.Size = new System.Drawing.Size(249, 53);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(264, 53);
             this.btnCerrarSesion.TabIndex = 7;
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -96,7 +97,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 641);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 40);
+            this.panel1.Size = new System.Drawing.Size(264, 40);
             this.panel1.TabIndex = 5;
             // 
             // btnAcercaDe
@@ -110,7 +111,7 @@
             this.btnAcercaDe.Location = new System.Drawing.Point(0, 294);
             this.btnAcercaDe.Name = "btnAcercaDe";
             this.btnAcercaDe.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAcercaDe.Size = new System.Drawing.Size(249, 50);
+            this.btnAcercaDe.Size = new System.Drawing.Size(264, 50);
             this.btnAcercaDe.TabIndex = 4;
             this.btnAcercaDe.Text = "Acerca de";
             this.btnAcercaDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +128,7 @@
             this.btnAyuda.Location = new System.Drawing.Point(0, 244);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAyuda.Size = new System.Drawing.Size(249, 50);
+            this.btnAyuda.Size = new System.Drawing.Size(264, 50);
             this.btnAyuda.TabIndex = 3;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,7 +145,7 @@
             this.btnProductos.Location = new System.Drawing.Point(0, 194);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnProductos.Size = new System.Drawing.Size(249, 50);
+            this.btnProductos.Size = new System.Drawing.Size(264, 50);
             this.btnProductos.TabIndex = 2;
             this.btnProductos.Text = "Productos";
             this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,11 +162,12 @@
             this.btnServicios.Location = new System.Drawing.Point(0, 144);
             this.btnServicios.Name = "btnServicios";
             this.btnServicios.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnServicios.Size = new System.Drawing.Size(249, 50);
+            this.btnServicios.Size = new System.Drawing.Size(264, 50);
             this.btnServicios.TabIndex = 1;
             this.btnServicios.Text = "Servicios";
             this.btnServicios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnServicios.UseVisualStyleBackColor = false;
+            this.btnServicios.Click += new System.EventHandler(this.btnServicios_Click);
             // 
             // pnlLogotipo
             // 
@@ -174,7 +176,7 @@
             this.pnlLogotipo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogotipo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogotipo.Name = "pnlLogotipo";
-            this.pnlLogotipo.Size = new System.Drawing.Size(249, 144);
+            this.pnlLogotipo.Size = new System.Drawing.Size(264, 144);
             this.pnlLogotipo.TabIndex = 0;
             // 
             // pctrLogotipo
@@ -186,12 +188,21 @@
             this.pctrLogotipo.TabIndex = 1;
             this.pctrLogotipo.TabStop = false;
             // 
+            // pnlFormulario
+            // 
+            this.pnlFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlFormulario.Location = new System.Drawing.Point(264, 0);
+            this.pnlFormulario.Name = "pnlFormulario";
+            this.pnlFormulario.Size = new System.Drawing.Size(1000, 681);
+            this.pnlFormulario.TabIndex = 1;
+            // 
             // frmAdministradorPantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnlFormulario);
             this.Controls.Add(this.pnlMenuLateral);
             this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmAdministradorPantallaPrincipal";
@@ -217,5 +228,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pctrLogotipo;
+        private System.Windows.Forms.Panel pnlFormulario;
     }
 }
