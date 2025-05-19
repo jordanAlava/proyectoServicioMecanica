@@ -49,9 +49,9 @@
             // 
             this.pctrImagenFondo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctrImagenFondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctrImagenFondo.Location = new System.Drawing.Point(-431, 0);
+            this.pctrImagenFondo.Location = new System.Drawing.Point(-555, 3);
             this.pctrImagenFondo.Name = "pctrImagenFondo";
-            this.pctrImagenFondo.Size = new System.Drawing.Size(1562, 681);
+            this.pctrImagenFondo.Size = new System.Drawing.Size(1563, 681);
             this.pctrImagenFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrImagenFondo.TabIndex = 0;
             this.pctrImagenFondo.TabStop = false;
@@ -161,9 +161,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlContenedor.Controls.Add(this.pctrImagenFondo);
             this.pnlContenedor.Location = new System.Drawing.Point(0, 0);
-            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(307, 681);
+            this.pnlContenedor.Size = new System.Drawing.Size(512, 681);
             this.pnlContenedor.TabIndex = 12;
             this.pnlContenedor.Resize += new System.EventHandler(this.pnlContenedor_Resize);
             // 
@@ -179,6 +179,7 @@
             this.pctrAdministradorMarco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pctrAdministradorMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pctrAdministradorMarco.Location = new System.Drawing.Point(829, 245);
+            this.pctrAdministradorMarco.Margin = new System.Windows.Forms.Padding(4);
             this.pctrAdministradorMarco.Multiline = true;
             this.pctrAdministradorMarco.Name = "pctrAdministradorMarco";
             this.pctrAdministradorMarco.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -203,6 +204,7 @@
             this.pctrClienteMarco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pctrClienteMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pctrClienteMarco.Location = new System.Drawing.Point(650, 245);
+            this.pctrClienteMarco.Margin = new System.Windows.Forms.Padding(4);
             this.pctrClienteMarco.Multiline = true;
             this.pctrClienteMarco.Name = "pctrClienteMarco";
             this.pctrClienteMarco.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -231,7 +233,7 @@
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAtras.Location = new System.Drawing.Point(691, 491);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(72, 38);
             this.btnAtras.TabIndex = 17;
