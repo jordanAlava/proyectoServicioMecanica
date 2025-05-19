@@ -19,6 +19,7 @@ namespace capaPresentacion
         Administrador admin = new Administrador();
         Cliente cliente = new Cliente();
         classPuente operacion = new classPuente();
+        
         public frmIniciarSesion()
         {
             InitializeComponent();
@@ -90,7 +91,7 @@ namespace capaPresentacion
 
         private void frmIniciarSesion_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

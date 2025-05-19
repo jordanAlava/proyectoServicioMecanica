@@ -110,7 +110,7 @@
             this.txtNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCliente.ForeColor = System.Drawing.Color.White;
             this.txtNombreCliente.Location = new System.Drawing.Point(337, 289);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreCliente.Multiline = false;
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -132,7 +132,7 @@
             this.txtCedulaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaCliente.ForeColor = System.Drawing.Color.White;
             this.txtCedulaCliente.Location = new System.Drawing.Point(337, 230);
-            this.txtCedulaCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCedulaCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtCedulaCliente.Multiline = false;
             this.txtCedulaCliente.Name = "txtCedulaCliente";
             this.txtCedulaCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -169,7 +169,7 @@
             this.txtDireccionCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionCliente.ForeColor = System.Drawing.Color.White;
             this.txtDireccionCliente.Location = new System.Drawing.Point(1087, 356);
-            this.txtDireccionCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDireccionCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtDireccionCliente.Multiline = false;
             this.txtDireccionCliente.Name = "txtDireccionCliente";
             this.txtDireccionCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -190,33 +190,6 @@
             this.cmbxCuidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbxCuidad.ForeColor = System.Drawing.Color.DarkGray;
             this.cmbxCuidad.IconColor = System.Drawing.Color.White;
-            this.cmbxCuidad.Items.AddRange(new object[] {
-            "Quito",
-            "Guayaquil",
-            "Cuenca",
-            "Santo Domingo",
-            "Machala",
-            "Durán",
-            "Manta",
-            "Portoviejo",
-            "Loja",
-            "Ambato",
-            "Esmeraldas",
-            "Riobamba",
-            "Milagro",
-            "Ibarra",
-            "Latacunga",
-            "Quevedo",
-            "Tulcán",
-            "Babahoyo",
-            "Santa Elena",
-            "Tena",
-            "Puyo",
-            "Nueva Loja",
-            "Macas",
-            "Zamora",
-            "Puerto Francisco de Orellana",
-            "Galápagos (Puerto Ayora, Puerto Baquerizo Moreno)"});
             this.cmbxCuidad.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxCuidad.ListTextColor = System.Drawing.Color.DarkGray;
             this.cmbxCuidad.Location = new System.Drawing.Point(1087, 297);
@@ -252,31 +225,6 @@
             this.cmbxProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbxProvincia.ForeColor = System.Drawing.Color.DarkGray;
             this.cmbxProvincia.IconColor = System.Drawing.Color.White;
-            this.cmbxProvincia.Items.AddRange(new object[] {
-            "Azuay",
-            "Bolívar",
-            "Cañar",
-            "Carchi",
-            "Chimborazo",
-            "Cotopaxi",
-            "El Oro",
-            "Esmeraldas",
-            "Galápagos",
-            "Guayas",
-            "Imbabura",
-            "Loja",
-            "Los Ríos",
-            "Manabí",
-            "Morona Santiago",
-            "Napo",
-            "Orellana",
-            "Pastaza",
-            "Pichincha",
-            "Santa Elena",
-            "Santo Domingo de los Tsáchilas",
-            "Sucumbíos",
-            "Tungurahua",
-            "Zamora Chinchipe"});
             this.cmbxProvincia.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxProvincia.ListTextColor = System.Drawing.Color.DarkGray;
             this.cmbxProvincia.Location = new System.Drawing.Point(1087, 238);
@@ -287,6 +235,7 @@
             this.cmbxProvincia.Size = new System.Drawing.Size(249, 30);
             this.cmbxProvincia.TabIndex = 70;
             this.cmbxProvincia.Texts = "Provincia";
+            this.cmbxProvincia.OnSelectedIndexChanged += new System.EventHandler(this.cmbxProvincia_OnSelectedIndexChanged);
             // 
             // iconPictureBox8
             // 
@@ -420,7 +369,7 @@
             this.btnCrearUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioCliente.ForeColor = System.Drawing.Color.White;
             this.btnCrearUsuarioCliente.Location = new System.Drawing.Point(1307, 673);
-            this.btnCrearUsuarioCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrearUsuarioCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearUsuarioCliente.Name = "btnCrearUsuarioCliente";
             this.btnCrearUsuarioCliente.Size = new System.Drawing.Size(211, 47);
             this.btnCrearUsuarioCliente.TabIndex = 57;
@@ -439,7 +388,7 @@
             this.txtContraseniaUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseniaUsuarioCliente.ForeColor = System.Drawing.Color.White;
             this.txtContraseniaUsuarioCliente.Location = new System.Drawing.Point(337, 679);
-            this.txtContraseniaUsuarioCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtContraseniaUsuarioCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtContraseniaUsuarioCliente.Multiline = false;
             this.txtContraseniaUsuarioCliente.Name = "txtContraseniaUsuarioCliente";
             this.txtContraseniaUsuarioCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -461,7 +410,7 @@
             this.txtNombreUsuarioCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuarioCliente.ForeColor = System.Drawing.Color.White;
             this.txtNombreUsuarioCliente.Location = new System.Drawing.Point(337, 612);
-            this.txtNombreUsuarioCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombreUsuarioCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreUsuarioCliente.Multiline = false;
             this.txtNombreUsuarioCliente.Name = "txtNombreUsuarioCliente";
             this.txtNombreUsuarioCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -483,7 +432,7 @@
             this.txtEmailCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailCliente.ForeColor = System.Drawing.Color.White;
             this.txtEmailCliente.Location = new System.Drawing.Point(337, 540);
-            this.txtEmailCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtEmailCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmailCliente.Multiline = false;
             this.txtEmailCliente.Name = "txtEmailCliente";
             this.txtEmailCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -505,7 +454,7 @@
             this.txtApellidoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoCliente.ForeColor = System.Drawing.Color.White;
             this.txtApellidoCliente.Location = new System.Drawing.Point(609, 289);
-            this.txtApellidoCliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtApellidoCliente.Margin = new System.Windows.Forms.Padding(5);
             this.txtApellidoCliente.Multiline = false;
             this.txtApellidoCliente.Name = "txtApellidoCliente";
             this.txtApellidoCliente.Padding = new System.Windows.Forms.Padding(11, 7, 11, 7);
@@ -642,7 +591,7 @@
             this.Controls.Add(this.txtNombreUsuarioCliente);
             this.Controls.Add(this.txtEmailCliente);
             this.Controls.Add(this.txtApellidoCliente);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1359, 728);
             this.Name = "frmRegistroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
