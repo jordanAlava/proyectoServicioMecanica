@@ -10,13 +10,20 @@ namespace capaDato
     public class ClassConexion
 
     {
-        private string serverJOrdan = "DESKTOP-EO71RE8";
+
+        // Jordan Alava:        DESKTOP-EO71RE8
+        // Gonzalo Romero       MSI
+
+
+        string nombreServidor = "MSI";
         // en Data Source poner el nombre del servidor de su maquina
         // en Initial Catalog poner el nombre del base de datos que crearon, aunque debe ser la misma BDTallerMecanico
-        private string cadena = "Data Source = DESKTOP-EO71RE8; Initial Catalog = BDTallerMecanico; Integrated Security = True";
+
+        private string cadena;
         public SqlConnection conectar = new SqlConnection();
         public ClassConexion()
         {
+            cadena = "Data Source = " + nombreServidor + "; Initial Catalog = BDTallerMecanico; Integrated Security = True";
             conectar.ConnectionString = cadena;
         }
         public void Abrir()

@@ -60,7 +60,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(709, 134);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,7 +76,7 @@
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 40;
             this.iconPictureBox6.Location = new System.Drawing.Point(146, 154);
-            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(40, 49);
             this.iconPictureBox6.TabIndex = 35;
@@ -103,7 +103,7 @@
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 31;
             this.iconPictureBox5.Location = new System.Drawing.Point(341, 513);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox5.TabIndex = 33;
@@ -118,7 +118,7 @@
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 31;
             this.iconPictureBox4.Location = new System.Drawing.Point(341, 312);
-            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox4.TabIndex = 32;
@@ -133,7 +133,7 @@
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 31;
             this.iconPictureBox3.Location = new System.Drawing.Point(341, 265);
-            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox3.TabIndex = 31;
@@ -148,7 +148,7 @@
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 31;
             this.iconPictureBox2.Location = new System.Drawing.Point(341, 466);
-            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox2.TabIndex = 30;
@@ -163,7 +163,7 @@
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 31;
             this.iconPictureBox1.Location = new System.Drawing.Point(341, 360);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(31, 33);
             this.iconPictureBox1.TabIndex = 29;
@@ -177,7 +177,7 @@
             this.label2.Location = new System.Drawing.Point(374, 418);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 26);
+            this.label2.Size = new System.Drawing.Size(201, 24);
             this.label2.TabIndex = 28;
             this.label2.Text = "Creación de Usuario";
             // 
@@ -189,7 +189,7 @@
             this.label1.Location = new System.Drawing.Point(374, 220);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 26);
+            this.label1.Size = new System.Drawing.Size(172, 24);
             this.label1.TabIndex = 27;
             this.label1.Text = "Datos Personales";
             // 
@@ -205,7 +205,7 @@
             this.btnCrearUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
             this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(503, 702);
-            this.btnCrearUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCrearUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.btnCrearUsuarioAdministrador.Name = "btnCrearUsuarioAdministrador";
             this.btnCrearUsuarioAdministrador.Size = new System.Drawing.Size(196, 38);
             this.btnCrearUsuarioAdministrador.TabIndex = 26;
@@ -224,7 +224,7 @@
             this.txtContraseniaUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseniaUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
             this.txtContraseniaUsuarioAdministrador.Location = new System.Drawing.Point(503, 631);
-            this.txtContraseniaUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtContraseniaUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtContraseniaUsuarioAdministrador.Multiline = false;
             this.txtContraseniaUsuarioAdministrador.Name = "txtContraseniaUsuarioAdministrador";
             this.txtContraseniaUsuarioAdministrador.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -247,7 +247,7 @@
             this.txtNombreUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
             this.txtNombreUsuarioAdministrador.Location = new System.Drawing.Point(503, 574);
-            this.txtNombreUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombreUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreUsuarioAdministrador.Multiline = false;
             this.txtNombreUsuarioAdministrador.Name = "txtNombreUsuarioAdministrador";
             this.txtNombreUsuarioAdministrador.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -270,7 +270,7 @@
             this.txtEmailAdministracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailAdministracion.ForeColor = System.Drawing.Color.White;
             this.txtEmailAdministracion.Location = new System.Drawing.Point(503, 443);
-            this.txtEmailAdministracion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtEmailAdministracion.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmailAdministracion.Multiline = false;
             this.txtEmailAdministracion.Name = "txtEmailAdministracion";
             this.txtEmailAdministracion.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -293,7 +293,7 @@
             this.txtApellidoAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoAdministrador.ForeColor = System.Drawing.Color.White;
             this.txtApellidoAdministrador.Location = new System.Drawing.Point(772, 384);
-            this.txtApellidoAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtApellidoAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtApellidoAdministrador.Multiline = false;
             this.txtApellidoAdministrador.Name = "txtApellidoAdministrador";
             this.txtApellidoAdministrador.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -316,7 +316,7 @@
             this.txtNombreAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreAdministrador.ForeColor = System.Drawing.Color.White;
             this.txtNombreAdministrador.Location = new System.Drawing.Point(503, 384);
-            this.txtNombreAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombreAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreAdministrador.Multiline = false;
             this.txtNombreAdministrador.Name = "txtNombreAdministrador";
             this.txtNombreAdministrador.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -339,7 +339,7 @@
             this.txtCedulaAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedulaAdministrador.ForeColor = System.Drawing.Color.White;
             this.txtCedulaAdministrador.Location = new System.Drawing.Point(503, 326);
-            this.txtCedulaAdministrador.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCedulaAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.txtCedulaAdministrador.Multiline = false;
             this.txtCedulaAdministrador.Name = "txtCedulaAdministrador";
             this.txtCedulaAdministrador.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
@@ -362,7 +362,7 @@
             this.rjCircularPictureBox1.BorderSize = 2;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Location = new System.Drawing.Point(128, 134);
-            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(74, 74);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -404,7 +404,8 @@
             this.Controls.Add(this.txtNombreAdministrador);
             this.Controls.Add(this.txtCedulaAdministrador);
             this.Controls.Add(this.rjCircularPictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1024, 600);
             this.Name = "frmRegistroAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistroAdministrador";

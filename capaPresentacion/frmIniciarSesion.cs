@@ -56,10 +56,6 @@ namespace capaPresentacion
 
         }
 
-        private void frmIniciarSesion_Load(object sender, EventArgs e)
-        {
-
-        }
 
         public bool esAdmin { get; private set; }
         private void btnIniciarSesion_Click_1(object sender, EventArgs e)
@@ -86,6 +82,12 @@ namespace capaPresentacion
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void btnIniciarSesion_Click_1(object sender, EventArgs e)
+        {
+            frmAdministradorPantallaPrincipal obj = new frmAdministradorPantallaPrincipal();
+            obj.ShowDialog();
         }
     }
 }
