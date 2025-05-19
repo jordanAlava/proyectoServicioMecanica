@@ -12,6 +12,8 @@ namespace capaPresentacion
 {
     public partial class frmAdministradorPantallaPrincipal : Form
     {
+        private Form formularioActivo = null;
+
         public frmAdministradorPantallaPrincipal()
         {
             InitializeComponent();
@@ -24,28 +26,28 @@ namespace capaPresentacion
             pctrLogotipo.Image = Image.FromFile("Recursos/Imagenes/logotipo.jpg");
         }
 
-        private Form formularioActivo = null;
-
-        private void abrirFormHijo(Form formularioHijo)
+        public void abrirFormHijo(Form formularioHijo)
         {
-            if (formularioActivo == null) 
+            if (formularioActivo != null)
             {
-                formularioActivo = new Form();
+                formularioActivo.Close();
             }
+
             formularioActivo = formularioHijo;
             formularioHijo.TopLevel = false;
             formularioHijo.FormBorderStyle = FormBorderStyle.None;
             formularioHijo.Dock = DockStyle.Fill;
+            pnlFormulario.Controls.Clear(); // Limpia controles anteriores, opcional
             pnlFormulario.Controls.Add(formularioHijo);
             pnlFormulario.Tag = formularioHijo;
             formularioHijo.BringToFront();
             formularioHijo.Show();
-
         }
 
         private void btnServicios_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmServicios());
+            // Pasa una referencia al padre (this) al crear el formulario hijo
+            abrirFormHijo(new frmServicios(this));
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

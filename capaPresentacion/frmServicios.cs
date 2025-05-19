@@ -12,21 +12,30 @@ namespace capaPresentacion
 {
     public partial class frmServicios : Form
     {
-        public frmServicios()
+        private frmAdministradorPantallaPrincipal formularioPadre;
+
+        // Constructor que recibe al formulario padre como parámetro
+        public frmServicios(frmAdministradorPantallaPrincipal padre)
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            formularioPadre = padre;
         }
 
         private void frmServicios_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'bDTallerMecanicoDataSet.Servicio' Puede moverla o quitarla según sea necesario.
+            // Cargar datos si es necesario
             this.servicioTableAdapter.Fill(this.bDTallerMecanicoDataSet.Servicio);
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Cierra el formulario hijo actual
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            // Aquí llamas al método del padre para abrir un nuevo formulario (nieto)
+            formularioPadre.abrirFormHijo(new frmServiciosAgregar(formularioPadre));
         }
     }
 }
