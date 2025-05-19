@@ -200,7 +200,7 @@
             // 
             // cmbxFiltroBusqueda
             // 
-            this.cmbxFiltroBusqueda.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbxFiltroBusqueda.BackColor = System.Drawing.Color.White;
             this.cmbxFiltroBusqueda.BorderColor = System.Drawing.Color.Black;
             this.cmbxFiltroBusqueda.BorderSize = 2;
             this.cmbxFiltroBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
@@ -217,7 +217,7 @@
             this.cmbxFiltroBusqueda.MinimumSize = new System.Drawing.Size(200, 30);
             this.cmbxFiltroBusqueda.Name = "cmbxFiltroBusqueda";
             this.cmbxFiltroBusqueda.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(200, 30);
+            this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(200, 31);
             this.cmbxFiltroBusqueda.TabIndex = 88;
             this.cmbxFiltroBusqueda.Texts = "Filtrar por";
             this.cmbxFiltroBusqueda.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
