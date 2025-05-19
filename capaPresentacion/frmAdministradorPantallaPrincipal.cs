@@ -47,5 +47,10 @@ namespace capaPresentacion
         {
             abrirFormHijo(new frmServicios());
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

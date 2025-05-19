@@ -73,7 +73,7 @@
             this.dtgvTabla.Name = "dtgvTabla";
             this.dtgvTabla.ReadOnly = true;
             this.dtgvTabla.RowHeadersWidth = 51;
-            this.dtgvTabla.Size = new System.Drawing.Size(664, 316);
+            this.dtgvTabla.Size = new System.Drawing.Size(680, 355);
             this.dtgvTabla.TabIndex = 1;
             // 
             // idServicioDataGridViewTextBoxColumn
@@ -161,11 +161,11 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.Black;
-            this.lblTitulo.Location = new System.Drawing.Point(85, 86);
+            this.lblTitulo.Location = new System.Drawing.Point(85, 85);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(134, 31);
+            this.lblTitulo.Size = new System.Drawing.Size(143, 37);
             this.lblTitulo.TabIndex = 83;
             this.lblTitulo.Text = "Servicios";
             // 
@@ -240,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 642);
+            this.ClientSize = new System.Drawing.Size(1000, 681);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
