@@ -444,5 +444,205 @@ namespace capaDato
                 objConnect.Cerrar();
             }
         }
+
+        ///////////////// OPERACIONES VEHICULO //////////////////
+        /*  Metodos
+         *  1   bool ingresarVehiculo
+         *  2   bool eliminarVehiculo
+         *  3   bool modificarVehiculo
+         *  4   bool existeVehiculo
+         *  5   Vehiculo buscarVehiculo
+         *  6   List<Vehiculo> listarVehiculosCliente
+         */
+
+        public List<Vehiculo> listarVehiculosCliente(int idCliente)
+        {
+            List<Vehiculo> vehiculos = new List<Vehiculo>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT *
+                FROM Cliente cli inner join Vehiculo vh on cli.idCliente = vh.idCliente
+                WHERE cli.idCliente = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@id", idCliente);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    Vehiculo vh = new Vehiculo
+                    {
+                        placaVehiculo = Convert.ToString(reader["placa"]),
+                        idCliente = Convert.ToInt32(reader["idCliente"]),
+                        modeloVehiculo = Convert.ToString(reader["modelo"]),
+                        marcaVehiculo = Convert.ToString(reader["marca"]),
+                        numChasisVehiculo = Convert.ToString(reader["numChasis"]),
+                        colorVehiculo = Convert.ToString(reader["color"]),
+                        fechaFabricacionVehiculo = Convert.ToDateTime(reader["fechaFabricacion"]),
+                        cilindrajeVehiculo = Convert.ToString(reader["cilindraje"]),
+                        combustibleVehiculo = Convert.ToString(reader["combustible"]),
+                        aseguradoVehiculo = Convert.ToChar(reader["asegurado"]),
+                        fotoVehiculo = reader["foto"] == DBNull.Value ? null : (byte[])reader["foto"]
+                    };
+                    vehiculos.Add(vh);
+                }
+                reader.Close();
+                return vehiculos;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public Vehiculo buscarVehiculo(string placa)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT * 
+                FROM Vehiculo
+                WHERE placa = @placa", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", placa);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                if (reader.Read())
+                {
+                    Vehiculo vhEncontrado = new Vehiculo
+                    {
+                        placaVehiculo = Convert.ToString(reader["placa"]),
+                        idCliente = Convert.ToInt32(reader["idCliente"]),
+                        modeloVehiculo = Convert.ToString(reader["modelo"]),
+                        marcaVehiculo = Convert.ToString(reader["marca"]),
+                        numChasisVehiculo = Convert.ToString(reader["numChasis"]),
+                        colorVehiculo = Convert.ToString(reader["color"]),
+                        fechaFabricacionVehiculo = Convert.ToDateTime(reader["fechaFabricacion"]),
+                        cilindrajeVehiculo = Convert.ToString(reader["cilindraje"]),
+                        combustibleVehiculo = Convert.ToString(reader["combustible"]),
+                        aseguradoVehiculo = Convert.ToChar(reader["asegurado"]),
+                        fotoVehiculo = reader["foto"] == DBNull.Value ? null : (byte[])reader["foto"]
+                    };
+                    reader.Close();
+                    return vhEncontrado;
+                }
+                else
+                {
+                    reader.Close();
+                    return null;
+                }
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public bool existeVehiculo(string placa, string chasis)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT COUNT(*)
+                FROM Vehiculo
+                WHERE placa = @placa OR numChasis = @chasis", objConnect.conectar);
+                int existe = (int)sqlC.ExecuteScalar();
+                objConnect.Cerrar();
+                return existe == 1;
+                
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+        public bool modificarVehiculo(Vehiculo vehiculo)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                UPDATE Vehiculo
+                SET idCliente = @id, modelo = @modelo,marca = @marca, numChasis = @chasis, color = @color, fechaFabricacion = @fabricacion, cilindraje = @cilindraje, combustible = @combustible, asegurado = @asegurado, foto = @foto
+                WHERE placa = @placa", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", vehiculo.placaVehiculo);
+                sqlC.Parameters.AddWithValue("@id", vehiculo.idCliente);
+                sqlC.Parameters.AddWithValue("@modelo", vehiculo.modeloVehiculo);
+                sqlC.Parameters.AddWithValue("@marca", vehiculo.marcaVehiculo);
+                sqlC.Parameters.AddWithValue("@chasis", vehiculo.numChasisVehiculo);
+                sqlC.Parameters.AddWithValue("@color", vehiculo.colorVehiculo);
+                sqlC.Parameters.AddWithValue("@fabricacion", vehiculo.fechaFabricacionVehiculo);
+                sqlC.Parameters.AddWithValue("@cilindraje", vehiculo.cilindrajeVehiculo);
+                sqlC.Parameters.AddWithValue("@combustible", vehiculo.combustibleVehiculo);
+                sqlC.Parameters.AddWithValue("@asegurado", vehiculo.aseguradoVehiculo);
+                sqlC.Parameters.AddWithValue("@foto", vehiculo.fotoVehiculo);
+                int vehiculoModificado = sqlC.ExecuteNonQuery();
+                objConnect.Cerrar();
+                return vehiculoModificado == 1;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+
+        public bool eliminarVehiculo(string placa)
+        {
+            try
+            {
+                // CONTROLAR EN EL FOMRULARIO QUE SEA UNA PLACA CORRECTA
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                DELETE
+                FROM Vehiculo
+                WHERE placa = @placa", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", placa);
+                int vehiculoEliminado = sqlC.ExecuteNonQuery();
+                objConnect.Cerrar();
+                return vehiculoEliminado == 1;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }
+        public bool ingresarVehiculo(Vehiculo vehiculo)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                INSERT INTO Vehiculo(placa, idCliente, modelo, marca, numChasis, color, fechaFabricacion, cilindraje, combustible, asegurado, foto)
+                VALUES (@placa, @id, @modelo, @marca, @chasis, @color, @fabricacion, @cilindraje, @combustible, @asegurado, @foto)", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", vehiculo.placaVehiculo);
+                sqlC.Parameters.AddWithValue("@id", vehiculo.idCliente);
+                sqlC.Parameters.AddWithValue("@modelo", vehiculo.modeloVehiculo);
+                sqlC.Parameters.AddWithValue("@marca", vehiculo.marcaVehiculo);
+                sqlC.Parameters.AddWithValue("@chasis", vehiculo.numChasisVehiculo);
+                sqlC.Parameters.AddWithValue("@color", vehiculo.colorVehiculo);
+                sqlC.Parameters.AddWithValue("@fabricacion", vehiculo.fechaFabricacionVehiculo);
+                sqlC.Parameters.AddWithValue("@cilindraje", vehiculo.cilindrajeVehiculo);
+                sqlC.Parameters.AddWithValue("@combustible", vehiculo.combustibleVehiculo);
+                sqlC.Parameters.AddWithValue("@asegurado", vehiculo.aseguradoVehiculo);
+                sqlC.Parameters.AddWithValue("@foto", vehiculo.fotoVehiculo);
+                int vehiculoAgregado = sqlC.ExecuteNonQuery();
+                return vehiculoAgregado == 1;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
     }
 }
