@@ -60,11 +60,11 @@
             // 
             // pctrLogotipo
             // 
-            this.pctrLogotipo.Location = new System.Drawing.Point(978, 42);
+            this.pctrLogotipo.Location = new System.Drawing.Point(980, 0);
             this.pctrLogotipo.Margin = new System.Windows.Forms.Padding(2);
             this.pctrLogotipo.Name = "pctrLogotipo";
-            this.pctrLogotipo.Size = new System.Drawing.Size(169, 119);
-            this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctrLogotipo.Size = new System.Drawing.Size(240, 162);
+            this.pctrLogotipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrLogotipo.TabIndex = 37;
             this.pctrLogotipo.TabStop = false;
             // 
@@ -76,7 +76,7 @@
             this.iconPictureBox6.IconColor = System.Drawing.Color.Brown;
             this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox6.IconSize = 42;
-            this.iconPictureBox6.Location = new System.Drawing.Point(63, 64);
+            this.iconPictureBox6.Location = new System.Drawing.Point(64, 64);
             this.iconPictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox6.Name = "iconPictureBox6";
             this.iconPictureBox6.Size = new System.Drawing.Size(42, 42);
@@ -88,7 +88,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Brown;
-            this.label3.Location = new System.Drawing.Point(129, 69);
+            this.label3.Location = new System.Drawing.Point(130, 70);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(520, 37);
@@ -175,7 +175,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(172, 350);
+            this.label2.Location = new System.Drawing.Point(170, 350);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(201, 24);
@@ -187,7 +187,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(172, 167);
+            this.label1.Location = new System.Drawing.Point(170, 170);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 24);
@@ -205,7 +205,7 @@
             this.btnCrearUsuarioAdministrador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearUsuarioAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearUsuarioAdministrador.ForeColor = System.Drawing.Color.White;
-            this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(978, 519);
+            this.btnCrearUsuarioAdministrador.Location = new System.Drawing.Point(980, 520);
             this.btnCrearUsuarioAdministrador.Margin = new System.Windows.Forms.Padding(5);
             this.btnCrearUsuarioAdministrador.Name = "btnCrearUsuarioAdministrador";
             this.btnCrearUsuarioAdministrador.Size = new System.Drawing.Size(158, 38);
@@ -395,7 +395,7 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(843, 520);
+            this.btnAtras.Location = new System.Drawing.Point(840, 520);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(72, 38);

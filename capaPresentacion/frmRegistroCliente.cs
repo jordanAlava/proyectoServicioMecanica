@@ -18,6 +18,13 @@ namespace capaPresentacion
         public frmRegistroCliente()
         {
             InitializeComponent();
+            inicializarFormulario();
+        }
+
+        public void inicializarFormulario()
+        {
+            this.ActiveControl = null;
+            pctrLogotipo.Image = Image.FromFile("Recursos/Imagenes/logotipo.jpg");
         }
 
         classPuente puente = new classPuente();
@@ -82,5 +89,33 @@ namespace capaPresentacion
                 MessageBox.Show("NOO ES UNA CEDULA LEGAL");
             }
         }
+
+
+
+
+
+
+        private void btnAtras_MouseEnter(object sender, EventArgs e)
+        {
+            btnAtras.Font = new Font(btnAtras.Font, FontStyle.Underline);
+
+        }
+
+        private void btnAtras_MouseLeave(object sender, EventArgs e)
+        {
+            btnAtras.Font = new Font(btnAtras.Font, FontStyle.Regular);
+        }
+
+        private void btnAtras_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnAtras.ForeColor = Color.Firebrick;
+            btnAtras.IconColor = Color.Firebrick;
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
