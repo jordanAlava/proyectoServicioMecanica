@@ -1,6 +1,6 @@
-﻿namespace capaPresentacion
+﻿namespace capaPresentacion.administrador
 {
-    partial class frmServiciosAgregar
+    partial class frmServiciosEditar
     {
         /// <summary>
         /// Required designer variable.
@@ -46,14 +46,15 @@
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnAtras = new FontAwesome.Sharp.IconButton();
-            this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarServicio = new System.Windows.Forms.Label();
+            this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.txtGarantia);
             this.panel1.Controls.Add(this.txtCostoTotal);
             this.panel1.Controls.Add(this.txtIVA);
@@ -71,12 +72,11 @@
             this.panel1.Controls.Add(this.lblTipo);
             this.panel1.Controls.Add(this.lblNombre);
             this.panel1.Controls.Add(this.btnAtras);
-            this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.lblAgregarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 681);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // txtGarantia
             // 
@@ -350,27 +350,6 @@
             this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
             this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Black;
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnAgregar.IconColor = System.Drawing.Color.White;
-            this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregar.IconSize = 36;
-            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(710, 555);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(211, 47);
-            this.btnAgregar.TabIndex = 117;
-            this.btnAgregar.Text = "&Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            // 
             // lblAgregarServicio
             // 
             this.lblAgregarServicio.AutoSize = true;
@@ -378,19 +357,42 @@
             this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
             this.lblAgregarServicio.Location = new System.Drawing.Point(67, 55);
             this.lblAgregarServicio.Name = "lblAgregarServicio";
-            this.lblAgregarServicio.Size = new System.Drawing.Size(262, 37);
+            this.lblAgregarServicio.Size = new System.Drawing.Size(230, 37);
             this.lblAgregarServicio.TabIndex = 111;
-            this.lblAgregarServicio.Text = "Agregar Servicio";
+            this.lblAgregarServicio.Text = "Editar Servicio";
             // 
-            // frmServiciosAgregar
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Black;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Pencil;
+            this.btnEditar.IconColor = System.Drawing.Color.White;
+            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditar.IconSize = 36;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(710, 555);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnEditar.Size = new System.Drawing.Size(211, 47);
+            this.btnEditar.TabIndex = 136;
+            this.btnEditar.Text = "&Confirmar Cambios";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // frmServiciosEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 681);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmServiciosAgregar";
-            this.Text = "serviciosAgregar";
+            this.Name = "frmServiciosEditar";
+            this.Text = "frmServiciosEditar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -400,6 +402,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private RJCodeAdvance.RJControls.RJTextBox txtGarantia;
+        private RJCodeAdvance.RJControls.RJTextBox txtCostoTotal;
+        private RJCodeAdvance.RJControls.RJTextBox txtIVA;
+        private RJCodeAdvance.RJControls.RJTextBox txtCostoUnitario;
+        private RJCodeAdvance.RJControls.RJTextBox txtDescripcion;
+        private RJCodeAdvance.RJControls.RJTextBox txtTipo;
+        private RJCodeAdvance.RJControls.RJTextBox txtNombre;
         private System.Windows.Forms.Label lblGarantia;
         private System.Windows.Forms.Label lblValorID;
         private System.Windows.Forms.Label lblID;
@@ -410,14 +419,7 @@
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.Label lblNombre;
         private FontAwesome.Sharp.IconButton btnAtras;
-        private FontAwesome.Sharp.IconButton btnAgregar;
         private System.Windows.Forms.Label lblAgregarServicio;
-        private RJCodeAdvance.RJControls.RJTextBox txtGarantia;
-        private RJCodeAdvance.RJControls.RJTextBox txtCostoTotal;
-        private RJCodeAdvance.RJControls.RJTextBox txtIVA;
-        private RJCodeAdvance.RJControls.RJTextBox txtCostoUnitario;
-        private RJCodeAdvance.RJControls.RJTextBox txtDescripcion;
-        private RJCodeAdvance.RJControls.RJTextBox txtTipo;
-        private RJCodeAdvance.RJControls.RJTextBox txtNombre;
+        private FontAwesome.Sharp.IconButton btnEditar;
     }
 }

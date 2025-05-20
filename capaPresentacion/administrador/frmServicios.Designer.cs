@@ -129,6 +129,8 @@
             this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(200, 31);
             this.cmbxFiltroBusqueda.TabIndex = 96;
             this.cmbxFiltroBusqueda.Texts = "Filtrar por";
+            this.cmbxFiltroBusqueda.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
+            this.cmbxFiltroBusqueda.Leave += new System.EventHandler(this.cmbxFiltroBusqueda_Leave);
             // 
             // txtBarraBusqueda
             // 
@@ -196,6 +198,7 @@
             this.btnEditar.TabIndex = 93;
             this.btnEditar.Text = "E&ditar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnAgregar
             // 

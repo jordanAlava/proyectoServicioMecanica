@@ -1,4 +1,5 @@
-﻿using System;
+﻿using capaPresentacion.administrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,10 @@ namespace capaPresentacion
             // Aquí llamas al método del padre para abrir un nuevo formulario (nieto)
             formularioPadre.abrirFormHijo(new frmServiciosAgregar(formularioPadre));
         }
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            formularioPadre.abrirFormHijo(new frmServiciosEditar(formularioPadre));
+        }
 
 
 
@@ -52,5 +57,7 @@ namespace capaPresentacion
         {
 
         }
+
+
     }
 }

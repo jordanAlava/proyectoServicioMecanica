@@ -56,6 +56,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administrador\frmServiciosEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\frmServiciosEditar.Designer.cs">
+      <DependentUpon>frmServiciosEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\frmServiciosEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\frmServiciosEliminar.Designer.cs">
+      <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
+    </Compile>
     <Compile Include="BDTallerMecanicoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="administrador\frmAdministradorPantallaPrincipal.resx">
       <DependentUpon>frmAdministradorPantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\frmServiciosEditar.resx">
+      <DependentUpon>frmServiciosEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cliente\frmClientePantallaPrincipal.resx">
       <DependentUpon>frmClientePantallaPrincipal.cs</DependentUpon>
