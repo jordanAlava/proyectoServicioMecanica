@@ -244,7 +244,7 @@
             this.btnEliminar.TabIndex = 86;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
+
             // 
             // btnEditar
             // 
@@ -267,7 +267,6 @@
             this.btnEditar.TabIndex = 85;
             this.btnEditar.Text = "E&ditar";
             this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
             // 
             // btnAgregar
             // 
@@ -291,7 +290,6 @@
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            this.btnAgregar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
             // 
             // btnBuscar
             // 
@@ -314,7 +312,7 @@
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
+
             // 
             // frmServicios
             // 
