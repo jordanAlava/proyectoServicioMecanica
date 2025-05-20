@@ -19,7 +19,6 @@ namespace capaPresentacion
         {
             InitializeComponent();
             formularioPadre = padre;
-            MessageBox.Show("Formulario frmServiciosAgregar creado");
         }
 
 

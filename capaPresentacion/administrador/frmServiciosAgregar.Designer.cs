@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtTipo = new RJCodeAdvance.RJControls.RJTextBox();
             this.lblGarantia = new System.Windows.Forms.Label();
-            this.txtGarantia = new RJCodeAdvance.RJControls.RJTextBox();
             this.lblValorID = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.lblCostoTotal = new System.Windows.Forms.Label();
@@ -42,21 +40,28 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
-            this.txtCostoTotal = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtIva = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtCostoUnitario = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtDescripcion = new RJCodeAdvance.RJControls.RJTextBox();
-            this.txtNombre = new RJCodeAdvance.RJControls.RJTextBox();
             this.lblAgregarServicio = new System.Windows.Forms.Label();
+            this.txtNombre = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtTipo = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtDescripcion = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtCostoUnitario = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtIVA = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtCostoTotal = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtGarantia = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.txtTipo);
-            this.panel1.Controls.Add(this.lblGarantia);
             this.panel1.Controls.Add(this.txtGarantia);
+            this.panel1.Controls.Add(this.txtCostoTotal);
+            this.panel1.Controls.Add(this.txtIVA);
+            this.panel1.Controls.Add(this.txtCostoUnitario);
+            this.panel1.Controls.Add(this.txtDescripcion);
+            this.panel1.Controls.Add(this.txtTipo);
+            this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.lblGarantia);
             this.panel1.Controls.Add(this.lblValorID);
             this.panel1.Controls.Add(this.lblID);
             this.panel1.Controls.Add(this.lblCostoTotal);
@@ -67,38 +72,11 @@
             this.panel1.Controls.Add(this.lblNombre);
             this.panel1.Controls.Add(this.btnAtras);
             this.panel1.Controls.Add(this.btnAgregar);
-            this.panel1.Controls.Add(this.txtCostoTotal);
-            this.panel1.Controls.Add(this.txtIva);
-            this.panel1.Controls.Add(this.txtCostoUnitario);
-            this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(this.lblAgregarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 681);
             this.panel1.TabIndex = 0;
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTipo.BorderColor = System.Drawing.Color.Black;
-            this.txtTipo.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtTipo.BorderRadius = 0;
-            this.txtTipo.BorderSize = 2;
-            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTipo.Location = new System.Drawing.Point(407, 209);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTipo.Multiline = false;
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTipo.PasswordChar = false;
-            this.txtTipo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTipo.PlaceholderText = "";
-            this.txtTipo.Size = new System.Drawing.Size(380, 31);
-            this.txtTipo.TabIndex = 129;
-            this.txtTipo.Texts = "";
-            this.txtTipo.UnderlinedStyle = false;
             // 
             // lblGarantia
             // 
@@ -109,28 +87,6 @@
             this.lblGarantia.Size = new System.Drawing.Size(148, 20);
             this.lblGarantia.TabIndex = 128;
             this.lblGarantia.Text = "Garantía (meses)";
-            // 
-            // txtGarantia
-            // 
-            this.txtGarantia.BackColor = System.Drawing.SystemColors.Window;
-            this.txtGarantia.BorderColor = System.Drawing.Color.Black;
-            this.txtGarantia.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtGarantia.BorderRadius = 0;
-            this.txtGarantia.BorderSize = 2;
-            this.txtGarantia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGarantia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtGarantia.Location = new System.Drawing.Point(407, 471);
-            this.txtGarantia.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGarantia.Multiline = false;
-            this.txtGarantia.Name = "txtGarantia";
-            this.txtGarantia.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGarantia.PasswordChar = false;
-            this.txtGarantia.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtGarantia.PlaceholderText = "";
-            this.txtGarantia.Size = new System.Drawing.Size(380, 31);
-            this.txtGarantia.TabIndex = 127;
-            this.txtGarantia.Texts = "";
-            this.txtGarantia.UnderlinedStyle = false;
             // 
             // lblValorID
             // 
@@ -261,93 +217,16 @@
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
-            // txtCostoTotal
+            // lblAgregarServicio
             // 
-            this.txtCostoTotal.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCostoTotal.BorderColor = System.Drawing.Color.Black;
-            this.txtCostoTotal.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtCostoTotal.BorderRadius = 0;
-            this.txtCostoTotal.BorderSize = 2;
-            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCostoTotal.Location = new System.Drawing.Point(407, 414);
-            this.txtCostoTotal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCostoTotal.Multiline = false;
-            this.txtCostoTotal.Name = "txtCostoTotal";
-            this.txtCostoTotal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCostoTotal.PasswordChar = false;
-            this.txtCostoTotal.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCostoTotal.PlaceholderText = "";
-            this.txtCostoTotal.Size = new System.Drawing.Size(380, 31);
-            this.txtCostoTotal.TabIndex = 116;
-            this.txtCostoTotal.Texts = "";
-            this.txtCostoTotal.UnderlinedStyle = false;
-            // 
-            // txtIva
-            // 
-            this.txtIva.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIva.BorderColor = System.Drawing.Color.Black;
-            this.txtIva.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtIva.BorderRadius = 0;
-            this.txtIva.BorderSize = 2;
-            this.txtIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtIva.Location = new System.Drawing.Point(407, 360);
-            this.txtIva.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIva.Multiline = false;
-            this.txtIva.Name = "txtIva";
-            this.txtIva.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtIva.PasswordChar = false;
-            this.txtIva.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIva.PlaceholderText = "";
-            this.txtIva.Size = new System.Drawing.Size(380, 31);
-            this.txtIva.TabIndex = 115;
-            this.txtIva.Texts = "";
-            this.txtIva.UnderlinedStyle = false;
-            // 
-            // txtCostoUnitario
-            // 
-            this.txtCostoUnitario.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCostoUnitario.BorderColor = System.Drawing.Color.Black;
-            this.txtCostoUnitario.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtCostoUnitario.BorderRadius = 0;
-            this.txtCostoUnitario.BorderSize = 2;
-            this.txtCostoUnitario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoUnitario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCostoUnitario.Location = new System.Drawing.Point(407, 308);
-            this.txtCostoUnitario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCostoUnitario.Multiline = false;
-            this.txtCostoUnitario.Name = "txtCostoUnitario";
-            this.txtCostoUnitario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCostoUnitario.PasswordChar = false;
-            this.txtCostoUnitario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCostoUnitario.PlaceholderText = "";
-            this.txtCostoUnitario.Size = new System.Drawing.Size(380, 31);
-            this.txtCostoUnitario.TabIndex = 114;
-            this.txtCostoUnitario.Texts = "";
-            this.txtCostoUnitario.UnderlinedStyle = false;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.BackColor = System.Drawing.SystemColors.Window;
-            this.txtDescripcion.BorderColor = System.Drawing.Color.Black;
-            this.txtDescripcion.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtDescripcion.BorderRadius = 0;
-            this.txtDescripcion.BorderSize = 2;
-            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDescripcion.Location = new System.Drawing.Point(407, 259);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDescripcion.Multiline = false;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDescripcion.PasswordChar = false;
-            this.txtDescripcion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDescripcion.PlaceholderText = "";
-            this.txtDescripcion.Size = new System.Drawing.Size(380, 31);
-            this.txtDescripcion.TabIndex = 113;
-            this.txtDescripcion.Texts = "";
-            this.txtDescripcion.UnderlinedStyle = false;
+            this.lblAgregarServicio.AutoSize = true;
+            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
+            this.lblAgregarServicio.Location = new System.Drawing.Point(67, 55);
+            this.lblAgregarServicio.Name = "lblAgregarServicio";
+            this.lblAgregarServicio.Size = new System.Drawing.Size(262, 37);
+            this.lblAgregarServicio.TabIndex = 111;
+            this.lblAgregarServicio.Text = "Agregar Servicio";
             // 
             // txtNombre
             // 
@@ -367,20 +246,141 @@
             this.txtNombre.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNombre.PlaceholderText = "";
             this.txtNombre.Size = new System.Drawing.Size(380, 31);
-            this.txtNombre.TabIndex = 112;
+            this.txtNombre.TabIndex = 129;
             this.txtNombre.Texts = "";
             this.txtNombre.UnderlinedStyle = false;
             // 
-            // lblAgregarServicio
+            // txtTipo
             // 
-            this.lblAgregarServicio.AutoSize = true;
-            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
-            this.lblAgregarServicio.Location = new System.Drawing.Point(67, 55);
-            this.lblAgregarServicio.Name = "lblAgregarServicio";
-            this.lblAgregarServicio.Size = new System.Drawing.Size(262, 37);
-            this.lblAgregarServicio.TabIndex = 111;
-            this.lblAgregarServicio.Text = "Agregar Servicio";
+            this.txtTipo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTipo.BorderColor = System.Drawing.Color.Black;
+            this.txtTipo.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtTipo.BorderRadius = 0;
+            this.txtTipo.BorderSize = 2;
+            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTipo.Location = new System.Drawing.Point(407, 209);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipo.Multiline = false;
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTipo.PasswordChar = false;
+            this.txtTipo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTipo.PlaceholderText = "";
+            this.txtTipo.Size = new System.Drawing.Size(380, 31);
+            this.txtTipo.TabIndex = 130;
+            this.txtTipo.Texts = "";
+            this.txtTipo.UnderlinedStyle = false;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDescripcion.BorderColor = System.Drawing.Color.Black;
+            this.txtDescripcion.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtDescripcion.BorderRadius = 0;
+            this.txtDescripcion.BorderSize = 2;
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDescripcion.Location = new System.Drawing.Point(407, 259);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcion.Multiline = false;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescripcion.PasswordChar = false;
+            this.txtDescripcion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDescripcion.PlaceholderText = "";
+            this.txtDescripcion.Size = new System.Drawing.Size(380, 31);
+            this.txtDescripcion.TabIndex = 131;
+            this.txtDescripcion.Texts = "";
+            this.txtDescripcion.UnderlinedStyle = false;
+            // 
+            // txtCostoUnitario
+            // 
+            this.txtCostoUnitario.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCostoUnitario.BorderColor = System.Drawing.Color.Black;
+            this.txtCostoUnitario.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtCostoUnitario.BorderRadius = 0;
+            this.txtCostoUnitario.BorderSize = 2;
+            this.txtCostoUnitario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoUnitario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCostoUnitario.Location = new System.Drawing.Point(407, 308);
+            this.txtCostoUnitario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCostoUnitario.Multiline = false;
+            this.txtCostoUnitario.Name = "txtCostoUnitario";
+            this.txtCostoUnitario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCostoUnitario.PasswordChar = false;
+            this.txtCostoUnitario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCostoUnitario.PlaceholderText = "";
+            this.txtCostoUnitario.Size = new System.Drawing.Size(380, 31);
+            this.txtCostoUnitario.TabIndex = 132;
+            this.txtCostoUnitario.Texts = "";
+            this.txtCostoUnitario.UnderlinedStyle = false;
+            // 
+            // txtIVA
+            // 
+            this.txtIVA.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIVA.BorderColor = System.Drawing.Color.Black;
+            this.txtIVA.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtIVA.BorderRadius = 0;
+            this.txtIVA.BorderSize = 2;
+            this.txtIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIVA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtIVA.Location = new System.Drawing.Point(407, 360);
+            this.txtIVA.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIVA.Multiline = false;
+            this.txtIVA.Name = "txtIVA";
+            this.txtIVA.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtIVA.PasswordChar = false;
+            this.txtIVA.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIVA.PlaceholderText = "";
+            this.txtIVA.Size = new System.Drawing.Size(380, 31);
+            this.txtIVA.TabIndex = 133;
+            this.txtIVA.Texts = "";
+            this.txtIVA.UnderlinedStyle = false;
+            // 
+            // txtCostoTotal
+            // 
+            this.txtCostoTotal.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCostoTotal.BorderColor = System.Drawing.Color.Black;
+            this.txtCostoTotal.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtCostoTotal.BorderRadius = 0;
+            this.txtCostoTotal.BorderSize = 2;
+            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCostoTotal.Location = new System.Drawing.Point(407, 414);
+            this.txtCostoTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCostoTotal.Multiline = false;
+            this.txtCostoTotal.Name = "txtCostoTotal";
+            this.txtCostoTotal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCostoTotal.PasswordChar = false;
+            this.txtCostoTotal.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCostoTotal.PlaceholderText = "";
+            this.txtCostoTotal.Size = new System.Drawing.Size(380, 31);
+            this.txtCostoTotal.TabIndex = 134;
+            this.txtCostoTotal.Texts = "";
+            this.txtCostoTotal.UnderlinedStyle = false;
+            // 
+            // txtGarantia
+            // 
+            this.txtGarantia.BackColor = System.Drawing.SystemColors.Window;
+            this.txtGarantia.BorderColor = System.Drawing.Color.Black;
+            this.txtGarantia.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtGarantia.BorderRadius = 0;
+            this.txtGarantia.BorderSize = 2;
+            this.txtGarantia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGarantia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtGarantia.Location = new System.Drawing.Point(407, 471);
+            this.txtGarantia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGarantia.Multiline = false;
+            this.txtGarantia.Name = "txtGarantia";
+            this.txtGarantia.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGarantia.PasswordChar = false;
+            this.txtGarantia.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtGarantia.PlaceholderText = "";
+            this.txtGarantia.Size = new System.Drawing.Size(380, 31);
+            this.txtGarantia.TabIndex = 135;
+            this.txtGarantia.Texts = "";
+            this.txtGarantia.UnderlinedStyle = false;
             // 
             // frmServiciosAgregar
             // 
@@ -400,9 +400,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private RJCodeAdvance.RJControls.RJTextBox txtTipo;
         private System.Windows.Forms.Label lblGarantia;
-        private RJCodeAdvance.RJControls.RJTextBox txtGarantia;
         private System.Windows.Forms.Label lblValorID;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblCostoTotal;
@@ -413,11 +411,13 @@
         private System.Windows.Forms.Label lblNombre;
         private FontAwesome.Sharp.IconButton btnAtras;
         private FontAwesome.Sharp.IconButton btnAgregar;
+        private System.Windows.Forms.Label lblAgregarServicio;
+        private RJCodeAdvance.RJControls.RJTextBox txtGarantia;
         private RJCodeAdvance.RJControls.RJTextBox txtCostoTotal;
-        private RJCodeAdvance.RJControls.RJTextBox txtIva;
+        private RJCodeAdvance.RJControls.RJTextBox txtIVA;
         private RJCodeAdvance.RJControls.RJTextBox txtCostoUnitario;
         private RJCodeAdvance.RJControls.RJTextBox txtDescripcion;
+        private RJCodeAdvance.RJControls.RJTextBox txtTipo;
         private RJCodeAdvance.RJControls.RJTextBox txtNombre;
-        private System.Windows.Forms.Label lblAgregarServicio;
     }
 }
