@@ -52,11 +52,11 @@
             // lblAgregarServicio
             // 
             this.lblAgregarServicio.AutoSize = true;
-            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
             this.lblAgregarServicio.Location = new System.Drawing.Point(67, 57);
             this.lblAgregarServicio.Name = "lblAgregarServicio";
-            this.lblAgregarServicio.Size = new System.Drawing.Size(254, 37);
+            this.lblAgregarServicio.Size = new System.Drawing.Size(262, 37);
             this.lblAgregarServicio.TabIndex = 84;
             this.lblAgregarServicio.Text = "Agregar Servicio";
             // 
