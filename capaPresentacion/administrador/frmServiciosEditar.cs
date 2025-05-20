@@ -18,6 +18,7 @@ namespace capaPresentacion.administrador
         public frmServiciosEditar(frmAdministradorPantallaPrincipal padre)
         {
             InitializeComponent();
+            formularioPadre = padre;
         }
 
 
