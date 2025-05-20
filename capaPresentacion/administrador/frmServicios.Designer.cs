@@ -238,9 +238,7 @@
             // 
             this.dtgvTabla.AllowUserToAddRows = false;
             this.dtgvTabla.AllowUserToDeleteRows = false;
-            this.dtgvTabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvTabla.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtgvTabla.AutoGenerateColumns = false;
             this.dtgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {

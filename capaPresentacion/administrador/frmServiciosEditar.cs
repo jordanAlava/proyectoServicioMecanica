@@ -42,6 +42,7 @@ namespace capaPresentacion.administrador
         private void btnAtras_Click(object sender, EventArgs e)
         {
             formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
+
         }
 
         #endregion
