@@ -62,9 +62,6 @@ namespace capaPresentacion
 
         #endregion
 
-        private void fKServicioidSer6754599EBindingSource1_CurrentChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
