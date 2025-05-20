@@ -53,6 +53,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.lblGarantia);
             this.panel1.Controls.Add(this.txtGarantia);
@@ -74,7 +75,7 @@
             this.panel1.Controls.Add(this.lblAgregarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(984, 643);
+            this.panel1.Size = new System.Drawing.Size(1000, 681);
             this.panel1.TabIndex = 0;
             // 
             // txtTipo
@@ -226,7 +227,7 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(564, 544);
+            this.btnAtras.Location = new System.Drawing.Point(572, 563);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(72, 38);
@@ -381,8 +382,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 642);
+            this.ClientSize = new System.Drawing.Size(1000, 681);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmServiciosAgregar";
             this.Text = "serviciosAgregar";
             this.panel1.ResumeLayout(false);
