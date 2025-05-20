@@ -644,5 +644,103 @@ namespace capaDato
                 objConnect.Cerrar();
             }
         }
+
+        ///////////////// OPERACIONES DE SERVICIOS ////////////////////////
+        /*  Metodos
+         *  1   bool ingresarServicio
+         *  2   bool modificarServicio
+         *  3   Servicio buscarServicio
+         */
+
+        public Servicio buscarServicio(int idSer)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT *
+                FROM Servicio
+                WHERE idServicio = @id", objConnect.conectar);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                if (reader.Read())
+                {
+                    Servicio servicioEncontrado = new Servicio
+                    {
+                        idServicio = idSer,
+                        nombreServicio = Convert.ToString(reader["nombreServicio"]),
+                        tipoServicio = Convert.ToString(reader["tipo"]),
+                        descripcionServicio = Convert.ToString(reader["descripcion"]),
+                        costoUnitarioServicio = Convert.ToDecimal(reader["costoUnitario"]),
+                        ivaServicio = Convert.ToInt32(reader["iva"]),
+                        costoTotalServicio = Convert.ToDecimal(reader["costoTotal"]),
+                        garantiaServicio = Convert.ToInt32(reader["garantiaServicio"])
+                    };
+                    reader.Close();
+                    return servicioEncontrado;
+                }
+                return null;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public bool modificarServicio(Servicio servicio)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                UPDATE Servicio
+                SET nombreServicio = @nombre, descripcion = @descripcion, costoUnitario = @costoU, iva = @iva, costoTotal = @costoT, garantiaServicio = @garantia
+                WHERE idServicio = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@id", servicio.idServicio);
+                sqlC.Parameters.AddWithValue("@nombre", servicio.nombreServicio);
+                sqlC.Parameters.AddWithValue("@descripcion", servicio.descripcionServicio);
+                sqlC.Parameters.AddWithValue("@costoU", servicio.costoUnitarioServicio);
+                sqlC.Parameters.AddWithValue("@costoT", servicio.costoTotalServicio);
+                sqlC.Parameters.AddWithValue("@garantia", servicio.garantiaServicio);
+                sqlC.Parameters.AddWithValue("@iva", servicio.ivaServicio);
+                int servicioModificado = sqlC.ExecuteNonQuery();
+                return servicioModificado == 1;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public bool ingresarServicio(Servicio servicio)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                INSERT INTO Servicio (nombreServicio, tipo, descripcion, costoUnitario, iva, costoTotal, garantiaServicio)
+                VALUES (@nombre, @tipo, @descripcion, @costoU, @iva, @costoT, @garantia)", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@nombre", servicio.nombreServicio);
+                sqlC.Parameters.AddWithValue("@tipo", servicio.tipoServicio);
+                sqlC.Parameters.AddWithValue("@descripcion", servicio.descripcionServicio);
+                sqlC.Parameters.AddWithValue("@costoU", servicio.costoUnitarioServicio);
+                sqlC.Parameters.AddWithValue("@iva", servicio.ivaServicio);
+                sqlC.Parameters.AddWithValue("@costoT", servicio.costoTotalServicio);
+                sqlC.Parameters.AddWithValue("@garantia", servicio.garantiaServicio);
+                int servicioAgregado = sqlC.ExecuteNonQuery();
+                return servicioAgregado == 1;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
     }
 }

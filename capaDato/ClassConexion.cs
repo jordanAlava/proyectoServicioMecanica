@@ -15,7 +15,7 @@ namespace capaDato
         // Gonzalo Romero       MSI
 
 
-        string nombreServidor = "MSI";
+        string nombreServidor = "DESKTOP-EO71RE8";
         // en Data Source poner el nombre del servidor de su maquina
         // en Initial Catalog poner el nombre del base de datos que crearon, aunque debe ser la misma BDTallerMecanico
 
