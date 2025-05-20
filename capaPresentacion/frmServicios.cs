@@ -53,7 +53,7 @@ namespace capaPresentacion
             cmbxFiltroBusqueda.BorderColor = Color.Black;
         }
 
-        private void btn_MouseDown(object sender, EventArgs e)
+        private void btn_MouseDown(object sender, MouseEventArgs e)
         {
             Button btn = sender as Button;
             if (btn != null)
@@ -61,6 +61,11 @@ namespace capaPresentacion
                 btn.BackColor = Color.Firebrick;
 
             }
+        }
+
+        private void btnBuscar_MouseDown(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
