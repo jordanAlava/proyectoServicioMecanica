@@ -33,14 +33,14 @@
             this.bDTallerMecanicoDataSet = new capaPresentacion.BDTallerMecanicoDataSet();
             this.servicioTableAdapter = new capaPresentacion.BDTallerMecanicoDataSetTableAdapters.ServicioTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnBuscar = new FontAwesome.Sharp.IconButton();
             this.cmbxFiltroBusqueda = new RJCodeAdvance.RJControls.RJComboBox();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.cmbxFiltroBusquedaDetalle = new RJCodeAdvance.RJControls.RJComboBox();
             this.btnEliminar = new FontAwesome.Sharp.IconButton();
             this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dtgvTabla = new System.Windows.Forms.DataGridView();
-            this.rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.servicioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDTallerMecanicoDataSet)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,9 +64,9 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.rjComboBox1);
-            this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.cmbxFiltroBusqueda);
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.cmbxFiltroBusquedaDetalle);
             this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.btnAgregar);
@@ -76,6 +76,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 681);
             this.panel1.TabIndex = 0;
+            // 
+            // cmbxFiltroBusqueda
+            // 
+            this.cmbxFiltroBusqueda.BackColor = System.Drawing.Color.White;
+            this.cmbxFiltroBusqueda.BorderColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusqueda.BorderSize = 2;
+            this.cmbxFiltroBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbxFiltroBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbxFiltroBusqueda.ForeColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusqueda.IconColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusqueda.Items.AddRange(new object[] {
+            "op 1",
+            "op 2",
+            "op 3"});
+            this.cmbxFiltroBusqueda.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cmbxFiltroBusqueda.ListTextColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusqueda.Location = new System.Drawing.Point(49, 153);
+            this.cmbxFiltroBusqueda.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxFiltroBusqueda.Name = "cmbxFiltroBusqueda";
+            this.cmbxFiltroBusqueda.Padding = new System.Windows.Forms.Padding(2);
+            this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(381, 31);
+            this.cmbxFiltroBusqueda.TabIndex = 99;
+            this.cmbxFiltroBusqueda.Texts = "Filtrar por (Campo)";
+            this.cmbxFiltroBusqueda.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
+            this.cmbxFiltroBusqueda.Leave += new System.EventHandler(this.cmbxFiltroBusqueda_Leave);
             // 
             // btnBuscar
             // 
@@ -100,30 +125,30 @@
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // cmbxFiltroBusqueda
+            // cmbxFiltroBusquedaDetalle
             // 
-            this.cmbxFiltroBusqueda.BackColor = System.Drawing.Color.White;
-            this.cmbxFiltroBusqueda.BorderColor = System.Drawing.Color.Black;
-            this.cmbxFiltroBusqueda.BorderSize = 2;
-            this.cmbxFiltroBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbxFiltroBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbxFiltroBusqueda.ForeColor = System.Drawing.Color.Black;
-            this.cmbxFiltroBusqueda.IconColor = System.Drawing.Color.Black;
-            this.cmbxFiltroBusqueda.Items.AddRange(new object[] {
+            this.cmbxFiltroBusquedaDetalle.BackColor = System.Drawing.Color.White;
+            this.cmbxFiltroBusquedaDetalle.BorderColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusquedaDetalle.BorderSize = 2;
+            this.cmbxFiltroBusquedaDetalle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbxFiltroBusquedaDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbxFiltroBusquedaDetalle.ForeColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusquedaDetalle.IconColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusquedaDetalle.Items.AddRange(new object[] {
             "op 1",
             "op 2",
             "op 3"});
-            this.cmbxFiltroBusqueda.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbxFiltroBusqueda.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxFiltroBusqueda.Location = new System.Drawing.Point(436, 153);
-            this.cmbxFiltroBusqueda.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbxFiltroBusqueda.Name = "cmbxFiltroBusqueda";
-            this.cmbxFiltroBusqueda.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(200, 31);
-            this.cmbxFiltroBusqueda.TabIndex = 96;
-            this.cmbxFiltroBusqueda.Texts = "Detalle";
-            this.cmbxFiltroBusqueda.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
-            this.cmbxFiltroBusqueda.Leave += new System.EventHandler(this.cmbxFiltroBusqueda_Leave);
+            this.cmbxFiltroBusquedaDetalle.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cmbxFiltroBusquedaDetalle.ListTextColor = System.Drawing.Color.Black;
+            this.cmbxFiltroBusquedaDetalle.Location = new System.Drawing.Point(436, 153);
+            this.cmbxFiltroBusquedaDetalle.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxFiltroBusquedaDetalle.Name = "cmbxFiltroBusquedaDetalle";
+            this.cmbxFiltroBusquedaDetalle.Padding = new System.Windows.Forms.Padding(2);
+            this.cmbxFiltroBusquedaDetalle.Size = new System.Drawing.Size(200, 31);
+            this.cmbxFiltroBusquedaDetalle.TabIndex = 96;
+            this.cmbxFiltroBusquedaDetalle.Texts = "Detalle";
+            this.cmbxFiltroBusquedaDetalle.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
+            this.cmbxFiltroBusquedaDetalle.Leave += new System.EventHandler(this.cmbxFiltroBusqueda_Leave);
             // 
             // btnEliminar
             // 
@@ -221,29 +246,6 @@
             this.dtgvTabla.Size = new System.Drawing.Size(680, 352);
             this.dtgvTabla.TabIndex = 90;
             // 
-            // rjComboBox1
-            // 
-            this.rjComboBox1.BackColor = System.Drawing.Color.White;
-            this.rjComboBox1.BorderColor = System.Drawing.Color.Black;
-            this.rjComboBox1.BorderSize = 2;
-            this.rjComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.rjComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rjComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.rjComboBox1.IconColor = System.Drawing.Color.Black;
-            this.rjComboBox1.Items.AddRange(new object[] {
-            "op 1",
-            "op 2",
-            "op 3"});
-            this.rjComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.rjComboBox1.ListTextColor = System.Drawing.Color.Black;
-            this.rjComboBox1.Location = new System.Drawing.Point(49, 153);
-            this.rjComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
-            this.rjComboBox1.Name = "rjComboBox1";
-            this.rjComboBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.rjComboBox1.Size = new System.Drawing.Size(381, 31);
-            this.rjComboBox1.TabIndex = 99;
-            this.rjComboBox1.Texts = "Filtrar por (Campo)";
-            // 
             // frmServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,12 +272,12 @@
         private BDTallerMecanicoDataSetTableAdapters.ServicioTableAdapter servicioTableAdapter;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btnBuscar;
-        private RJCodeAdvance.RJControls.RJComboBox cmbxFiltroBusqueda;
+        private RJCodeAdvance.RJControls.RJComboBox cmbxFiltroBusquedaDetalle;
         private FontAwesome.Sharp.IconButton btnEliminar;
         private FontAwesome.Sharp.IconButton btnEditar;
         private FontAwesome.Sharp.IconButton btnAgregar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.DataGridView dtgvTabla;
-        private RJCodeAdvance.RJControls.RJComboBox rjComboBox1;
+        private RJCodeAdvance.RJControls.RJComboBox cmbxFiltroBusqueda;
     }
 }

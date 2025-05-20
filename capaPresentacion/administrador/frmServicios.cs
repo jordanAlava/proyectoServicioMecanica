@@ -49,12 +49,12 @@ namespace capaPresentacion
         # region D I S E Ñ O
         private void cmbxFiltroBusqueda_Enter(object sender, EventArgs e)
         {
-            cmbxFiltroBusqueda.BorderColor = Color.Firebrick;
+            cmbxFiltroBusquedaDetalle.BorderColor = Color.Firebrick;
         }
 
         private void cmbxFiltroBusqueda_Leave(object sender, EventArgs e)
         {
-            cmbxFiltroBusqueda.BorderColor = Color.Black;
+            cmbxFiltroBusquedaDetalle.BorderColor = Color.Black;
         }
 
 
