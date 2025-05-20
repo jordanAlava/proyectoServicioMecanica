@@ -16,5 +16,10 @@ namespace capaPresentacion.administrador
         {
             InitializeComponent();
         }
+
+        private void lblRegistroNoEncontrado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

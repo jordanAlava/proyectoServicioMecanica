@@ -135,6 +135,9 @@
     <EmbeddedResource Include="administrador\frmServiciosEditar.resx">
       <DependentUpon>frmServiciosEditar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="administrador\frmServiciosEliminar.resx">
+      <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cliente\frmClientePantallaPrincipal.resx">
       <DependentUpon>frmClientePantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
