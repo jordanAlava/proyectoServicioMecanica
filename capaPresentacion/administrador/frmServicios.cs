@@ -51,9 +51,9 @@ namespace capaPresentacion
             cmbxFiltroBusqueda.BorderColor = Color.Black;
         }
 
+
+
         #endregion
-
-
 
     }
 }
