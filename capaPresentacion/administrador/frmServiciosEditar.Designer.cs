@@ -80,7 +80,7 @@
             this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditar.IconSize = 36;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(719, 381);
+            this.btnEditar.Location = new System.Drawing.Point(720, 380);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -105,7 +105,7 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(591, 386);
+            this.btnAtras.Location = new System.Drawing.Point(590, 385);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(72, 38);
@@ -359,7 +359,7 @@
             // 
             this.lblGarantia.AutoSize = true;
             this.lblGarantia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGarantia.Location = new System.Drawing.Point(198, 325);
+            this.lblGarantia.Location = new System.Drawing.Point(208, 325);
             this.lblGarantia.Name = "lblGarantia";
             this.lblGarantia.Size = new System.Drawing.Size(148, 20);
             this.lblGarantia.TabIndex = 142;
@@ -369,7 +369,7 @@
             // 
             this.lblCostoTotal.AutoSize = true;
             this.lblCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoTotal.Location = new System.Drawing.Point(198, 268);
+            this.lblCostoTotal.Location = new System.Drawing.Point(208, 268);
             this.lblCostoTotal.Name = "lblCostoTotal";
             this.lblCostoTotal.Size = new System.Drawing.Size(101, 20);
             this.lblCostoTotal.TabIndex = 141;
@@ -379,7 +379,7 @@
             // 
             this.lblIva.AutoSize = true;
             this.lblIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIva.Location = new System.Drawing.Point(198, 214);
+            this.lblIva.Location = new System.Drawing.Point(208, 214);
             this.lblIva.Name = "lblIva";
             this.lblIva.Size = new System.Drawing.Size(39, 20);
             this.lblIva.TabIndex = 140;
@@ -389,7 +389,7 @@
             // 
             this.lblCostoUnitario.AutoSize = true;
             this.lblCostoUnitario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoUnitario.Location = new System.Drawing.Point(198, 162);
+            this.lblCostoUnitario.Location = new System.Drawing.Point(208, 162);
             this.lblCostoUnitario.Name = "lblCostoUnitario";
             this.lblCostoUnitario.Size = new System.Drawing.Size(124, 20);
             this.lblCostoUnitario.TabIndex = 139;
@@ -399,7 +399,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(198, 113);
+            this.lblDescripcion.Location = new System.Drawing.Point(208, 113);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(103, 20);
             this.lblDescripcion.TabIndex = 138;
@@ -409,7 +409,7 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(198, 63);
+            this.lblTipo.Location = new System.Drawing.Point(208, 63);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(43, 20);
             this.lblTipo.TabIndex = 137;
@@ -419,7 +419,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(198, 14);
+            this.lblNombre.Location = new System.Drawing.Point(208, 14);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(168, 20);
             this.lblNombre.TabIndex = 136;
