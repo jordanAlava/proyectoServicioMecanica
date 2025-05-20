@@ -21,6 +21,9 @@ namespace capaPresentacion
             formularioPadre = padre;
         }
 
+
+
+        #region D I S E Ñ O
         private void btnAtras_MouseEnter(object sender, EventArgs e)
         {
             btnAtras.Font = new Font(btnAtras.Font, FontStyle.Underline);
@@ -41,20 +44,9 @@ namespace capaPresentacion
         private void btnAtras_Click(object sender, EventArgs e)
         {
             formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
-            //this.Close();
         }
 
+        #endregion
 
-        private void btnVolver_Click(object sender, EventArgs e)
-        {
-            // Volver al formulario anterior o cualquier otro que desees cargar
-            formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
-        }
-
-        private void btnOtraAccion_Click(object sender, EventArgs e)
-        {
-            // Puedes seguir abriendo más formularios al mismo nivel si es necesario
-            //formularioPadre.abrirFormHijo(new frmFormularioExtra(formularioPadre));
-        }
     }
 }
