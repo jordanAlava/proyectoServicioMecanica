@@ -54,5 +54,14 @@ namespace capaPresentacion
         {
             this.Close();
         }
+
+        private void btnCerrarSesion_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnCerrarSesion.Font = new Font(btnCerrarSesion.Font.FontFamily, 11, btnCerrarSesion.Font.Style);
+            btnCerrarSesion.IconSize += 1;
+            btnCerrarSesion.ForeColor = Color.White;
+            btnCerrarSesion.IconColor = Color.White;
+
+        }
     }
 }

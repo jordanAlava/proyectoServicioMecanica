@@ -36,8 +36,8 @@ namespace capaPresentacion.administrador
 
         private void btnAtras_MouseDown(object sender, MouseEventArgs e)
         {
-            btnAtras.ForeColor = Color.Firebrick;
-            btnAtras.IconColor = Color.Firebrick;
+            btnAtras.ForeColor = Color.Black;
+            btnAtras.IconColor = Color.Black;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
