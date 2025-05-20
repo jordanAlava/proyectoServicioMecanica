@@ -19,6 +19,7 @@ namespace capaPresentacion
         {
             InitializeComponent();
             formularioPadre = padre;
+            MessageBox.Show("Formulario frmServiciosAgregar creado");
         }
 
 
@@ -48,9 +49,6 @@ namespace capaPresentacion
 
         #endregion
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }

@@ -227,7 +227,7 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(572, 563);
+            this.btnAtras.Location = new System.Drawing.Point(582, 560);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(72, 38);
@@ -235,6 +235,10 @@
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.btnAtras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
+            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
             // btnAgregar
             // 
@@ -248,7 +252,7 @@
             this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregar.IconSize = 36;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(707, 540);
+            this.btnAgregar.Location = new System.Drawing.Point(709, 556);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
