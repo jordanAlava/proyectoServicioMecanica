@@ -37,6 +37,10 @@ namespace capaPresentacion
         {
             formularioPadre.abrirFormHijo(new frmServiciosEditar(formularioPadre));
         }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            formularioPadre.abrirFormHijo(new frmServiciosEliminar(formularioPadre));
+        }
 
 
 
@@ -54,6 +58,7 @@ namespace capaPresentacion
 
 
         #endregion
+
 
     }
 }
