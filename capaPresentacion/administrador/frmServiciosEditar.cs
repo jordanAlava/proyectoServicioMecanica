@@ -45,7 +45,7 @@ namespace capaPresentacion.administrador
             formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
 
         }
-
         #endregion
+
     }
 }
