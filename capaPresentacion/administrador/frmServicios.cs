@@ -24,6 +24,8 @@ namespace capaPresentacion
 
         private void frmServicios_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'bDTallerMecanicoDataSet.Servicio_Repuesto' Puede moverla o quitarla según sea necesario.
+            this.servicio_RepuestoTableAdapter.Fill(this.bDTallerMecanicoDataSet.Servicio_Repuesto);
             // Cargar datos si es necesario
             this.servicioTableAdapter.Fill(this.bDTallerMecanicoDataSet.Servicio);
         }
@@ -57,8 +59,12 @@ namespace capaPresentacion
 
 
 
+
         #endregion
 
+        private void fKServicioidSer6754599EBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

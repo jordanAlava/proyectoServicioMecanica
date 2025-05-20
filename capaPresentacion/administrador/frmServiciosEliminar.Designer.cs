@@ -354,6 +354,10 @@
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.btnAtras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
+            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
             // frmServiciosEliminar
             // 

@@ -41,18 +41,20 @@
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dtgvTabla = new System.Windows.Forms.DataGridView();
+            this.fKServicioidSer6754599EBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.servicio_RepuestoTableAdapter = new capaPresentacion.BDTallerMecanicoDataSetTableAdapters.Servicio_RepuestoTableAdapter();
+            this.fKServicioidSer6754599EBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.idServicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreServicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costoUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ivaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costoTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.garantiaServicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idRepuestoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaInstalacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaCambioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.servicioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bDTallerMecanicoDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKServicioidSer6754599EBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKServicioidSer6754599EBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // servicioBindingSource
@@ -244,14 +246,11 @@
             this.dtgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idServicioDataGridViewTextBoxColumn,
-            this.nombreServicioDataGridViewTextBoxColumn,
-            this.tipoDataGridViewTextBoxColumn,
-            this.descripcionDataGridViewTextBoxColumn,
-            this.costoUnitarioDataGridViewTextBoxColumn,
-            this.ivaDataGridViewTextBoxColumn,
-            this.costoTotalDataGridViewTextBoxColumn,
-            this.garantiaServicioDataGridViewTextBoxColumn});
-            this.dtgvTabla.DataSource = this.servicioBindingSource;
+            this.idRepuestoDataGridViewTextBoxColumn,
+            this.fechaInstalacionDataGridViewTextBoxColumn,
+            this.fechaCambioDataGridViewTextBoxColumn,
+            this.cantidadDataGridViewTextBoxColumn});
+            this.dtgvTabla.DataSource = this.fKServicioidSer6754599EBindingSource1;
             this.dtgvTabla.Location = new System.Drawing.Point(49, 210);
             this.dtgvTabla.Name = "dtgvTabla";
             this.dtgvTabla.ReadOnly = true;
@@ -259,77 +258,54 @@
             this.dtgvTabla.Size = new System.Drawing.Size(680, 352);
             this.dtgvTabla.TabIndex = 90;
             // 
+            // fKServicioidSer6754599EBindingSource
+            // 
+            this.fKServicioidSer6754599EBindingSource.DataMember = "FK__Servicio___idSer__6754599E";
+            this.fKServicioidSer6754599EBindingSource.DataSource = this.servicioBindingSource;
+            // 
+            // servicio_RepuestoTableAdapter
+            // 
+            this.servicio_RepuestoTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKServicioidSer6754599EBindingSource1
+            // 
+            this.fKServicioidSer6754599EBindingSource1.DataMember = "FK__Servicio___idSer__6754599E";
+            this.fKServicioidSer6754599EBindingSource1.DataSource = this.servicioBindingSource;
+              // 
             // idServicioDataGridViewTextBoxColumn
             // 
             this.idServicioDataGridViewTextBoxColumn.DataPropertyName = "idServicio";
-            this.idServicioDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idServicioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idServicioDataGridViewTextBoxColumn.HeaderText = "idServicio";
             this.idServicioDataGridViewTextBoxColumn.Name = "idServicioDataGridViewTextBoxColumn";
             this.idServicioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idServicioDataGridViewTextBoxColumn.Width = 40;
             // 
-            // nombreServicioDataGridViewTextBoxColumn
+            // idRepuestoDataGridViewTextBoxColumn
             // 
-            this.nombreServicioDataGridViewTextBoxColumn.DataPropertyName = "nombreServicio";
-            this.nombreServicioDataGridViewTextBoxColumn.HeaderText = "Servicio";
-            this.nombreServicioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombreServicioDataGridViewTextBoxColumn.Name = "nombreServicioDataGridViewTextBoxColumn";
-            this.nombreServicioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nombreServicioDataGridViewTextBoxColumn.Width = 125;
+            this.idRepuestoDataGridViewTextBoxColumn.DataPropertyName = "idRepuesto";
+            this.idRepuestoDataGridViewTextBoxColumn.HeaderText = "idRepuesto";
+            this.idRepuestoDataGridViewTextBoxColumn.Name = "idRepuestoDataGridViewTextBoxColumn";
+            this.idRepuestoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // tipoDataGridViewTextBoxColumn
+            // fechaInstalacionDataGridViewTextBoxColumn
             // 
-            this.tipoDataGridViewTextBoxColumn.DataPropertyName = "tipo";
-            this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
-            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
-            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipoDataGridViewTextBoxColumn.Width = 125;
+            this.fechaInstalacionDataGridViewTextBoxColumn.DataPropertyName = "fechaInstalacion";
+            this.fechaInstalacionDataGridViewTextBoxColumn.HeaderText = "fechaInstalacion";
+            this.fechaInstalacionDataGridViewTextBoxColumn.Name = "fechaInstalacionDataGridViewTextBoxColumn";
+            this.fechaInstalacionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // descripcionDataGridViewTextBoxColumn
+            // fechaCambioDataGridViewTextBoxColumn
             // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descripcionDataGridViewTextBoxColumn.Width = 125;
+            this.fechaCambioDataGridViewTextBoxColumn.DataPropertyName = "fechaCambio";
+            this.fechaCambioDataGridViewTextBoxColumn.HeaderText = "fechaCambio";
+            this.fechaCambioDataGridViewTextBoxColumn.Name = "fechaCambioDataGridViewTextBoxColumn";
+            this.fechaCambioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // costoUnitarioDataGridViewTextBoxColumn
+            // cantidadDataGridViewTextBoxColumn
             // 
-            this.costoUnitarioDataGridViewTextBoxColumn.DataPropertyName = "costoUnitario";
-            this.costoUnitarioDataGridViewTextBoxColumn.HeaderText = "Costo Unitario";
-            this.costoUnitarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.costoUnitarioDataGridViewTextBoxColumn.Name = "costoUnitarioDataGridViewTextBoxColumn";
-            this.costoUnitarioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.costoUnitarioDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ivaDataGridViewTextBoxColumn
-            // 
-            this.ivaDataGridViewTextBoxColumn.DataPropertyName = "iva";
-            this.ivaDataGridViewTextBoxColumn.HeaderText = "Iva";
-            this.ivaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ivaDataGridViewTextBoxColumn.Name = "ivaDataGridViewTextBoxColumn";
-            this.ivaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ivaDataGridViewTextBoxColumn.Width = 40;
-            // 
-            // costoTotalDataGridViewTextBoxColumn
-            // 
-            this.costoTotalDataGridViewTextBoxColumn.DataPropertyName = "costoTotal";
-            this.costoTotalDataGridViewTextBoxColumn.HeaderText = "Costo Total";
-            this.costoTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.costoTotalDataGridViewTextBoxColumn.Name = "costoTotalDataGridViewTextBoxColumn";
-            this.costoTotalDataGridViewTextBoxColumn.ReadOnly = true;
-            this.costoTotalDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // garantiaServicioDataGridViewTextBoxColumn
-            // 
-            this.garantiaServicioDataGridViewTextBoxColumn.DataPropertyName = "garantiaServicio";
-            this.garantiaServicioDataGridViewTextBoxColumn.HeaderText = "Garantia Servicio";
-            this.garantiaServicioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.garantiaServicioDataGridViewTextBoxColumn.Name = "garantiaServicioDataGridViewTextBoxColumn";
-            this.garantiaServicioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.garantiaServicioDataGridViewTextBoxColumn.Width = 125;
+            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "cantidad";
+            this.cantidadDataGridViewTextBoxColumn.HeaderText = "cantidad";
+            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // frmServicios
             // 
@@ -347,6 +323,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKServicioidSer6754599EBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fKServicioidSer6754599EBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,13 +342,13 @@
         private FontAwesome.Sharp.IconButton btnAgregar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.DataGridView dtgvTabla;
+        private System.Windows.Forms.BindingSource fKServicioidSer6754599EBindingSource;
+        private BDTallerMecanicoDataSetTableAdapters.Servicio_RepuestoTableAdapter servicio_RepuestoTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idServicioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreServicioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn costoUnitarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ivaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn costoTotalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn garantiaServicioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idRepuestoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaInstalacionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaCambioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource fKServicioidSer6754599EBindingSource1;
     }
 }
