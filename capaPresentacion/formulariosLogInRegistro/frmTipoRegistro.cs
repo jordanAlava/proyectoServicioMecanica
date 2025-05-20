@@ -14,7 +14,7 @@ namespace capaPresentacion
     {
         //Inicialización
 
-        private string itemSeleccionado;
+        private string itemSeleccionado = "";
         private Image imagenOriginal;
 
 
@@ -108,6 +108,8 @@ namespace capaPresentacion
             pctrAdministradorMarco.Visible = false;
             lblAdministrador.Font = new Font(lblAdministrador.Font, FontStyle.Regular);
             pctrAdministrador.IconColor = Color.DimGray;
+
+            lblMensaje.Visible = false;
         }
 
         private void pctrAdministrador_Click(object sender, EventArgs e)
@@ -121,6 +123,8 @@ namespace capaPresentacion
             pctrClienteMarco.Visible = false;
             lblCliente.Font = new Font(lblCliente.Font, FontStyle.Regular);
             pctrCliente.IconColor = Color.DimGray;
+
+            lblMensaje.Visible = false;
 
         }
 
@@ -148,18 +152,24 @@ namespace capaPresentacion
         // Clicks
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            if(itemSeleccionado == pctrAdministrador.Name)
+            if (itemSeleccionado == pctrAdministrador.Name)
             {
                 frmRegistroAdministrador obj = new frmRegistroAdministrador();
                 obj.ShowDialog();
                 this.Close();
             }
-            else if(itemSeleccionado == pctrCliente.Name)
+            else if (itemSeleccionado == pctrCliente.Name)
             {
                 frmRegistroCliente obj = new frmRegistroCliente();
                 obj.ShowDialog();
                 this.Close();
             }
+            else 
+            {
+                lblMensaje.Text = "Por favor, seleccione una opción antes de Continuar";
+                lblMensaje.Visible = true;
+            }
+
                 
         }
 
@@ -176,6 +186,26 @@ namespace capaPresentacion
         private void pctrAdministrador_DoubleClick(object sender, EventArgs e)
         {
             btnSiguiente.PerformClick();
+        }
+
+        private void btnSiguiente_Leave(object sender, EventArgs e)
+        {
+            lblMensaje.Visible = false; 
+        }
+
+        private void frmTipoRegistro_Click(object sender, EventArgs e)
+        {
+            itemSeleccionado = "";
+
+            pctrAdministradorMarco.Visible = false;
+            lblAdministrador.Font = new Font(lblAdministrador.Font, FontStyle.Regular);
+            pctrAdministrador.IconColor = Color.DimGray;
+
+            pctrClienteMarco.Visible = false;
+            lblCliente.Font = new Font(lblCliente.Font, FontStyle.Regular);
+            pctrCliente.IconColor = Color.DimGray;
+
+            lblMensaje.Visible = false;
         }
     }
 }

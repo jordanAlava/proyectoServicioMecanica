@@ -39,6 +39,7 @@
             this.pctrAdministradorMarco = new RJCodeAdvance.RJControls.RJTextBox();
             this.pctrClienteMarco = new RJCodeAdvance.RJControls.RJTextBox();
             this.btnAtras = new FontAwesome.Sharp.IconButton();
+            this.lblMensaje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrAdministrador)).BeginInit();
@@ -245,12 +246,26 @@
             this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
             this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.BackColor = System.Drawing.Color.Black;
+            this.lblMensaje.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblMensaje.Location = new System.Drawing.Point(654, 421);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(255, 13);
+            this.lblMensaje.TabIndex = 18;
+            this.lblMensaje.Text = "Por favor, seleccione una opción antes de Continuar";
+            this.lblMensaje.Visible = false;
+            // 
             // frmTipoRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.lblAdministrador);
@@ -265,6 +280,7 @@
             this.Name = "frmTipoRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTipoRegistro";
+            this.Click += new System.EventHandler(this.frmTipoRegistro_Click);
             this.Resize += new System.EventHandler(this.frmTipoRegistro_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pctrImagenFondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrCliente)).EndInit();
@@ -288,5 +304,6 @@
         private RJCodeAdvance.RJControls.RJTextBox pctrAdministradorMarco;
         private RJCodeAdvance.RJControls.RJTextBox pctrClienteMarco;
         private FontAwesome.Sharp.IconButton btnAtras;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }
