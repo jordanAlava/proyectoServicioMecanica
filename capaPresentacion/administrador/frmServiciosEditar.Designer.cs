@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEditar = new FontAwesome.Sharp.IconButton();
-            this.btnAtras = new FontAwesome.Sharp.IconButton();
-            this.lblAgregarServicio = new System.Windows.Forms.Label();
-            this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.txtBarraBusqueda = new RJCodeAdvance.RJControls.RJTextBox();
             this.pnlIngresoDatos = new System.Windows.Forms.Panel();
+            this.btnEditar = new FontAwesome.Sharp.IconButton();
             this.txtGarantia = new RJCodeAdvance.RJControls.RJTextBox();
+            this.btnAtras = new FontAwesome.Sharp.IconButton();
+            this.lblRegistroNoEncontrado = new System.Windows.Forms.Label();
             this.txtCostoTotal = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtIVA = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtCostoUnitario = new RJCodeAdvance.RJControls.RJTextBox();
@@ -49,7 +47,9 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblRegistroNoEncontrado = new System.Windows.Forms.Label();
+            this.btnBuscar = new FontAwesome.Sharp.IconButton();
+            this.txtBarraBusqueda = new RJCodeAdvance.RJControls.RJTextBox();
+            this.lblAgregarServicio = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlIngresoDatos.SuspendLayout();
             this.SuspendLayout();
@@ -65,115 +65,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 681);
             this.panel1.TabIndex = 1;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEditar.BackColor = System.Drawing.Color.Black;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Pencil;
-            this.btnEditar.IconColor = System.Drawing.Color.White;
-            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEditar.IconSize = 36;
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(720, 380);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnEditar.Size = new System.Drawing.Size(211, 47);
-            this.btnEditar.TabIndex = 136;
-            this.btnEditar.Text = "&Confirmar Cambios";
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // btnAtras
-            // 
-            this.btnAtras.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAtras.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAtras.FlatAppearance.BorderSize = 0;
-            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
-            this.btnAtras.IconColor = System.Drawing.Color.Firebrick;
-            this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAtras.IconSize = 24;
-            this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(590, 385);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(72, 38);
-            this.btnAtras.TabIndex = 118;
-            this.btnAtras.Text = "&Atrás";
-            this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAtras.UseVisualStyleBackColor = false;
-            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
-            this.btnAtras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
-            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
-            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
-            // 
-            // lblAgregarServicio
-            // 
-            this.lblAgregarServicio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblAgregarServicio.AutoSize = true;
-            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
-            this.lblAgregarServicio.Location = new System.Drawing.Point(67, 55);
-            this.lblAgregarServicio.Name = "lblAgregarServicio";
-            this.lblAgregarServicio.Size = new System.Drawing.Size(230, 37);
-            this.lblAgregarServicio.TabIndex = 111;
-            this.lblAgregarServicio.Text = "Editar Servicio";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnBuscar.BackColor = System.Drawing.Color.Black;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscar.IconColor = System.Drawing.Color.White;
-            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.IconSize = 24;
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(705, 116);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 30);
-            this.btnBuscar.TabIndex = 139;
-            this.btnBuscar.Text = "&Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // txtBarraBusqueda
-            // 
-            this.txtBarraBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBarraBusqueda.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBarraBusqueda.BorderColor = System.Drawing.Color.Black;
-            this.txtBarraBusqueda.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtBarraBusqueda.BorderRadius = 0;
-            this.txtBarraBusqueda.BorderSize = 2;
-            this.txtBarraBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarraBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBarraBusqueda.Location = new System.Drawing.Point(212, 115);
-            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBarraBusqueda.Multiline = false;
-            this.txtBarraBusqueda.Name = "txtBarraBusqueda";
-            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtBarraBusqueda.PasswordChar = false;
-            this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBarraBusqueda.PlaceholderText = "Buscar por ID";
-            this.txtBarraBusqueda.Size = new System.Drawing.Size(485, 31);
-            this.txtBarraBusqueda.TabIndex = 137;
-            this.txtBarraBusqueda.Texts = "";
-            this.txtBarraBusqueda.UnderlinedStyle = false;
             // 
             // pnlIngresoDatos
             // 
@@ -200,6 +91,30 @@
             this.pnlIngresoDatos.Size = new System.Drawing.Size(1000, 445);
             this.pnlIngresoDatos.TabIndex = 140;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEditar.BackColor = System.Drawing.Color.Black;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.Pencil;
+            this.btnEditar.IconColor = System.Drawing.Color.White;
+            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditar.IconSize = 36;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(720, 380);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnEditar.Size = new System.Drawing.Size(211, 47);
+            this.btnEditar.TabIndex = 136;
+            this.btnEditar.Text = "&Confirmar Cambios";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
             // txtGarantia
             // 
             this.txtGarantia.BackColor = System.Drawing.SystemColors.Window;
@@ -221,6 +136,46 @@
             this.txtGarantia.TabIndex = 149;
             this.txtGarantia.Texts = "";
             this.txtGarantia.UnderlinedStyle = false;
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAtras.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Control;
+            this.btnAtras.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnAtras.IconChar = FontAwesome.Sharp.IconChar.ArrowLeft;
+            this.btnAtras.IconColor = System.Drawing.Color.Firebrick;
+            this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAtras.IconSize = 24;
+            this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtras.Location = new System.Drawing.Point(590, 385);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.TabIndex = 118;
+            this.btnAtras.Text = "&Atrás";
+            this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.btnAtras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
+            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
+            // 
+            // lblRegistroNoEncontrado
+            // 
+            this.lblRegistroNoEncontrado.AutoSize = true;
+            this.lblRegistroNoEncontrado.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistroNoEncontrado.Location = new System.Drawing.Point(398, 49);
+            this.lblRegistroNoEncontrado.Name = "lblRegistroNoEncontrado";
+            this.lblRegistroNoEncontrado.Size = new System.Drawing.Size(202, 22);
+            this.lblRegistroNoEncontrado.TabIndex = 150;
+            this.lblRegistroNoEncontrado.Text = "Registro no Encontrado";
+            this.lblRegistroNoEncontrado.Visible = false;
             // 
             // txtCostoTotal
             // 
@@ -424,16 +379,63 @@
             this.lblNombre.TabIndex = 136;
             this.lblNombre.Text = "Nombre del Servicio";
             // 
-            // lblRegistroNoEncontrado
+            // btnBuscar
             // 
-            this.lblRegistroNoEncontrado.AutoSize = true;
-            this.lblRegistroNoEncontrado.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistroNoEncontrado.Location = new System.Drawing.Point(398, 49);
-            this.lblRegistroNoEncontrado.Name = "lblRegistroNoEncontrado";
-            this.lblRegistroNoEncontrado.Size = new System.Drawing.Size(202, 22);
-            this.lblRegistroNoEncontrado.TabIndex = 150;
-            this.lblRegistroNoEncontrado.Text = "Registro no Encontrado";
-            this.lblRegistroNoEncontrado.Visible = false;
+            this.btnBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBuscar.BackColor = System.Drawing.Color.Black;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscar.IconColor = System.Drawing.Color.White;
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.IconSize = 24;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(705, 116);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 30);
+            this.btnBuscar.TabIndex = 139;
+            this.btnBuscar.Text = "&Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // txtBarraBusqueda
+            // 
+            this.txtBarraBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtBarraBusqueda.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBarraBusqueda.BorderColor = System.Drawing.Color.Black;
+            this.txtBarraBusqueda.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtBarraBusqueda.BorderRadius = 0;
+            this.txtBarraBusqueda.BorderSize = 2;
+            this.txtBarraBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarraBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBarraBusqueda.Location = new System.Drawing.Point(212, 115);
+            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBarraBusqueda.Multiline = false;
+            this.txtBarraBusqueda.Name = "txtBarraBusqueda";
+            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBarraBusqueda.PasswordChar = false;
+            this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtBarraBusqueda.PlaceholderText = "Buscar por ID";
+            this.txtBarraBusqueda.Size = new System.Drawing.Size(485, 31);
+            this.txtBarraBusqueda.TabIndex = 137;
+            this.txtBarraBusqueda.Texts = "";
+            this.txtBarraBusqueda.UnderlinedStyle = false;
+            // 
+            // lblAgregarServicio
+            // 
+            this.lblAgregarServicio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAgregarServicio.AutoSize = true;
+            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
+            this.lblAgregarServicio.Location = new System.Drawing.Point(67, 55);
+            this.lblAgregarServicio.Name = "lblAgregarServicio";
+            this.lblAgregarServicio.Size = new System.Drawing.Size(230, 37);
+            this.lblAgregarServicio.TabIndex = 111;
+            this.lblAgregarServicio.Text = "Editar Servicio";
             // 
             // frmServiciosEditar
             // 
