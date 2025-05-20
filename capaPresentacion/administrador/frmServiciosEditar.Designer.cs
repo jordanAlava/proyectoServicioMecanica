@@ -114,6 +114,7 @@
             this.btnEditar.Text = "&Confirmar Cambios";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // txtGarantia
             // 
@@ -136,6 +137,7 @@
             this.txtGarantia.TabIndex = 149;
             this.txtGarantia.Texts = "";
             this.txtGarantia.UnderlinedStyle = false;
+            this.txtGarantia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // btnAtras
             // 
@@ -198,6 +200,7 @@
             this.txtCostoTotal.TabIndex = 148;
             this.txtCostoTotal.Texts = "";
             this.txtCostoTotal.UnderlinedStyle = false;
+            this.txtCostoTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtIVA
             // 
@@ -220,6 +223,7 @@
             this.txtIVA.TabIndex = 147;
             this.txtIVA.Texts = "";
             this.txtIVA.UnderlinedStyle = false;
+            this.txtIVA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtCostoUnitario
             // 
@@ -242,6 +246,7 @@
             this.txtCostoUnitario.TabIndex = 146;
             this.txtCostoUnitario.Texts = "";
             this.txtCostoUnitario.UnderlinedStyle = false;
+            this.txtCostoUnitario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtDescripcion
             // 
@@ -264,6 +269,7 @@
             this.txtDescripcion.TabIndex = 145;
             this.txtDescripcion.Texts = "";
             this.txtDescripcion.UnderlinedStyle = false;
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtTipo
             // 
@@ -286,6 +292,7 @@
             this.txtTipo.TabIndex = 144;
             this.txtTipo.Texts = "";
             this.txtTipo.UnderlinedStyle = false;
+            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtNombre
             // 
@@ -308,6 +315,7 @@
             this.txtNombre.TabIndex = 143;
             this.txtNombre.Texts = "";
             this.txtNombre.UnderlinedStyle = false;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // lblGarantia
             // 

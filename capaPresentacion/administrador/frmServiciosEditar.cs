@@ -45,7 +45,32 @@ namespace capaPresentacion.administrador
             formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
 
         }
+
+        private void txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Control actual = sender as Control;
+                if (actual.Name != "txtGarantia")
+                {
+                    panel1.SelectNextControl(actual, true, true, true, false);
+
+                }
+                else
+                {
+                    btnEditar_Click(sender, e);
+                }
+                e.Handled = true; // Para evitar beep al presionar Enter
+            }
+
+        }
         #endregion
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Servicio Editadpo");
+        }
+
 
     }
 }
