@@ -51,16 +51,27 @@ namespace capaPresentacion
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Control actual = sender as Control;
+                if (actual.Name != "txtGarantia")
+                {
+                    panel1.SelectNextControl(actual, true, true, true, false);
 
-                panel1.SelectNextControl(actual, true, true, true, false);
+                }
+                else
+                {
+                    btnAgregar_Click(sender,e);
+                }
                 e.Handled = true; // Para evitar beep al presionar Enter
             }
         }
 
 
 
+
         #endregion
 
-
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Servicio Agregado");
+        }
     }
 }

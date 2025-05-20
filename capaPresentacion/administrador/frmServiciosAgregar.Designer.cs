@@ -378,6 +378,7 @@
             this.btnAgregar.TabIndex = 117;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblAgregarServicio
             // 
