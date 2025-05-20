@@ -191,6 +191,7 @@
             // 
             // pnlFormulario
             // 
+            this.pnlFormulario.BackColor = System.Drawing.SystemColors.Control;
             this.pnlFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFormulario.Location = new System.Drawing.Point(264, 0);
             this.pnlFormulario.Name = "pnlFormulario";

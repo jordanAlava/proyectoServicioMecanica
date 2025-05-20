@@ -1,4 +1,5 @@
-﻿using System;
+﻿using capaPresentacion.administrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,22 +28,19 @@ namespace capaPresentacion
             this.servicioTableAdapter.Fill(this.bDTallerMecanicoDataSet.Servicio);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close(); // Cierra el formulario hijo actual
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             // Aquí llamas al método del padre para abrir un nuevo formulario (nieto)
             formularioPadre.abrirFormHijo(new frmServiciosAgregar(formularioPadre));
         }
-
-        private void rjComboBox1_Enter(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
         {
-
+            formularioPadre.abrirFormHijo(new frmServiciosEditar(formularioPadre));
         }
 
+
+
+        # region D I S E Ñ O
         private void cmbxFiltroBusqueda_Enter(object sender, EventArgs e)
         {
             cmbxFiltroBusqueda.BorderColor = Color.Firebrick;
@@ -53,14 +51,13 @@ namespace capaPresentacion
             cmbxFiltroBusqueda.BorderColor = Color.Black;
         }
 
-        private void btn_MouseDown(object sender, EventArgs e)
-        {
-            Button btn = sender as Button;
-            if (btn != null)
-            {
-                btn.BackColor = Color.Firebrick;
+        #endregion
 
-            }
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+
         }
+
+
     }
 }
