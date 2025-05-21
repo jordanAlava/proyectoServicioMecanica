@@ -19,7 +19,25 @@ namespace capaPresentacion
         {
             InitializeComponent();
             formularioPadre = padre;
+            this.ActiveControl = txtNombre;
+            txtNombre.Focus();
         }
+
+        void limpiar_formulario(Control control)
+        {
+            foreach (Control ctrl in control.Controls)
+            {
+                if (ctrl is TextBox)
+                    ((TextBox)ctrl).Clear();
+                else if (ctrl is ComboBox)
+                    ((ComboBox)ctrl).SelectedIndex = -1;
+                else if (ctrl is CheckBox)
+                    ((CheckBox)ctrl).Checked = false;
+                else if (ctrl.HasChildren)
+                    limpiar_formulario(ctrl);  // llamada recursiva
+            }
+        }
+
 
 
 
@@ -69,8 +87,11 @@ namespace capaPresentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Servicio Agregado");
+            MessageBox.Show("Servicio Agregado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_formulario(this);
         }
+
+
 
 
     }

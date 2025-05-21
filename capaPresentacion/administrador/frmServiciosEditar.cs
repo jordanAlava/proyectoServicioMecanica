@@ -18,7 +18,23 @@ namespace capaPresentacion.administrador
         public frmServiciosEditar(frmAdministradorPantallaPrincipal padre)
         {
             InitializeComponent();
+            this.ActiveControl = txtBarraBusqueda;
             formularioPadre = padre;
+        }
+
+        void limpiar_formulario(Control control)
+        {
+            foreach (Control ctrl in control.Controls)
+            {
+                if (ctrl is TextBox)
+                    ((TextBox)ctrl).Clear();
+                else if (ctrl is ComboBox)
+                    ((ComboBox)ctrl).SelectedIndex = -1;
+                else if (ctrl is CheckBox)
+                    ((CheckBox)ctrl).Checked = false;
+                else if (ctrl.HasChildren)
+                    limpiar_formulario(ctrl);  // llamada recursiva
+            }
         }
 
 
@@ -68,7 +84,8 @@ namespace capaPresentacion.administrador
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Servicio Editadpo");
+            MessageBox.Show("Servicio Editado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_formulario(this);
         }
 
 
