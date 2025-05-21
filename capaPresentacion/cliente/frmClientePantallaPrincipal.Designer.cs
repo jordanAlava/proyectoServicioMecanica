@@ -34,8 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAcercaDe = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
-            this.btnServicios = new System.Windows.Forms.Button();
+            this.btnAgendarServicio = new System.Windows.Forms.Button();
+            this.btnMisVehiculos = new System.Windows.Forms.Button();
             this.pnlLogotipo = new System.Windows.Forms.Panel();
             this.pctrLogotipo = new System.Windows.Forms.PictureBox();
             this.pnlFormulario = new System.Windows.Forms.Panel();
@@ -53,8 +53,8 @@
             this.pnlMenuLateral.Controls.Add(this.panel1);
             this.pnlMenuLateral.Controls.Add(this.btnAcercaDe);
             this.pnlMenuLateral.Controls.Add(this.btnAyuda);
-            this.pnlMenuLateral.Controls.Add(this.btnProductos);
-            this.pnlMenuLateral.Controls.Add(this.btnServicios);
+            this.pnlMenuLateral.Controls.Add(this.btnAgendarServicio);
+            this.pnlMenuLateral.Controls.Add(this.btnMisVehiculos);
             this.pnlMenuLateral.Controls.Add(this.pnlLogotipo);
             this.pnlMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuLateral.Location = new System.Drawing.Point(0, 0);
@@ -93,7 +93,6 @@
             this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            this.btnCerrarSesion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnCerrarSesion_MouseDown);
             // 
             // panel1
             // 
@@ -137,39 +136,40 @@
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyuda.UseVisualStyleBackColor = false;
             // 
-            // btnProductos
+            // btnAgendarServicio
             // 
-            this.btnProductos.BackColor = System.Drawing.Color.Black;
-            this.btnProductos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.ForeColor = System.Drawing.Color.White;
-            this.btnProductos.Location = new System.Drawing.Point(0, 194);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnProductos.Size = new System.Drawing.Size(264, 50);
-            this.btnProductos.TabIndex = 2;
-            this.btnProductos.Text = "Agendar Servicio";
-            this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnAgendarServicio.BackColor = System.Drawing.Color.Black;
+            this.btnAgendarServicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAgendarServicio.FlatAppearance.BorderSize = 0;
+            this.btnAgendarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgendarServicio.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendarServicio.ForeColor = System.Drawing.Color.White;
+            this.btnAgendarServicio.Location = new System.Drawing.Point(0, 194);
+            this.btnAgendarServicio.Name = "btnAgendarServicio";
+            this.btnAgendarServicio.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnAgendarServicio.Size = new System.Drawing.Size(264, 50);
+            this.btnAgendarServicio.TabIndex = 2;
+            this.btnAgendarServicio.Text = "Agendar Servicio";
+            this.btnAgendarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgendarServicio.UseVisualStyleBackColor = false;
             // 
-            // btnServicios
+            // btnMisVehiculos
             // 
-            this.btnServicios.BackColor = System.Drawing.Color.Black;
-            this.btnServicios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnServicios.FlatAppearance.BorderSize = 0;
-            this.btnServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnServicios.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnServicios.ForeColor = System.Drawing.Color.White;
-            this.btnServicios.Location = new System.Drawing.Point(0, 144);
-            this.btnServicios.Name = "btnServicios";
-            this.btnServicios.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnServicios.Size = new System.Drawing.Size(264, 50);
-            this.btnServicios.TabIndex = 1;
-            this.btnServicios.Text = "Mis Vehículos";
-            this.btnServicios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnServicios.UseVisualStyleBackColor = false;
+            this.btnMisVehiculos.BackColor = System.Drawing.Color.Black;
+            this.btnMisVehiculos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMisVehiculos.FlatAppearance.BorderSize = 0;
+            this.btnMisVehiculos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMisVehiculos.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMisVehiculos.ForeColor = System.Drawing.Color.White;
+            this.btnMisVehiculos.Location = new System.Drawing.Point(0, 144);
+            this.btnMisVehiculos.Name = "btnMisVehiculos";
+            this.btnMisVehiculos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnMisVehiculos.Size = new System.Drawing.Size(264, 50);
+            this.btnMisVehiculos.TabIndex = 1;
+            this.btnMisVehiculos.Text = "Mis Vehículos";
+            this.btnMisVehiculos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMisVehiculos.UseVisualStyleBackColor = false;
+            this.btnMisVehiculos.Click += new System.EventHandler(this.btnMisVehiculos_Click);
             // 
             // pnlLogotipo
             // 
@@ -227,8 +227,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAcercaDe;
         private System.Windows.Forms.Button btnAyuda;
-        private System.Windows.Forms.Button btnProductos;
-        private System.Windows.Forms.Button btnServicios;
+        private System.Windows.Forms.Button btnAgendarServicio;
+        private System.Windows.Forms.Button btnMisVehiculos;
         private System.Windows.Forms.Panel pnlLogotipo;
         private System.Windows.Forms.PictureBox pctrLogotipo;
         private System.Windows.Forms.Panel pnlFormulario;

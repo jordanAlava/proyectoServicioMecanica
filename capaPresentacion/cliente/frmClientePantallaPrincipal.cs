@@ -1,4 +1,5 @@
-﻿using System;
+﻿using capaPresentacion.cliente;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,8 @@ namespace capaPresentacion
 {
     public partial class frmClientePantallaPrincipal : Form
     {
-
         private Form formularioActivo = null;
+
         public frmClientePantallaPrincipal()
         {
             InitializeComponent();
@@ -58,6 +59,9 @@ namespace capaPresentacion
 
         }
 
-
+        private void btnMisVehiculos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmVehiculos(this));
+        }
     }
 }
