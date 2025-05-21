@@ -94,7 +94,7 @@
             this.cmbxVehiculo.Padding = new System.Windows.Forms.Padding(2);
             this.cmbxVehiculo.Size = new System.Drawing.Size(381, 31);
             this.cmbxVehiculo.TabIndex = 133;
-            this.cmbxVehiculo.Texts = "Filtrar por (Campo)";
+            this.cmbxVehiculo.Texts = "(Seleccionar)";
             // 
             // cmbxServicio
             // 
@@ -117,7 +117,7 @@
             this.cmbxServicio.Padding = new System.Windows.Forms.Padding(2);
             this.cmbxServicio.Size = new System.Drawing.Size(381, 31);
             this.cmbxServicio.TabIndex = 132;
-            this.cmbxServicio.Texts = "Filtrar por (Campo)";
+            this.cmbxServicio.Texts = "(Seleccionar)";
             // 
             // lblFecha
             // 

@@ -151,7 +151,7 @@
             this.cmbxFiltrarBusqueda.Padding = new System.Windows.Forms.Padding(2);
             this.cmbxFiltrarBusqueda.Size = new System.Drawing.Size(200, 31);
             this.cmbxFiltrarBusqueda.TabIndex = 176;
-            this.cmbxFiltrarBusqueda.Texts = "Filtrar por (Campo)";
+            this.cmbxFiltrarBusqueda.Texts = "Buscar por (Campo)";
             // 
             // cmbxFecha
             // 
@@ -189,7 +189,7 @@
             this.cmbxVehiculo.Padding = new System.Windows.Forms.Padding(2);
             this.cmbxVehiculo.Size = new System.Drawing.Size(381, 31);
             this.cmbxVehiculo.TabIndex = 174;
-            this.cmbxVehiculo.Texts = "Filtrar por (Campo)";
+            this.cmbxVehiculo.Texts = "(Seleccionar)";
             // 
             // cmbxServicio
             // 
@@ -212,7 +212,7 @@
             this.cmbxServicio.Padding = new System.Windows.Forms.Padding(2);
             this.cmbxServicio.Size = new System.Drawing.Size(381, 31);
             this.cmbxServicio.TabIndex = 173;
-            this.cmbxServicio.Texts = "Filtrar por (Campo)";
+            this.cmbxServicio.Texts = "(Seleccionar)";
             // 
             // lblFecha
             // 
@@ -284,7 +284,7 @@
             this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtBarraBusqueda.PasswordChar = false;
             this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBarraBusqueda.PlaceholderText = "Buscar por ID";
+            this.txtBarraBusqueda.PlaceholderText = "Buscar";
             this.txtBarraBusqueda.Size = new System.Drawing.Size(313, 31);
             this.txtBarraBusqueda.TabIndex = 168;
             this.txtBarraBusqueda.Texts = "";

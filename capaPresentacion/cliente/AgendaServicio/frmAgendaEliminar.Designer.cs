@@ -127,7 +127,7 @@
             this.cmbxFiltrarBusqueda.Padding = new System.Windows.Forms.Padding(2);
             this.cmbxFiltrarBusqueda.Size = new System.Drawing.Size(200, 31);
             this.cmbxFiltrarBusqueda.TabIndex = 176;
-            this.cmbxFiltrarBusqueda.Texts = "Filtrar por (Campo)";
+            this.cmbxFiltrarBusqueda.Texts = "Buscar por (Campo)";
             // 
             // lblFecha
             // 
@@ -199,7 +199,7 @@
             this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtBarraBusqueda.PasswordChar = false;
             this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBarraBusqueda.PlaceholderText = "Buscar por ID";
+            this.txtBarraBusqueda.PlaceholderText = "Buscar ";
             this.txtBarraBusqueda.Size = new System.Drawing.Size(313, 31);
             this.txtBarraBusqueda.TabIndex = 168;
             this.txtBarraBusqueda.Texts = "";
@@ -223,9 +223,8 @@
             this.lblServicioValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblServicioValor.Location = new System.Drawing.Point(428, 281);
             this.lblServicioValor.Name = "lblServicioValor";
-            this.lblServicioValor.Size = new System.Drawing.Size(46, 20);
+            this.lblServicioValor.Size = new System.Drawing.Size(0, 20);
             this.lblServicioValor.TabIndex = 180;
-            this.lblServicioValor.Text = "Valor";
             // 
             // lblVehiculoValor
             // 
@@ -233,9 +232,8 @@
             this.lblVehiculoValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVehiculoValor.Location = new System.Drawing.Point(428, 330);
             this.lblVehiculoValor.Name = "lblVehiculoValor";
-            this.lblVehiculoValor.Size = new System.Drawing.Size(46, 20);
+            this.lblVehiculoValor.Size = new System.Drawing.Size(0, 20);
             this.lblVehiculoValor.TabIndex = 181;
-            this.lblVehiculoValor.Text = "Valor";
             // 
             // lblFechaValor
             // 
@@ -243,9 +241,8 @@
             this.lblFechaValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaValor.Location = new System.Drawing.Point(428, 380);
             this.lblFechaValor.Name = "lblFechaValor";
-            this.lblFechaValor.Size = new System.Drawing.Size(46, 20);
+            this.lblFechaValor.Size = new System.Drawing.Size(0, 20);
             this.lblFechaValor.TabIndex = 182;
-            this.lblFechaValor.Text = "Valor";
             // 
             // btnEliminar
             // 
