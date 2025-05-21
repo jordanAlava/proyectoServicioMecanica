@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCargarImagen = new FontAwesome.Sharp.IconButton();
             this.grpFoto = new System.Windows.Forms.GroupBox();
             this.pctrFoto = new System.Windows.Forms.PictureBox();
             this.lblFoto = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarVehiculo = new System.Windows.Forms.Label();
-            this.btnCargarImagen = new FontAwesome.Sharp.IconButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.grpFoto.SuspendLayout();
@@ -91,10 +91,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 681);
             this.panel1.TabIndex = 1;
-            this.panel1.Click += new System.EventHandler(this.btnAtras_Click);
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
-            this.panel1.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
-            this.panel1.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
+
+            // 
+            // btnCargarImagen
+            // 
+            this.btnCargarImagen.BackColor = System.Drawing.Color.Silver;
+            this.btnCargarImagen.FlatAppearance.BorderSize = 0;
+            this.btnCargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarImagen.ForeColor = System.Drawing.Color.Black;
+            this.btnCargarImagen.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnCargarImagen.IconColor = System.Drawing.Color.Black;
+            this.btnCargarImagen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarImagen.IconSize = 24;
+            this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen.Location = new System.Drawing.Point(830, 388);
+            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCargarImagen.Name = "btnCargarImagen";
+            this.btnCargarImagen.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnCargarImagen.Size = new System.Drawing.Size(101, 29);
+            this.btnCargarImagen.TabIndex = 147;
+            this.btnCargarImagen.Text = "   &Cargar";
+            this.btnCargarImagen.UseVisualStyleBackColor = false;
             // 
             // grpFoto
             // 
@@ -442,6 +460,10 @@
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.btnAtras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
+            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
             // btnAgregar
             // 
@@ -474,27 +496,6 @@
             this.lblAgregarVehiculo.Size = new System.Drawing.Size(273, 37);
             this.lblAgregarVehiculo.TabIndex = 111;
             this.lblAgregarVehiculo.Text = "Agregar Vehículo";
-            // 
-            // btnCargarImagen
-            // 
-            this.btnCargarImagen.BackColor = System.Drawing.Color.Silver;
-            this.btnCargarImagen.FlatAppearance.BorderSize = 0;
-            this.btnCargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.ForeColor = System.Drawing.Color.Black;
-            this.btnCargarImagen.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnCargarImagen.IconColor = System.Drawing.Color.Black;
-            this.btnCargarImagen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarImagen.IconSize = 24;
-            this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarImagen.Location = new System.Drawing.Point(830, 388);
-            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCargarImagen.Name = "btnCargarImagen";
-            this.btnCargarImagen.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnCargarImagen.Size = new System.Drawing.Size(101, 29);
-            this.btnCargarImagen.TabIndex = 147;
-            this.btnCargarImagen.Text = "   &Cargar";
-            this.btnCargarImagen.UseVisualStyleBackColor = false;
             // 
             // openFileDialog1
             // 
