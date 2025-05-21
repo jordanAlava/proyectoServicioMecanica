@@ -43,5 +43,10 @@ namespace capaPresentacion.cliente
         }
 
         #endregion
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

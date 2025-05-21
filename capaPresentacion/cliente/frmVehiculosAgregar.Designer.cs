@@ -54,6 +54,7 @@
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarVehiculo = new System.Windows.Forms.Label();
             this.btnCargarImagen = new FontAwesome.Sharp.IconButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.grpFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrFoto)).BeginInit();
@@ -495,6 +496,10 @@
             this.btnCargarImagen.Text = "   &Cargar";
             this.btnCargarImagen.UseVisualStyleBackColor = false;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // frmVehiculosAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,5 +545,6 @@
         private System.Windows.Forms.PictureBox pctrFoto;
         private System.Windows.Forms.Label lblFoto;
         private FontAwesome.Sharp.IconButton btnCargarImagen;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
