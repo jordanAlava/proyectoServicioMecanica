@@ -90,6 +90,10 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 681);
             this.panel1.TabIndex = 1;
+            this.panel1.Click += new System.EventHandler(this.btnAtras_Click);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
+            this.panel1.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.panel1.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
             // grpFoto
             // 
