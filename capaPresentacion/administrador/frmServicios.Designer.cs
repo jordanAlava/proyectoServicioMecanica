@@ -73,9 +73,11 @@
             this.panel1.Controls.Add(this.lblTitulo);
             this.panel1.Controls.Add(this.dtgvTabla);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 681);
+            this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbxFiltroBusqueda
             // 
@@ -92,11 +94,12 @@
             "op 3"});
             this.cmbxFiltroBusqueda.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxFiltroBusqueda.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxFiltroBusqueda.Location = new System.Drawing.Point(49, 153);
-            this.cmbxFiltroBusqueda.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxFiltroBusqueda.Location = new System.Drawing.Point(65, 188);
+            this.cmbxFiltroBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxFiltroBusqueda.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxFiltroBusqueda.Name = "cmbxFiltroBusqueda";
-            this.cmbxFiltroBusqueda.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(381, 31);
+            this.cmbxFiltroBusqueda.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxFiltroBusqueda.Size = new System.Drawing.Size(508, 38);
             this.cmbxFiltroBusqueda.TabIndex = 99;
             this.cmbxFiltroBusqueda.Texts = "Filtrar por (Campo)";
             this.cmbxFiltroBusqueda.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
@@ -115,15 +118,16 @@
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 24;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(643, 153);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Location = new System.Drawing.Point(857, 188);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
-            this.btnBuscar.Size = new System.Drawing.Size(86, 30);
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(0, 0, 9, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(115, 37);
             this.btnBuscar.TabIndex = 97;
             this.btnBuscar.Text = "&Filtrar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cmbxFiltroBusquedaDetalle
             // 
@@ -135,16 +139,18 @@
             this.cmbxFiltroBusquedaDetalle.ForeColor = System.Drawing.Color.Black;
             this.cmbxFiltroBusquedaDetalle.IconColor = System.Drawing.Color.Black;
             this.cmbxFiltroBusquedaDetalle.Items.AddRange(new object[] {
-            "op 1",
-            "op 2",
-            "op 3"});
+            "Ninguno",
+            "Costo total 50$ en adelante",
+            "Costo total 75$ en adelante",
+            "Costo total 100$ en adelante"});
             this.cmbxFiltroBusquedaDetalle.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxFiltroBusquedaDetalle.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxFiltroBusquedaDetalle.Location = new System.Drawing.Point(436, 153);
-            this.cmbxFiltroBusquedaDetalle.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxFiltroBusquedaDetalle.Location = new System.Drawing.Point(581, 188);
+            this.cmbxFiltroBusquedaDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxFiltroBusquedaDetalle.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxFiltroBusquedaDetalle.Name = "cmbxFiltroBusquedaDetalle";
-            this.cmbxFiltroBusquedaDetalle.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxFiltroBusquedaDetalle.Size = new System.Drawing.Size(200, 31);
+            this.cmbxFiltroBusquedaDetalle.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxFiltroBusquedaDetalle.Size = new System.Drawing.Size(267, 38);
             this.cmbxFiltroBusquedaDetalle.TabIndex = 96;
             this.cmbxFiltroBusquedaDetalle.Texts = "Detalle";
             this.cmbxFiltroBusquedaDetalle.Enter += new System.EventHandler(this.cmbxFiltroBusqueda_Enter);
@@ -164,11 +170,11 @@
             this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminar.IconSize = 36;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(748, 384);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Location = new System.Drawing.Point(997, 473);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnEliminar.Size = new System.Drawing.Size(211, 47);
+            this.btnEliminar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnEliminar.Size = new System.Drawing.Size(281, 58);
             this.btnEliminar.TabIndex = 94;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -187,11 +193,11 @@
             this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditar.IconSize = 36;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(748, 296);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Location = new System.Drawing.Point(997, 364);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnEditar.Size = new System.Drawing.Size(211, 47);
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnEditar.Size = new System.Drawing.Size(281, 58);
             this.btnEditar.TabIndex = 93;
             this.btnEditar.Text = "E&ditar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -210,11 +216,11 @@
             this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregar.IconSize = 36;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(748, 210);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(997, 258);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(211, 47);
+            this.btnAgregar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnAgregar.Size = new System.Drawing.Size(281, 58);
             this.btnAgregar.TabIndex = 92;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -223,11 +229,12 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.Black;
-            this.lblTitulo.Location = new System.Drawing.Point(42, 77);
+            this.lblTitulo.Location = new System.Drawing.Point(56, 95);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(150, 37);
+            this.lblTitulo.Size = new System.Drawing.Size(165, 39);
             this.lblTitulo.TabIndex = 91;
             this.lblTitulo.Text = "Servicios";
             // 
@@ -236,24 +243,23 @@
             this.dtgvTabla.AllowUserToAddRows = false;
             this.dtgvTabla.AllowUserToDeleteRows = false;
             this.dtgvTabla.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtgvTabla.AutoGenerateColumns = false;
             this.dtgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTabla.DataSource = this.bDTallerMecanicoDataSet;
-            this.dtgvTabla.Location = new System.Drawing.Point(49, 210);
+            this.dtgvTabla.Location = new System.Drawing.Point(65, 258);
+            this.dtgvTabla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgvTabla.Name = "dtgvTabla";
             this.dtgvTabla.ReadOnly = true;
             this.dtgvTabla.RowHeadersWidth = 51;
-            this.dtgvTabla.Size = new System.Drawing.Size(680, 352);
+            this.dtgvTabla.Size = new System.Drawing.Size(907, 433);
             this.dtgvTabla.TabIndex = 90;
             // 
             // frmServicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 681);
+            this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmServicios";
             this.Text = "frmServicios";
             this.Load += new System.EventHandler(this.frmServicios_Load);

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
+using capaLogica;
 
 namespace capaPresentacion
 {
@@ -21,6 +23,8 @@ namespace capaPresentacion
             InitializeComponent();
             formularioPadre = padre;
         }
+
+        classPuente objP = new classPuente();
 
         private void frmServicios_Load(object sender, EventArgs e)
         {
@@ -60,8 +64,42 @@ namespace capaPresentacion
 
 
 
+
         #endregion
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            // Cargar comboBox de Tipo servicios
+            cmbxFiltroBusqueda.Items.Clear();
+            cmbxFiltroBusqueda.Items.Add("(Ninguno)");
+            cmbxFiltroBusqueda.Items.AddRange(objP.tipoServicios().ToArray());
+            // Cargar DataGridView
+            dtgvTabla.DataSource = null;
+            dtgvTabla.DataSource = objP.listarServicios();
+        }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if(cmbxFiltroBusqueda.SelectedIndex > 0 )
+            {
+                string tipo = cmbxFiltroBusqueda.Texts;
+                decimal dinero = 0;
+                if (cmbxFiltroBusquedaDetalle.SelectedIndex <= 0) dinero = 0;
+                if (cmbxFiltroBusquedaDetalle.SelectedIndex == 1) dinero = 50;
+                if (cmbxFiltroBusquedaDetalle.SelectedIndex == 2) dinero = 75;
+                if (cmbxFiltroBusquedaDetalle.SelectedIndex == 3) dinero = 100;
+                dtgvTabla.DataSource = null;
+                dtgvTabla.DataSource = objP.filtrarServicios(tipo, dinero);
+            }
+            else if(cmbxFiltroBusqueda.SelectedIndex == 0)
+            {
+                dtgvTabla.DataSource = null;
+                dtgvTabla.DataSource = objP.listarServicios();
+            }
+            else
+            {
+                MessageBox.Show("Para filtrar la tabla, elija al menos un tipo de servicio");
+            }
+        }
     }
 }

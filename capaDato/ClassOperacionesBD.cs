@@ -650,7 +650,111 @@ namespace capaDato
          *  1   bool ingresarServicio
          *  2   bool modificarServicio
          *  3   Servicio buscarServicio
+         *  4   List<string> RetornarTiposServicios
+         *  5   List<Servicio> listarServicios
+         *  6   list<Servicio> filtrarServicios
          */
+
+        public List<Servicio> filtrarServicios(string tipo, decimal dinero)
+        {
+            List<Servicio> filtro = new List<Servicio>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT *
+                FROM Servicio
+                WHERE tipo = @tipo AND costoTotal >= @dinero", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@tipo", tipo);
+                sqlC.Parameters.AddWithValue("@dinero", dinero);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    Servicio servis = new Servicio
+                    {
+                        idServicio = Convert.ToInt32(reader["idServicio"]),
+                        nombreServicio = Convert.ToString(reader["nombreServicio"]),
+                        tipoServicio = Convert.ToString(reader["tipo"]),
+                        descripcionServicio = Convert.ToString(reader["descripcion"]),
+                        costoUnitarioServicio = Convert.ToDecimal(reader["costoUnitario"]),
+                        ivaServicio = Convert.ToInt32(reader["iva"]),
+                        costoTotalServicio = Convert.ToDecimal(reader["costoTotal"]),
+                        garantiaServicio = Convert.ToInt32(reader["garantiaServicio"])
+                    };
+                    filtro.Add(servis);
+                }
+                reader.Close();
+                return filtro;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public List<Servicio> listarServicios()
+        {
+            List<Servicio> listaS = new List<Servicio>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT * 
+                FROM Servicio", objConnect.conectar);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    Servicio servis = new Servicio
+                    {
+                        idServicio = Convert.ToInt32(reader["idServicio"]),
+                        nombreServicio = Convert.ToString(reader["nombreServicio"]),
+                        tipoServicio = Convert.ToString(reader["tipo"]),
+                        descripcionServicio = Convert.ToString(reader["descripcion"]),
+                        costoUnitarioServicio = Convert.ToDecimal(reader["costoUnitario"]),
+                        ivaServicio = Convert.ToInt32(reader["iva"]),
+                        costoTotalServicio = Convert.ToDecimal(reader["costoTotal"]),
+                        garantiaServicio = Convert.ToInt32(reader["garantiaServicio"])
+                    };
+                    listaS.Add(servis);
+                }
+                reader.Close();
+                return listaS;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public List<string> tipoServicios()
+        {
+            List<string> tipos = new List<string>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT DISTINCT tipo
+                FROM Servicio", objConnect.conectar);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    tipos.Add(Convert.ToString(reader["tipo"]));
+                }
+                reader.Close();
+                return tipos;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
 
         public Servicio buscarServicio(int idSer)
         {

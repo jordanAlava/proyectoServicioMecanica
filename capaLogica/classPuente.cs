@@ -73,5 +73,30 @@ namespace capaLogica
             return operacion.existeUsuario(usuario);
         }
 
+        /////////////////// SERVICIOS //////////////////////
+        public List<string> tipoServicios()
+        {
+            return operacion.tipoServicios();
+        }
+        public Servicio buscarServicio(int idSer)
+        {
+            return operacion.buscarServicio(idSer);
+        }
+        public bool modificarServicio(Servicio servicio)
+        {
+            return operacion.modificarServicio(servicio);
+        }
+        public bool ingresarServicio(Servicio servicio)
+        {
+            return operacion.ingresarServicio(servicio);
+        }
+        public List<Servicio> listarServicios()
+        {
+            return operacion.listarServicios();
+        }
+        public List<Servicio> filtrarServicios(string tipo, decimal dinero)
+        {
+            return operacion.filtrarServicios(tipo, dinero);
+        }
     }
 }
