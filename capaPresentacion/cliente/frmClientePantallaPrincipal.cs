@@ -8,18 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
 
 namespace capaPresentacion
 {
     public partial class frmClientePantallaPrincipal : Form
     {
         private Form formularioActivo = null;
-
-        public frmClientePantallaPrincipal()
+        private int idCliente;
+        public frmClientePantallaPrincipal(int cliente)
         {
             InitializeComponent();
             inicializarFormulario();
+            this.idCliente = cliente;
         }
+
+        
 
         public void inicializarFormulario()
         {
@@ -61,7 +65,12 @@ namespace capaPresentacion
 
         private void btnMisVehiculos_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmVehiculos(this));
+            abrirFormHijo(new frmVehiculos(this, idCliente));
+        }
+
+        private void frmClientePantallaPrincipal_Load(object sender, EventArgs e)
+        {
+            //MessageBox.Show($"ID: {idCliente}");
         }
     }
 }

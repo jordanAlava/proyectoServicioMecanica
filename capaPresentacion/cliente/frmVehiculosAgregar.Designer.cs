@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCargarImagen = new FontAwesome.Sharp.IconButton();
             this.grpFoto = new System.Windows.Forms.GroupBox();
             this.pctrFoto = new System.Windows.Forms.PictureBox();
             this.lblFoto = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarVehiculo = new System.Windows.Forms.Label();
-            this.btnCargarImagen = new FontAwesome.Sharp.IconButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.grpFoto.SuspendLayout();
@@ -88,28 +88,56 @@
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.lblAgregarVehiculo);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 681);
+            this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 1;
             this.panel1.Click += new System.EventHandler(this.btnAtras_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
             this.panel1.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
+            // btnCargarImagen
+            // 
+            this.btnCargarImagen.BackColor = System.Drawing.Color.Silver;
+            this.btnCargarImagen.FlatAppearance.BorderSize = 0;
+            this.btnCargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarImagen.ForeColor = System.Drawing.Color.Black;
+            this.btnCargarImagen.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnCargarImagen.IconColor = System.Drawing.Color.Black;
+            this.btnCargarImagen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarImagen.IconSize = 24;
+            this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen.Location = new System.Drawing.Point(1107, 478);
+            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCargarImagen.Name = "btnCargarImagen";
+            this.btnCargarImagen.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnCargarImagen.Size = new System.Drawing.Size(135, 36);
+            this.btnCargarImagen.TabIndex = 147;
+            this.btnCargarImagen.Text = "   &Cargar";
+            this.btnCargarImagen.UseVisualStyleBackColor = false;
+            this.btnCargarImagen.Click += new System.EventHandler(this.btnCargarImagen_Click);
+            // 
             // grpFoto
             // 
             this.grpFoto.Controls.Add(this.pctrFoto);
-            this.grpFoto.Location = new System.Drawing.Point(590, 166);
+            this.grpFoto.Location = new System.Drawing.Point(787, 204);
+            this.grpFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpFoto.Name = "grpFoto";
-            this.grpFoto.Size = new System.Drawing.Size(341, 215);
+            this.grpFoto.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpFoto.Size = new System.Drawing.Size(455, 265);
             this.grpFoto.TabIndex = 146;
             this.grpFoto.TabStop = false;
             // 
             // pctrFoto
             // 
-            this.pctrFoto.Location = new System.Drawing.Point(19, 18);
+            this.pctrFoto.Location = new System.Drawing.Point(25, 22);
+            this.pctrFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pctrFoto.Name = "pctrFoto";
-            this.pctrFoto.Size = new System.Drawing.Size(302, 179);
+            this.pctrFoto.Size = new System.Drawing.Size(403, 220);
+            this.pctrFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctrFoto.TabIndex = 147;
             this.pctrFoto.TabStop = false;
             // 
@@ -117,9 +145,10 @@
             // 
             this.lblFoto.AutoSize = true;
             this.lblFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFoto.Location = new System.Drawing.Point(586, 143);
+            this.lblFoto.Location = new System.Drawing.Point(781, 176);
+            this.lblFoto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFoto.Name = "lblFoto";
-            this.lblFoto.Size = new System.Drawing.Size(46, 20);
+            this.lblFoto.Size = new System.Drawing.Size(55, 25);
             this.lblFoto.TabIndex = 145;
             this.lblFoto.Text = "Foto";
             // 
@@ -132,45 +161,43 @@
             this.txtCilindraje.BorderSize = 2;
             this.txtCilindraje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCilindraje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCilindraje.Location = new System.Drawing.Point(257, 560);
-            this.txtCilindraje.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCilindraje.Location = new System.Drawing.Point(343, 689);
+            this.txtCilindraje.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtCilindraje.Multiline = false;
             this.txtCilindraje.Name = "txtCilindraje";
-            this.txtCilindraje.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCilindraje.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtCilindraje.PasswordChar = false;
             this.txtCilindraje.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCilindraje.PlaceholderText = "";
-            this.txtCilindraje.Size = new System.Drawing.Size(240, 31);
+            this.txtCilindraje.Size = new System.Drawing.Size(320, 39);
             this.txtCilindraje.TabIndex = 143;
             this.txtCilindraje.Texts = "";
             this.txtCilindraje.UnderlinedStyle = false;
+            this.txtCilindraje.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCilindraje_KeyPress);
             // 
             // cmbxCombustible
             // 
             this.cmbxCombustible.BackColor = System.Drawing.Color.White;
             this.cmbxCombustible.BorderColor = System.Drawing.Color.Black;
             this.cmbxCombustible.BorderSize = 2;
-            this.cmbxCombustible.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbxCombustible.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxCombustible.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbxCombustible.ForeColor = System.Drawing.Color.Black;
             this.cmbxCombustible.IconColor = System.Drawing.Color.Black;
             this.cmbxCombustible.Items.AddRange(new object[] {
-            "Gasolina Extra: 85 octanos. ",
-            "",
-            "",
-            "Gasolina Ecopaís: 85 octanos.",
-            "Gasolina Súper: 92 octanos.",
-            "Gasolina Eco Plus: 89 octanos.",
-            "",
-            "",
-            "Diésel Premium."});
+            "Gasolina Extra",
+            "Gasolina Ecopaís",
+            "Gasolina Súper",
+            "Gasolina Eco Plus",
+            "Diésel Premium"});
             this.cmbxCombustible.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxCombustible.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxCombustible.Location = new System.Drawing.Point(257, 505);
-            this.cmbxCombustible.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxCombustible.Location = new System.Drawing.Point(343, 622);
+            this.cmbxCombustible.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxCombustible.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxCombustible.Name = "cmbxCombustible";
-            this.cmbxCombustible.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxCombustible.Size = new System.Drawing.Size(240, 31);
+            this.cmbxCombustible.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxCombustible.Size = new System.Drawing.Size(320, 38);
             this.cmbxCombustible.TabIndex = 142;
             this.cmbxCombustible.Texts = "Seleccionar";
             // 
@@ -178,9 +205,10 @@
             // 
             this.lblCombustible.AutoSize = true;
             this.lblCombustible.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCombustible.Location = new System.Drawing.Point(70, 505);
+            this.lblCombustible.Location = new System.Drawing.Point(93, 622);
+            this.lblCombustible.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCombustible.Name = "lblCombustible";
-            this.lblCombustible.Size = new System.Drawing.Size(108, 20);
+            this.lblCombustible.Size = new System.Drawing.Size(132, 25);
             this.lblCombustible.TabIndex = 140;
             this.lblCombustible.Text = "Combustible";
             // 
@@ -188,9 +216,10 @@
             // 
             this.lblCilindraje.AutoSize = true;
             this.lblCilindraje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCilindraje.Location = new System.Drawing.Point(70, 560);
+            this.lblCilindraje.Location = new System.Drawing.Point(93, 689);
+            this.lblCilindraje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCilindraje.Name = "lblCilindraje";
-            this.lblCilindraje.Size = new System.Drawing.Size(83, 20);
+            this.lblCilindraje.Size = new System.Drawing.Size(103, 25);
             this.lblCilindraje.TabIndex = 139;
             this.lblCilindraje.Text = "Cilindraje";
             // 
@@ -199,7 +228,7 @@
             this.cmbxSeguro.BackColor = System.Drawing.Color.White;
             this.cmbxSeguro.BorderColor = System.Drawing.Color.Black;
             this.cmbxSeguro.BorderSize = 2;
-            this.cmbxSeguro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbxSeguro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbxSeguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbxSeguro.ForeColor = System.Drawing.Color.Black;
             this.cmbxSeguro.IconColor = System.Drawing.Color.Black;
@@ -208,11 +237,12 @@
             "No"});
             this.cmbxSeguro.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxSeguro.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxSeguro.Location = new System.Drawing.Point(257, 449);
-            this.cmbxSeguro.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxSeguro.Location = new System.Drawing.Point(343, 553);
+            this.cmbxSeguro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxSeguro.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxSeguro.Name = "cmbxSeguro";
-            this.cmbxSeguro.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxSeguro.Size = new System.Drawing.Size(240, 31);
+            this.cmbxSeguro.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxSeguro.Size = new System.Drawing.Size(320, 38);
             this.cmbxSeguro.TabIndex = 135;
             this.cmbxSeguro.Texts = "Seleccionar";
             // 
@@ -225,15 +255,15 @@
             this.txtNoChasis.BorderSize = 2;
             this.txtNoChasis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoChasis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNoChasis.Location = new System.Drawing.Point(257, 397);
-            this.txtNoChasis.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoChasis.Location = new System.Drawing.Point(343, 489);
+            this.txtNoChasis.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtNoChasis.Multiline = false;
             this.txtNoChasis.Name = "txtNoChasis";
-            this.txtNoChasis.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNoChasis.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtNoChasis.PasswordChar = false;
             this.txtNoChasis.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNoChasis.PlaceholderText = "";
-            this.txtNoChasis.Size = new System.Drawing.Size(240, 31);
+            this.txtNoChasis.Size = new System.Drawing.Size(320, 39);
             this.txtNoChasis.TabIndex = 134;
             this.txtNoChasis.Texts = "";
             this.txtNoChasis.UnderlinedStyle = false;
@@ -247,18 +277,19 @@
             this.txtColor.BorderSize = 2;
             this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtColor.Location = new System.Drawing.Point(257, 343);
-            this.txtColor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtColor.Location = new System.Drawing.Point(343, 422);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtColor.Multiline = false;
             this.txtColor.Name = "txtColor";
-            this.txtColor.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtColor.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtColor.PasswordChar = false;
             this.txtColor.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtColor.PlaceholderText = "";
-            this.txtColor.Size = new System.Drawing.Size(240, 31);
+            this.txtColor.Size = new System.Drawing.Size(320, 39);
             this.txtColor.TabIndex = 133;
             this.txtColor.Texts = "";
             this.txtColor.UnderlinedStyle = false;
+            this.txtColor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtColor_KeyPress);
             // 
             // txtAnioFab
             // 
@@ -269,18 +300,19 @@
             this.txtAnioFab.BorderSize = 2;
             this.txtAnioFab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAnioFab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtAnioFab.Location = new System.Drawing.Point(257, 291);
-            this.txtAnioFab.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnioFab.Location = new System.Drawing.Point(343, 358);
+            this.txtAnioFab.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtAnioFab.Multiline = false;
             this.txtAnioFab.Name = "txtAnioFab";
-            this.txtAnioFab.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAnioFab.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtAnioFab.PasswordChar = false;
             this.txtAnioFab.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtAnioFab.PlaceholderText = "";
-            this.txtAnioFab.Size = new System.Drawing.Size(240, 31);
+            this.txtAnioFab.Size = new System.Drawing.Size(320, 39);
             this.txtAnioFab.TabIndex = 132;
             this.txtAnioFab.Texts = "";
             this.txtAnioFab.UnderlinedStyle = false;
+            this.txtAnioFab.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAnioFab_KeyPress);
             // 
             // txtModelo
             // 
@@ -291,18 +323,19 @@
             this.txtModelo.BorderSize = 2;
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtModelo.Location = new System.Drawing.Point(257, 242);
-            this.txtModelo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtModelo.Location = new System.Drawing.Point(343, 298);
+            this.txtModelo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtModelo.Multiline = false;
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtModelo.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtModelo.PasswordChar = false;
             this.txtModelo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtModelo.PlaceholderText = "";
-            this.txtModelo.Size = new System.Drawing.Size(240, 31);
+            this.txtModelo.Size = new System.Drawing.Size(320, 39);
             this.txtModelo.TabIndex = 131;
             this.txtModelo.Texts = "";
             this.txtModelo.UnderlinedStyle = false;
+            this.txtModelo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtModelo_KeyPress);
             // 
             // txtMarca
             // 
@@ -313,18 +346,19 @@
             this.txtMarca.BorderSize = 2;
             this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMarca.Location = new System.Drawing.Point(257, 192);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMarca.Location = new System.Drawing.Point(343, 236);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtMarca.Multiline = false;
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtMarca.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtMarca.PasswordChar = false;
             this.txtMarca.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMarca.PlaceholderText = "";
-            this.txtMarca.Size = new System.Drawing.Size(240, 31);
+            this.txtMarca.Size = new System.Drawing.Size(320, 39);
             this.txtMarca.TabIndex = 130;
             this.txtMarca.Texts = "";
             this.txtMarca.UnderlinedStyle = false;
+            this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
             // 
             // txtPlaca
             // 
@@ -335,26 +369,28 @@
             this.txtPlaca.BorderSize = 2;
             this.txtPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlaca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPlaca.Location = new System.Drawing.Point(257, 143);
-            this.txtPlaca.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPlaca.Location = new System.Drawing.Point(343, 176);
+            this.txtPlaca.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtPlaca.Multiline = false;
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPlaca.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtPlaca.PasswordChar = false;
             this.txtPlaca.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPlaca.PlaceholderText = "";
-            this.txtPlaca.Size = new System.Drawing.Size(240, 31);
+            this.txtPlaca.Size = new System.Drawing.Size(320, 39);
             this.txtPlaca.TabIndex = 129;
             this.txtPlaca.Texts = "";
             this.txtPlaca.UnderlinedStyle = false;
+            this.txtPlaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPlaca_KeyPress);
             // 
             // lblSeguro
             // 
             this.lblSeguro.AutoSize = true;
             this.lblSeguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeguro.Location = new System.Drawing.Point(70, 449);
+            this.lblSeguro.Location = new System.Drawing.Point(93, 553);
+            this.lblSeguro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSeguro.Name = "lblSeguro";
-            this.lblSeguro.Size = new System.Drawing.Size(96, 20);
+            this.lblSeguro.Size = new System.Drawing.Size(117, 25);
             this.lblSeguro.TabIndex = 128;
             this.lblSeguro.Text = "Asegurado";
             // 
@@ -362,9 +398,10 @@
             // 
             this.lblNoChasis.AutoSize = true;
             this.lblNoChasis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoChasis.Location = new System.Drawing.Point(70, 397);
+            this.lblNoChasis.Location = new System.Drawing.Point(93, 489);
+            this.lblNoChasis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNoChasis.Name = "lblNoChasis";
-            this.lblNoChasis.Size = new System.Drawing.Size(155, 20);
+            this.lblNoChasis.Size = new System.Drawing.Size(190, 25);
             this.lblNoChasis.TabIndex = 124;
             this.lblNoChasis.Text = "Número de Chasis";
             // 
@@ -372,9 +409,10 @@
             // 
             this.lblColor.AutoSize = true;
             this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(70, 343);
+            this.lblColor.Location = new System.Drawing.Point(93, 422);
+            this.lblColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(51, 20);
+            this.lblColor.Size = new System.Drawing.Size(64, 25);
             this.lblColor.TabIndex = 123;
             this.lblColor.Text = "Color";
             // 
@@ -382,9 +420,10 @@
             // 
             this.lblAnioFab.AutoSize = true;
             this.lblAnioFab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnioFab.Location = new System.Drawing.Point(70, 291);
+            this.lblAnioFab.Location = new System.Drawing.Point(93, 358);
+            this.lblAnioFab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnioFab.Name = "lblAnioFab";
-            this.lblAnioFab.Size = new System.Drawing.Size(164, 20);
+            this.lblAnioFab.Size = new System.Drawing.Size(199, 25);
             this.lblAnioFab.TabIndex = 122;
             this.lblAnioFab.Text = "Año de Fabricación";
             // 
@@ -392,9 +431,10 @@
             // 
             this.lblModelo.AutoSize = true;
             this.lblModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModelo.Location = new System.Drawing.Point(70, 242);
+            this.lblModelo.Location = new System.Drawing.Point(93, 298);
+            this.lblModelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(67, 20);
+            this.lblModelo.Size = new System.Drawing.Size(83, 25);
             this.lblModelo.TabIndex = 121;
             this.lblModelo.Text = "Modelo";
             // 
@@ -402,9 +442,10 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(70, 192);
+            this.lblMarca.Location = new System.Drawing.Point(93, 236);
+            this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(58, 20);
+            this.lblMarca.Size = new System.Drawing.Size(72, 25);
             this.lblMarca.TabIndex = 120;
             this.lblMarca.Text = "Marca";
             // 
@@ -412,9 +453,10 @@
             // 
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.Location = new System.Drawing.Point(70, 143);
+            this.lblPlaca.Location = new System.Drawing.Point(93, 176);
+            this.lblPlaca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(53, 20);
+            this.lblPlaca.Size = new System.Drawing.Size(66, 25);
             this.lblPlaca.TabIndex = 119;
             this.lblPlaca.Text = "Placa";
             // 
@@ -434,10 +476,10 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(590, 567);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(787, 698);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.Size = new System.Drawing.Size(96, 47);
             this.btnAtras.TabIndex = 118;
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -455,46 +497,27 @@
             this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregar.IconSize = 36;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(720, 560);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(960, 689);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(211, 47);
+            this.btnAgregar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnAgregar.Size = new System.Drawing.Size(281, 58);
             this.btnAgregar.TabIndex = 117;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblAgregarVehiculo
             // 
             this.lblAgregarVehiculo.AutoSize = true;
-            this.lblAgregarVehiculo.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgregarVehiculo.ForeColor = System.Drawing.Color.Black;
-            this.lblAgregarVehiculo.Location = new System.Drawing.Point(67, 55);
+            this.lblAgregarVehiculo.Location = new System.Drawing.Point(89, 68);
+            this.lblAgregarVehiculo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregarVehiculo.Name = "lblAgregarVehiculo";
-            this.lblAgregarVehiculo.Size = new System.Drawing.Size(273, 37);
+            this.lblAgregarVehiculo.Size = new System.Drawing.Size(295, 39);
             this.lblAgregarVehiculo.TabIndex = 111;
             this.lblAgregarVehiculo.Text = "Agregar Vehículo";
-            // 
-            // btnCargarImagen
-            // 
-            this.btnCargarImagen.BackColor = System.Drawing.Color.Silver;
-            this.btnCargarImagen.FlatAppearance.BorderSize = 0;
-            this.btnCargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarImagen.ForeColor = System.Drawing.Color.Black;
-            this.btnCargarImagen.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.btnCargarImagen.IconColor = System.Drawing.Color.Black;
-            this.btnCargarImagen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCargarImagen.IconSize = 24;
-            this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargarImagen.Location = new System.Drawing.Point(830, 388);
-            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCargarImagen.Name = "btnCargarImagen";
-            this.btnCargarImagen.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnCargarImagen.Size = new System.Drawing.Size(101, 29);
-            this.btnCargarImagen.TabIndex = 147;
-            this.btnCargarImagen.Text = "   &Cargar";
-            this.btnCargarImagen.UseVisualStyleBackColor = false;
             // 
             // openFileDialog1
             // 
@@ -502,11 +525,12 @@
             // 
             // frmVehiculosAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 681);
+            this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmVehiculosAgregar";
             this.Text = "frmVehiculosAgregar";
             this.panel1.ResumeLayout(false);

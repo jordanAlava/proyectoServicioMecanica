@@ -73,6 +73,11 @@ namespace capaLogica
             return operacion.existeUsuario(usuario);
         }
 
+        public Cliente buscarClienteUC(string usuario, string contra)
+        {
+            return operacion.buscarClienteUC(usuario, contra);
+        }
+
         /////////////////// SERVICIOS //////////////////////
         public List<string> tipoServicios()
         {
@@ -101,6 +106,32 @@ namespace capaLogica
         public bool eliminarServicion(int idS)
         {
             return operacion.eliminarServicion(idS);
+        }
+
+        /////////////// VEHICULO ///////////////////////////////
+        public List<Vehiculo> listarVehiculosCliente(int idCliente)
+        {
+            return operacion.listarVehiculosCliente(idCliente);
+        }
+        public Vehiculo buscarVehiculo(string placa)
+        {
+            return operacion.buscarVehiculo(placa);
+        }
+        public bool existeVehiculo(string placa, string chasis)
+        {
+            return operacion.existeVehiculo(placa, chasis);
+        }
+        public bool modificarVehiculo(Vehiculo vehiculo)
+        {
+            return operacion.modificarVehiculo(vehiculo);
+        }
+        public bool eliminarVehiculo(string placa)
+        {
+            return operacion.eliminarVehiculo(placa);
+        }
+        public bool ingresarVehiculo(Vehiculo vehiculo)
+        {
+            return operacion.ingresarVehiculo(vehiculo);
         }
     }
 }

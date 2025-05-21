@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
 
 namespace capaPresentacion
 {
@@ -25,7 +26,8 @@ namespace capaPresentacion
                 }
                 else
                 {
-                    Application.Run(new frmClientePantallaPrincipal());
+                    int idCli = inicioSesion.ClienteLogeado.idCliente;
+                    Application.Run(new frmClientePantallaPrincipal(idCli));
                 }
             }
         }

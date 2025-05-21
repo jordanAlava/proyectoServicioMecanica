@@ -13,10 +13,12 @@ namespace capaPresentacion.cliente
     public partial class frmVehiculosEditar : Form
     {
         private frmClientePantallaPrincipal formularioPadre;
-        public frmVehiculosEditar(frmClientePantallaPrincipal padre)
+        private int id;
+        public frmVehiculosEditar(frmClientePantallaPrincipal padre, int id)
         {
             InitializeComponent();
             this.formularioPadre = padre;
+            this.id = id;
         }
 
         #region D I S E Ñ O
@@ -39,7 +41,7 @@ namespace capaPresentacion.cliente
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            formularioPadre.abrirFormHijo(new frmVehiculos(formularioPadre));
+            formularioPadre.abrirFormHijo(new frmVehiculos(formularioPadre, id));
         }
 
         #endregion

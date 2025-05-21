@@ -230,8 +230,52 @@ namespace capaDato
          * 6    bool existeCliente 
          * 7    bool autenticacionCliente
          * 8    bool existeUsuario
+         * 9    Cliente buscarClienteUC(string usuario, string contra)
          */
 
+        public Cliente buscarClienteUC(string usuario, string contra)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand("SELECT * FROM Cliente WHERE userCliente = @usuario AND passCli = @pass", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@usuario", usuario);
+                sqlC.Parameters.AddWithValue("@pass", contra);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                if (reader.Read())
+                {
+                    Cliente clienteEncontrado = new Cliente
+                    {
+                        idCliente = Convert.ToInt32(reader["idCliente"]),
+                        cedulaCliente = Convert.ToString(reader["cedula"]),
+                        nombreCliente = Convert.ToString(reader["nombreCli"]),
+                        apellidoCliente = Convert.ToString(reader["apellidoCli"]),
+                        generoCliente = Convert.ToChar(reader["genero"]),
+                        direccionCliente = Convert.ToString(reader["direccion"]),
+                        ciudadCliente = Convert.ToString(reader["ciudadCli"]),
+                        provinciaCliente = Convert.ToString(reader["provinciaCli"]),
+                        correoCliente = Convert.ToString(reader["e_mail"]),
+                        userCliente = Convert.ToString(reader["userCliente"]),
+                        passCliente = Convert.ToString(reader["passCli"]),
+                        pasaporteCliente = Convert.ToString(reader["pasaporte"])
+                    };
+                    reader.Close();
+                    objConnect.Cerrar();
+                    return clienteEncontrado; ;
+                }
+                else
+                {
+                    reader.Close();
+                    objConnect.Cerrar();
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return null;
+            }
+        }
 
         public bool existeUsuario(string usuario)
         {
@@ -636,8 +680,7 @@ namespace capaDato
             }
             catch(Exception ex)
             {
-                Console.WriteLine("Error: " + ex.Message);
-                return false;
+                throw new Exception("Error: ", ex);
             }
             finally
             {
@@ -868,5 +911,8 @@ namespace capaDato
                 objConnect.Cerrar();
             }
         }
+
+
+       
     }
 }

@@ -136,7 +136,7 @@ namespace capaPresentacion
                     MessageBox.Show("Llene todos los campos...");
                 }
             }
-            catch(Exception ex)
+            catch
             {
                 MessageBox.Show("Ingreso los valores correctos (IVA, Garantia son números enteros");
             }
@@ -154,7 +154,7 @@ namespace capaPresentacion
                     e.Handled = true;
                     txtGarantia.Focus();
                 }
-            }catch(Exception ex)
+            }catch
             {
                 MessageBox.Show("Ingreso los valores correctos (IVA, Garantia son números enteros");
             }

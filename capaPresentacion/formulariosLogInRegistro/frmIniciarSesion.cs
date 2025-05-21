@@ -60,6 +60,10 @@ namespace capaPresentacion
 
         public bool esAdmin { get; private set; }
 
+        public Cliente ClienteLogeado
+        {
+            get { return cliente; }
+        }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
@@ -67,8 +71,10 @@ namespace capaPresentacion
             {
                 string usuario = txtUsuario.Texts;
                 string contra = txtContrasenia.Texts;
+
                 if (operacion.autenticarCliente(usuario, contra))
                 {
+                    cliente = operacion.buscarClienteUC(usuario, contra); // trae el cliente completo
                     esAdmin = false;
                     this.DialogResult = DialogResult.OK;
                 }
@@ -79,7 +85,6 @@ namespace capaPresentacion
                 }
                 else
                 {
-                    // POR SERGURIDAD, NO SE DEBE DECIR SI ESTA MAL EL USUARIO O CONTRASEÑA
                     MessageBox.Show("USUARIO O CONTRASEÑA INCORRECTO");
                 }
             }

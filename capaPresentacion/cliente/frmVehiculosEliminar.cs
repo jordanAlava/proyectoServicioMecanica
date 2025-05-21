@@ -13,10 +13,12 @@ namespace capaPresentacion.cliente
     public partial class frmVehiculosEliminar : Form
     {
         private frmClientePantallaPrincipal formularioPadre;
-        public frmVehiculosEliminar(frmClientePantallaPrincipal padre)
+        private int id;
+        public frmVehiculosEliminar(frmClientePantallaPrincipal padre, int id)
         {
             InitializeComponent();
             this.formularioPadre = padre;
+            this.id = id;
         }
 
 
@@ -40,7 +42,7 @@ namespace capaPresentacion.cliente
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            formularioPadre.abrirFormHijo(new frmVehiculos(formularioPadre));
+            formularioPadre.abrirFormHijo(new frmVehiculos(formularioPadre, id));
         }
 
         #endregion
