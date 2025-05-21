@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace capaPresentacion.cliente
 {
-    public partial class Form1 : Form
+    public partial class frmVehiculosEliminar : Form
     {
-        public Form1()
+        private frmClientePantallaPrincipal formularioPadre;
+        public frmVehiculosEliminar(frmClientePantallaPrincipal padre)
         {
             InitializeComponent();
+            this.formularioPadre = padre;
         }
     }
 }
