@@ -189,7 +189,7 @@ namespace capaPresentacion.cliente
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ingrese una imagen");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }
