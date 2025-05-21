@@ -100,7 +100,30 @@
             this.txtGarantia.TabIndex = 135;
             this.txtGarantia.Texts = "";
             this.txtGarantia.UnderlinedStyle = false;
-            this.txtGarantia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGarantia_KeyPress);
+            this.txtGarantia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
+            // 
+            // txtCostoTotal
+            // 
+            this.txtCostoTotal.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCostoTotal.BorderColor = System.Drawing.Color.Black;
+            this.txtCostoTotal.BorderFocusColor = System.Drawing.Color.Firebrick;
+            this.txtCostoTotal.BorderRadius = 0;
+            this.txtCostoTotal.BorderSize = 2;
+            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCostoTotal.Location = new System.Drawing.Point(407, 414);
+            this.txtCostoTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCostoTotal.Multiline = false;
+            this.txtCostoTotal.Name = "txtCostoTotal";
+            this.txtCostoTotal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCostoTotal.PasswordChar = false;
+            this.txtCostoTotal.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCostoTotal.PlaceholderText = "";
+            this.txtCostoTotal.Size = new System.Drawing.Size(380, 31);
+            this.txtCostoTotal.TabIndex = 134;
+            this.txtCostoTotal.Texts = "";
+            this.txtCostoTotal.UnderlinedStyle = false;
+            this.txtCostoTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtIVA
             // 
@@ -123,7 +146,7 @@
             this.txtIVA.TabIndex = 133;
             this.txtIVA.Texts = "";
             this.txtIVA.UnderlinedStyle = false;
-            this.txtIVA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIVA_KeyPress);
+            this.txtIVA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtCostoUnitario
             // 
@@ -146,7 +169,7 @@
             this.txtCostoUnitario.TabIndex = 132;
             this.txtCostoUnitario.Texts = "";
             this.txtCostoUnitario.UnderlinedStyle = false;
-            this.txtCostoUnitario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtCostoUnitario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtDescripcion
             // 
@@ -169,7 +192,7 @@
             this.txtDescripcion.TabIndex = 131;
             this.txtDescripcion.Texts = "";
             this.txtDescripcion.UnderlinedStyle = false;
-            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtTipo
             // 
@@ -192,7 +215,7 @@
             this.txtTipo.TabIndex = 130;
             this.txtTipo.Texts = "";
             this.txtTipo.UnderlinedStyle = false;
-            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txtNombre
             // 
@@ -215,7 +238,7 @@
             this.txtNombre.TabIndex = 129;
             this.txtNombre.Texts = "";
             this.txtNombre.UnderlinedStyle = false;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // lblGarantia
             // 

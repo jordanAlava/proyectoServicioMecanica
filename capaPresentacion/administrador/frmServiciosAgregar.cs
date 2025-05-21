@@ -21,9 +21,25 @@ namespace capaPresentacion
         {
             InitializeComponent();
             formularioPadre = padre;
+            this.ActiveControl = txtNombre;
+            txtNombre.Focus();
         }
 
-        classPuente objP = new classPuente();
+        void limpiar_formulario(Control control)
+        {
+            foreach (Control ctrl in control.Controls)
+            {
+                if (ctrl is TextBox)
+                    ((TextBox)ctrl).Clear();
+                else if (ctrl is ComboBox)
+                    ((ComboBox)ctrl).SelectedIndex = -1;
+                else if (ctrl is CheckBox)
+                    ((CheckBox)ctrl).Checked = false;
+                else if (ctrl.HasChildren)
+                    limpiar_formulario(ctrl);  // llamada recursiva
+            }
+        }
+
 
         #region D I S E Ñ O
         private void btnAtras_MouseEnter(object sender, EventArgs e)
@@ -48,18 +64,32 @@ namespace capaPresentacion
             formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
         }
 
-        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Control actual = sender as Control;
+                if (actual.Name != "txtGarantia")
+                {
+                    panel1.SelectNextControl(actual, true, true, true, false);
 
-                panel1.SelectNextControl(actual, true, true, true, false);
+                }
+                else
+                {
+                    btnAgregar_Click(sender, e);
+                }
                 e.Handled = true; // Para evitar beep al presionar Enter
             }
         }
 
 
+        #endregion
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Servicio Agregado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar_formulario(this);
+        }
 
 
         #endregion
