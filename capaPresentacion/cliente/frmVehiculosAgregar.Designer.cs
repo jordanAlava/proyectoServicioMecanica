@@ -53,6 +53,7 @@
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarVehiculo = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.grpFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrFoto)).BeginInit();
@@ -61,6 +62,7 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.grpFoto);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtCilindraje);
@@ -468,6 +470,27 @@
             this.lblAgregarVehiculo.TabIndex = 111;
             this.lblAgregarVehiculo.Text = "Agregar Vehículo";
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Silver;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.Black;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 24;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(830, 388);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.iconButton1.Size = new System.Drawing.Size(101, 29);
+            this.iconButton1.TabIndex = 147;
+            this.iconButton1.Text = "   &Cargar";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
             // frmVehiculosAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -512,5 +535,6 @@
         private System.Windows.Forms.GroupBox grpFoto;
         private System.Windows.Forms.PictureBox pctrFoto;
         private System.Windows.Forms.Label label3;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

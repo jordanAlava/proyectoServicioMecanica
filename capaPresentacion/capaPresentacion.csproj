@@ -171,6 +171,9 @@
     <EmbeddedResource Include="cliente\frmVehiculosAgregar.resx">
       <DependentUpon>frmVehiculosAgregar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cliente\frmVehiculosEditar.resx">
+      <DependentUpon>frmVehiculosEditar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formulariosLogInRegistro\frmIniciarSesion.resx">
       <DependentUpon>frmIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
