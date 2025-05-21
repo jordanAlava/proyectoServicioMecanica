@@ -98,5 +98,9 @@ namespace capaLogica
         {
             return operacion.filtrarServicios(tipo, dinero);
         }
+        public bool eliminarServicion(int idS)
+        {
+            return operacion.eliminarServicion(idS);
+        }
     }
 }

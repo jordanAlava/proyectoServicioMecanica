@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
+using capaLogica;
 
 namespace capaPresentacion.administrador
 {
     public partial class frmServiciosEditar : Form
     {
-
+        classPuente objP = new classPuente();
         private frmAdministradorPantallaPrincipal formularioPadre;
 
         public frmServiciosEditar(frmAdministradorPantallaPrincipal padre)
@@ -84,10 +86,112 @@ namespace capaPresentacion.administrador
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Servicio Editado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            limpiar_formulario(this);
+            try
+            {
+                // VALIDACIONES
+                string nombre = txtNombre.Texts, tipo = txtTipo.Texts, descripcion = txtDescripcion.Texts;
+                int iva = Convert.ToInt32(txtIVA.Texts), garantia = Convert.ToInt32(txtGarantia.Texts);
+                decimal costoU = Convert.ToDecimal(txtCostoUnitario.Texts), costoT = Math.Round(costoU * ((Convert.ToDecimal(iva)) / 100 + 1), 2);
+                lblCostoT.Text = costoT.ToString();
+                if (costoU < 0)
+                {
+                    MessageBox.Show("El costo unitario debe ser positivo...");
+                    txtCostoUnitario.Texts = "";
+                    return;
+                }
+                if (garantia < 0)
+                {
+                    MessageBox.Show("Los meses debe ser positivo...");
+                    txtIVA.Texts = "";
+                    return;
+                }
+                if (iva < 0)
+                {
+                    MessageBox.Show("El IVA debe ser positivo...");
+                    txtIVA.Texts = "";
+                    return;
+                }
+                if (!string.IsNullOrWhiteSpace(nombre) && !string.IsNullOrWhiteSpace(tipo) && !string.IsNullOrWhiteSpace(descripcion) && !string.IsNullOrWhiteSpace(txtIVA.Texts) && !string.IsNullOrWhiteSpace(txtGarantia.Texts) && !string.IsNullOrWhiteSpace(txtCostoUnitario.Texts))
+                {
+                    Servicio servicio = new Servicio
+                    {
+                        idServicio = Convert.ToInt32(txtBarraBusqueda.Texts.Trim()),
+                        nombreServicio = nombre,
+                        tipoServicio = tipo,
+                        descripcionServicio = descripcion,
+                        ivaServicio = iva,
+                        garantiaServicio = garantia,
+                        costoUnitarioServicio = costoU,
+                        costoTotalServicio = costoT
+                    };
+                    if (objP.modificarServicio(servicio))
+                    {
+                        MessageBox.Show("Servicio Editado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnAtras.PerformClick();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error, no se agregó el servicio");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Llene todos los campos...");
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("Ingreso los valores correctos (IVA, Garantia son números enteros");
+            }
+            
         }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(txtBarraBusqueda.Texts.Trim());
+                Servicio servicio = objP.buscarServicio(id);
+                if(servicio == null)
+                {
+                    pnlIngresoDatos.Visible = false;
+                    lblRegistroNoEncontrado.Visible = true; /// pongo MessageBox porque no se activa esto
+                    MessageBox.Show("Servicio no encontrado");
+                    return;
+                }
+                pnlIngresoDatos.Visible = true;
+                lblRegistroNoEncontrado.Visible = false;
+                txtNombre.Texts = servicio.nombreServicio;
+                txtTipo.Texts =servicio.tipoServicio;
+                txtDescripcion.Texts = servicio.descripcionServicio;
+                txtCostoUnitario.Texts = servicio.costoUnitarioServicio.ToString();
+                txtIVA.Texts = servicio.ivaServicio.ToString();
+                lblCostoT.Text = servicio.costoTotalServicio.ToString();
+                txtGarantia.Texts = servicio.garantiaServicio.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("El id es un número entero...");
+            }
+        }
 
+        private void txtBarraBusqueda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)Keys.Enter)
+            {
+                btnBuscar.PerformClick();
+            }
+        }
+
+        private void txtIVA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)Keys.Enter)
+            {
+                int iva = Convert.ToInt32(txtIVA.Texts);
+                decimal costoU = Convert.ToDecimal(txtCostoUnitario.Texts), costoT = Math.Round(costoU * ((Convert.ToDecimal(iva)) / 100 + 1), 2);
+                lblCostoT.Text = costoT.ToString();
+                txtGarantia.Focus();
+            }
+        }
     }
 }
