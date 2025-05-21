@@ -199,6 +199,7 @@
             this.pnlFormulario.Name = "pnlFormulario";
             this.pnlFormulario.Size = new System.Drawing.Size(1000, 681);
             this.pnlFormulario.TabIndex = 1;
+
             // 
             // frmAdministradorPantallaPrincipal
             // 

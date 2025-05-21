@@ -79,6 +79,12 @@
     <Compile Include="administrador\frmAdministradorPantallaPrincipal.Designer.cs">
       <DependentUpon>frmAdministradorPantallaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="cliente\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="cliente\frmClientePantallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

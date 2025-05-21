@@ -63,5 +63,10 @@ namespace capaPresentacion
             btnCerrarSesion.IconColor = Color.White;
 
         }
+
+        private void pnlFormulario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
