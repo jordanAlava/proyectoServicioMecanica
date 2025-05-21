@@ -88,7 +88,7 @@
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.lblAgregarVehiculo);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 1;
@@ -110,7 +110,7 @@
             this.btnCargarImagen.IconSize = 24;
             this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCargarImagen.Location = new System.Drawing.Point(1107, 478);
-            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(5);
             this.btnCargarImagen.Name = "btnCargarImagen";
             this.btnCargarImagen.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.btnCargarImagen.Size = new System.Drawing.Size(135, 36);
@@ -123,9 +123,9 @@
             // 
             this.grpFoto.Controls.Add(this.pctrFoto);
             this.grpFoto.Location = new System.Drawing.Point(787, 204);
-            this.grpFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpFoto.Margin = new System.Windows.Forms.Padding(4);
             this.grpFoto.Name = "grpFoto";
-            this.grpFoto.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpFoto.Padding = new System.Windows.Forms.Padding(4);
             this.grpFoto.Size = new System.Drawing.Size(455, 265);
             this.grpFoto.TabIndex = 146;
             this.grpFoto.TabStop = false;
@@ -133,7 +133,7 @@
             // pctrFoto
             // 
             this.pctrFoto.Location = new System.Drawing.Point(25, 22);
-            this.pctrFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctrFoto.Margin = new System.Windows.Forms.Padding(4);
             this.pctrFoto.Name = "pctrFoto";
             this.pctrFoto.Size = new System.Drawing.Size(403, 220);
             this.pctrFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,7 +161,7 @@
             this.txtCilindraje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCilindraje.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCilindraje.Location = new System.Drawing.Point(343, 689);
-            this.txtCilindraje.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCilindraje.Margin = new System.Windows.Forms.Padding(5);
             this.txtCilindraje.Multiline = false;
             this.txtCilindraje.Name = "txtCilindraje";
             this.txtCilindraje.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -192,7 +192,7 @@
             this.cmbxCombustible.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxCombustible.ListTextColor = System.Drawing.Color.Black;
             this.cmbxCombustible.Location = new System.Drawing.Point(343, 622);
-            this.cmbxCombustible.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxCombustible.Margin = new System.Windows.Forms.Padding(4);
             this.cmbxCombustible.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxCombustible.Name = "cmbxCombustible";
             this.cmbxCombustible.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -237,7 +237,7 @@
             this.cmbxSeguro.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxSeguro.ListTextColor = System.Drawing.Color.Black;
             this.cmbxSeguro.Location = new System.Drawing.Point(343, 553);
-            this.cmbxSeguro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxSeguro.Margin = new System.Windows.Forms.Padding(4);
             this.cmbxSeguro.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxSeguro.Name = "cmbxSeguro";
             this.cmbxSeguro.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -255,7 +255,7 @@
             this.txtNoChasis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoChasis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNoChasis.Location = new System.Drawing.Point(343, 489);
-            this.txtNoChasis.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNoChasis.Margin = new System.Windows.Forms.Padding(5);
             this.txtNoChasis.Multiline = false;
             this.txtNoChasis.Name = "txtNoChasis";
             this.txtNoChasis.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -277,7 +277,7 @@
             this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtColor.Location = new System.Drawing.Point(343, 422);
-            this.txtColor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(5);
             this.txtColor.Multiline = false;
             this.txtColor.Name = "txtColor";
             this.txtColor.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -300,7 +300,7 @@
             this.txtAnioFab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAnioFab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAnioFab.Location = new System.Drawing.Point(343, 358);
-            this.txtAnioFab.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtAnioFab.Margin = new System.Windows.Forms.Padding(5);
             this.txtAnioFab.Multiline = false;
             this.txtAnioFab.Name = "txtAnioFab";
             this.txtAnioFab.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -323,7 +323,7 @@
             this.txtModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtModelo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtModelo.Location = new System.Drawing.Point(343, 298);
-            this.txtModelo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtModelo.Margin = new System.Windows.Forms.Padding(5);
             this.txtModelo.Multiline = false;
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -346,7 +346,7 @@
             this.txtMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMarca.Location = new System.Drawing.Point(343, 236);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(5);
             this.txtMarca.Multiline = false;
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -369,7 +369,7 @@
             this.txtPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlaca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPlaca.Location = new System.Drawing.Point(343, 176);
-            this.txtPlaca.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPlaca.Margin = new System.Windows.Forms.Padding(5);
             this.txtPlaca.Multiline = false;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -501,7 +501,7 @@
             this.btnAgregar.IconSize = 36;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(960, 689);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
             this.btnAgregar.Size = new System.Drawing.Size(281, 58);
@@ -533,7 +533,7 @@
             this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVehiculosAgregar";
             this.Text = "frmVehiculosAgregar";
             this.panel1.ResumeLayout(false);
