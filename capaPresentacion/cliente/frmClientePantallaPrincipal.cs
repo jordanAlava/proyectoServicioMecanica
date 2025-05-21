@@ -1,4 +1,5 @@
 ﻿using capaPresentacion.cliente;
+using capaPresentacion.cliente.AgendaServicio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +63,11 @@ namespace capaPresentacion
         private void btnMisVehiculos_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new frmVehiculos(this));
+        }
+
+        private void btnAgendarServicio_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmAgendaServicios(this));
         }
     }
 }

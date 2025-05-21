@@ -153,6 +153,7 @@
             this.btnAgendarServicio.Text = "Agendar Servicio";
             this.btnAgendarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgendarServicio.UseVisualStyleBackColor = false;
+            this.btnAgendarServicio.Click += new System.EventHandler(this.btnAgendarServicio_Click);
             // 
             // btnMisVehiculos
             // 
