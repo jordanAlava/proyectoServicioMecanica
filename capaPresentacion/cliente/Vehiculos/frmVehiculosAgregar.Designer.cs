@@ -93,7 +93,6 @@
             this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 1;
             this.panel1.Click += new System.EventHandler(this.btnAtras_Click);
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
             this.panel1.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
             this.panel1.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
@@ -484,6 +483,10 @@
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.btnAtras.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnAtras_MouseDown);
+            this.btnAtras.MouseEnter += new System.EventHandler(this.btnAtras_MouseEnter);
+            this.btnAtras.MouseLeave += new System.EventHandler(this.btnAtras_MouseLeave);
             // 
             // btnAgregar
             // 

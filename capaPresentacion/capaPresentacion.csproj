@@ -79,34 +79,58 @@
     <Compile Include="administrador\frmAdministradorPantallaPrincipal.Designer.cs">
       <DependentUpon>frmAdministradorPantallaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaAgregar.Designer.cs">
+      <DependentUpon>frmAgendaAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaEditar.Designer.cs">
+      <DependentUpon>frmAgendaEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaEliminar.Designer.cs">
+      <DependentUpon>frmAgendaEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente\AgendaServicio\frmAgendaServicios.Designer.cs">
+      <DependentUpon>frmAgendaServicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="cliente\frmClientePantallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cliente\frmClientePantallaPrincipal.Designer.cs">
       <DependentUpon>frmClientePantallaPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="cliente\frmVehiculos.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cliente\frmVehiculos.Designer.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculos.Designer.cs">
       <DependentUpon>frmVehiculos.cs</DependentUpon>
     </Compile>
-    <Compile Include="cliente\frmVehiculosAgregar.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculosAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cliente\frmVehiculosAgregar.Designer.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculosAgregar.Designer.cs">
       <DependentUpon>frmVehiculosAgregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="cliente\frmVehiculosEditar.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculosEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cliente\frmVehiculosEditar.Designer.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculosEditar.Designer.cs">
       <DependentUpon>frmVehiculosEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="cliente\frmVehiculosEliminar.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculosEliminar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cliente\frmVehiculosEliminar.Designer.cs">
+    <Compile Include="cliente\Vehiculos\frmVehiculosEliminar.Designer.cs">
       <DependentUpon>frmVehiculosEliminar.cs</DependentUpon>
     </Compile>
     <Compile Include="formulariosLogInRegistro\frmIniciarSesion.cs">
@@ -162,19 +186,31 @@
     <EmbeddedResource Include="administrador\frmServiciosEliminar.resx">
       <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaAgregar.resx">
+      <DependentUpon>frmAgendaAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaEditar.resx">
+      <DependentUpon>frmAgendaEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaEliminar.resx">
+      <DependentUpon>frmAgendaEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaServicios.resx">
+      <DependentUpon>frmAgendaServicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cliente\frmClientePantallaPrincipal.resx">
       <DependentUpon>frmClientePantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cliente\frmVehiculos.resx">
+    <EmbeddedResource Include="cliente\Vehiculos\frmVehiculos.resx">
       <DependentUpon>frmVehiculos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cliente\frmVehiculosAgregar.resx">
+    <EmbeddedResource Include="cliente\Vehiculos\frmVehiculosAgregar.resx">
       <DependentUpon>frmVehiculosAgregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cliente\frmVehiculosEditar.resx">
+    <EmbeddedResource Include="cliente\Vehiculos\frmVehiculosEditar.resx">
       <DependentUpon>frmVehiculosEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cliente\frmVehiculosEliminar.resx">
+    <EmbeddedResource Include="cliente\Vehiculos\frmVehiculosEliminar.resx">
       <DependentUpon>frmVehiculosEliminar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formulariosLogInRegistro\frmIniciarSesion.resx">

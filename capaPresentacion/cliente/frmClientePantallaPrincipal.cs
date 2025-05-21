@@ -1,4 +1,5 @@
 ﻿using capaPresentacion.cliente;
+using capaPresentacion.cliente.AgendaServicio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +72,11 @@ namespace capaPresentacion
         private void frmClientePantallaPrincipal_Load(object sender, EventArgs e)
         {
             //MessageBox.Show($"ID: {idCliente}");
+        }
+
+        private void btnAgendarServicio_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new frmAgendaServicios(this));
         }
     }
 }
