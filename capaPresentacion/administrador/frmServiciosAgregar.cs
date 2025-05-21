@@ -46,6 +46,19 @@ namespace capaPresentacion
             formularioPadre.abrirFormHijo(new frmServicios(formularioPadre));
         }
 
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Control actual = sender as Control;
+
+                panel1.SelectNextControl(actual, true, true, true, false);
+                e.Handled = true; // Para evitar beep al presionar Enter
+            }
+        }
+
+
+
         #endregion
 
 
