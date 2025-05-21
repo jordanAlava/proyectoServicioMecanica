@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
+using capaLogica;
 
 namespace capaPresentacion
 {
@@ -20,7 +22,8 @@ namespace capaPresentacion
             InitializeComponent();
             formularioPadre = padre;
             this.ActiveControl = txtNombre;
-            txtNombre.Focus();
+            this.AcceptButton = new Button();
+            txtNombre.Controls[0].Focus();
         }
 
         void limpiar_formulario(Control control)
@@ -37,8 +40,6 @@ namespace capaPresentacion
                     limpiar_formulario(ctrl);  // llamada recursiva
             }
         }
-
-
 
 
         #region D I S E Ñ O
@@ -68,31 +69,128 @@ namespace capaPresentacion
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                Control actual = sender as Control;
-                if (actual.Name != "txtGarantia")
-                {
-                    panel1.SelectNextControl(actual, true, true, true, false);
-
-                }
-                else
-                {
-                    btnAgregar_Click(sender, e);
-                }
-                e.Handled = true; // Para evitar beep al presionar Enter
+                e.Handled = true;
+                txtTipo.Focus();
             }
         }
 
 
         #endregion
 
+        classPuente objP = new classPuente();
+
+
+        
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Servicio Agregado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            limpiar_formulario(this);
+            try
+            {
+                // VALIDACIONES
+                string nombre = txtNombre.Texts, tipo = txtTipo.Texts, descripcion = txtDescripcion.Texts;
+                int iva = Convert.ToInt32(txtIVA.Texts), garantia = Convert.ToInt32(txtGarantia.Texts);
+                decimal costoU = Convert.ToDecimal(txtCostoUnitario.Texts), costoT = Math.Round(costoU * ((Convert.ToDecimal(iva)) / 100 + 1), 2);
+                lblCostoT.Text = costoT.ToString();
+                if(!string.IsNullOrWhiteSpace(nombre) && !string.IsNullOrWhiteSpace(tipo) && !string.IsNullOrWhiteSpace(descripcion) && !string.IsNullOrWhiteSpace(txtIVA.Texts) && !string.IsNullOrWhiteSpace(txtGarantia.Texts) && !string.IsNullOrWhiteSpace(txtCostoUnitario.Texts))
+                {
+                    Servicio servicio = new Servicio
+                    {
+                        nombreServicio = nombre,
+                        tipoServicio = tipo,
+                        descripcionServicio = descripcion,
+                        ivaServicio = iva,
+                        garantiaServicio = garantia,
+                        costoUnitarioServicio = costoU,
+                        costoTotalServicio = costoT
+                    };
+                    if (objP.ingresarServicio(servicio))
+                    {
+                        MessageBox.Show("Servicio agregado correctamente");
+                        btnAtras.PerformClick();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error, no se agregó el servicio");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Llene todos los campos...");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ingreso los valores correctos (IVA, Garantia son números enteros");
+            }
         }
 
+        private void txtIVA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(e.KeyChar == (Char)Keys.Enter)
+                {
+                    int iva = Convert.ToInt32(txtIVA.Texts);
+                    decimal costoU = Convert.ToDecimal(txtCostoUnitario.Texts), costoT = costoU * ((Convert.ToDecimal(iva)) / 100 + 1);
+                    lblCostoT.Text = costoT.ToString();
+                    e.Handled = true;
+                    txtGarantia.Focus();
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Ingreso los valores correctos (IVA, Garantia son números enteros");
+            }
+            
+        }
 
+        private void txtGarantia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                btnAgregar.PerformClick();
+            }
+        }
 
+        private void txtTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtDescripcion.Focus();
+            }
+        }
 
+        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtCostoUnitario.Focus();
+            }
+        }
+
+        private void txtCostoUnitario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtIVA.Focus();
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtTipo.Focus();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            txtNombre.Focus();
+        }
     }
 }
