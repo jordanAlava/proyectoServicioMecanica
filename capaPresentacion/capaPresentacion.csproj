@@ -186,6 +186,15 @@
     <EmbeddedResource Include="administrador\frmServiciosEliminar.resx">
       <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaAgregar.resx">
+      <DependentUpon>frmAgendaAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaEditar.resx">
+      <DependentUpon>frmAgendaEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaEliminar.resx">
+      <DependentUpon>frmAgendaEliminar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaServicios.resx">
       <DependentUpon>frmAgendaServicios.cs</DependentUpon>
     </EmbeddedResource>
