@@ -93,6 +93,7 @@
             this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            this.btnCerrarSesion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnCerrarSesion_MouseDown);
             // 
             // panel1
             // 
