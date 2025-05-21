@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.grpFoto = new System.Windows.Forms.GroupBox();
             this.pctrFoto = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblFoto = new System.Windows.Forms.Label();
             this.txtCilindraje = new RJCodeAdvance.RJControls.RJTextBox();
             this.cmbxCombustible = new RJCodeAdvance.RJControls.RJComboBox();
             this.lblCombustible = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarVehiculo = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnCargarImagen = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.grpFoto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrFoto)).BeginInit();
@@ -62,9 +62,9 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.btnCargarImagen);
             this.panel1.Controls.Add(this.grpFoto);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblFoto);
             this.panel1.Controls.Add(this.txtCilindraje);
             this.panel1.Controls.Add(this.cmbxCombustible);
             this.panel1.Controls.Add(this.lblCombustible);
@@ -108,15 +108,15 @@
             this.pctrFoto.TabIndex = 147;
             this.pctrFoto.TabStop = false;
             // 
-            // label3
+            // lblFoto
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(586, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
-            this.label3.TabIndex = 145;
-            this.label3.Text = "Foto";
+            this.lblFoto.AutoSize = true;
+            this.lblFoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoto.Location = new System.Drawing.Point(586, 143);
+            this.lblFoto.Name = "lblFoto";
+            this.lblFoto.Size = new System.Drawing.Size(46, 20);
+            this.lblFoto.TabIndex = 145;
+            this.lblFoto.Text = "Foto";
             // 
             // txtCilindraje
             // 
@@ -470,26 +470,26 @@
             this.lblAgregarVehiculo.TabIndex = 111;
             this.lblAgregarVehiculo.Text = "Agregar Vehículo";
             // 
-            // iconButton1
+            // btnCargarImagen
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Silver;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Black;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 24;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(830, 388);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(101, 29);
-            this.iconButton1.TabIndex = 147;
-            this.iconButton1.Text = "   &Cargar";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnCargarImagen.BackColor = System.Drawing.Color.Silver;
+            this.btnCargarImagen.FlatAppearance.BorderSize = 0;
+            this.btnCargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarImagen.ForeColor = System.Drawing.Color.Black;
+            this.btnCargarImagen.IconChar = FontAwesome.Sharp.IconChar.FileArchive;
+            this.btnCargarImagen.IconColor = System.Drawing.Color.Black;
+            this.btnCargarImagen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCargarImagen.IconSize = 24;
+            this.btnCargarImagen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargarImagen.Location = new System.Drawing.Point(830, 388);
+            this.btnCargarImagen.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCargarImagen.Name = "btnCargarImagen";
+            this.btnCargarImagen.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnCargarImagen.Size = new System.Drawing.Size(101, 29);
+            this.btnCargarImagen.TabIndex = 147;
+            this.btnCargarImagen.Text = "   &Cargar";
+            this.btnCargarImagen.UseVisualStyleBackColor = false;
             // 
             // frmVehiculosAgregar
             // 
@@ -534,7 +534,7 @@
         private RJCodeAdvance.RJControls.RJComboBox cmbxCombustible;
         private System.Windows.Forms.GroupBox grpFoto;
         private System.Windows.Forms.PictureBox pctrFoto;
-        private System.Windows.Forms.Label label3;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label lblFoto;
+        private FontAwesome.Sharp.IconButton btnCargarImagen;
     }
 }
