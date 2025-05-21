@@ -90,6 +90,24 @@ namespace capaPresentacion
                 string nombre = txtNombre.Texts, tipo = txtTipo.Texts, descripcion = txtDescripcion.Texts;
                 int iva = Convert.ToInt32(txtIVA.Texts), garantia = Convert.ToInt32(txtGarantia.Texts);
                 decimal costoU = Convert.ToDecimal(txtCostoUnitario.Texts), costoT = Math.Round(costoU * ((Convert.ToDecimal(iva)) / 100 + 1), 2);
+                if(costoU < 0)
+                {
+                    MessageBox.Show("El costo unitario debe ser positivo...");
+                    txtCostoUnitario.Texts = "";
+                    return;
+                }
+                if (garantia < 0)
+                {
+                    MessageBox.Show("Los meses debe ser positivo...");
+                    txtIVA.Texts = "";
+                    return;
+                }
+                if (iva < 0)
+                {
+                    MessageBox.Show("El IVA debe ser positivo...");
+                    txtIVA.Texts = "";
+                    return;
+                }
                 lblCostoT.Text = costoT.ToString();
                 if(!string.IsNullOrWhiteSpace(nombre) && !string.IsNullOrWhiteSpace(tipo) && !string.IsNullOrWhiteSpace(descripcion) && !string.IsNullOrWhiteSpace(txtIVA.Texts) && !string.IsNullOrWhiteSpace(txtGarantia.Texts) && !string.IsNullOrWhiteSpace(txtCostoUnitario.Texts))
                 {

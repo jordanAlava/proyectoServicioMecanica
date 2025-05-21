@@ -653,8 +653,29 @@ namespace capaDato
          *  4   List<string> RetornarTiposServicios
          *  5   List<Servicio> listarServicios
          *  6   list<Servicio> filtrarServicios
+         *  7   bool eliminarServicio
+         *  
          */
 
+        public bool eliminarServicion(int idS)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                DELETE FROM Servicio WHERE idServicio = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@id", idS);
+                int servicioEliminado = sqlC.ExecuteNonQuery();
+                return servicioEliminado == 1;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
         public List<Servicio> filtrarServicios(string tipo, decimal dinero)
         {
             List<Servicio> filtro = new List<Servicio>();
@@ -765,6 +786,7 @@ namespace capaDato
                 SELECT *
                 FROM Servicio
                 WHERE idServicio = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@id", idSer);
                 SqlDataReader reader = sqlC.ExecuteReader();
                 if (reader.Read())
                 {

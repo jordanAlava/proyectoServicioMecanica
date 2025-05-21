@@ -62,8 +62,9 @@
             this.panel1.Controls.Add(this.txtBarraBusqueda);
             this.panel1.Controls.Add(this.lblAgregarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 681);
+            this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 2;
             // 
             // pnlIngresoDatos
@@ -86,9 +87,10 @@
             this.pnlIngresoDatos.Controls.Add(this.lblDescripcion);
             this.pnlIngresoDatos.Controls.Add(this.lblTipo);
             this.pnlIngresoDatos.Controls.Add(this.lblNombre);
-            this.pnlIngresoDatos.Location = new System.Drawing.Point(0, 182);
+            this.pnlIngresoDatos.Location = new System.Drawing.Point(0, 224);
+            this.pnlIngresoDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlIngresoDatos.Name = "pnlIngresoDatos";
-            this.pnlIngresoDatos.Size = new System.Drawing.Size(1000, 439);
+            this.pnlIngresoDatos.Size = new System.Drawing.Size(1333, 540);
             this.pnlIngresoDatos.TabIndex = 140;
             // 
             // btnEliminar
@@ -105,15 +107,16 @@
             this.btnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminar.IconSize = 36;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(720, 380);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Location = new System.Drawing.Point(960, 468);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnEliminar.Size = new System.Drawing.Size(211, 47);
+            this.btnEliminar.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnEliminar.Size = new System.Drawing.Size(281, 58);
             this.btnEliminar.TabIndex = 159;
             this.btnEliminar.Text = "&Confirmar Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAtras
             // 
@@ -131,10 +134,10 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(590, 385);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(787, 474);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.Size = new System.Drawing.Size(96, 47);
             this.btnAtras.TabIndex = 158;
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -147,87 +150,81 @@
             // lblGarantiaValor
             // 
             this.lblGarantiaValor.AutoSize = true;
-            this.lblGarantiaValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGarantiaValor.Location = new System.Drawing.Point(429, 327);
+            this.lblGarantiaValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGarantiaValor.Location = new System.Drawing.Point(572, 402);
+            this.lblGarantiaValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGarantiaValor.Name = "lblGarantiaValor";
-            this.lblGarantiaValor.Size = new System.Drawing.Size(95, 22);
+            this.lblGarantiaValor.Size = new System.Drawing.Size(0, 25);
             this.lblGarantiaValor.TabIndex = 157;
-            this.lblGarantiaValor.Text = "# VALOR #";
-            this.lblGarantiaValor.Visible = false;
             // 
             // lblCostoTotalValor
             // 
             this.lblCostoTotalValor.AutoSize = true;
-            this.lblCostoTotalValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoTotalValor.Location = new System.Drawing.Point(429, 270);
+            this.lblCostoTotalValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostoTotalValor.Location = new System.Drawing.Point(572, 332);
+            this.lblCostoTotalValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCostoTotalValor.Name = "lblCostoTotalValor";
-            this.lblCostoTotalValor.Size = new System.Drawing.Size(95, 22);
+            this.lblCostoTotalValor.Size = new System.Drawing.Size(0, 25);
             this.lblCostoTotalValor.TabIndex = 156;
-            this.lblCostoTotalValor.Text = "# VALOR #";
-            this.lblCostoTotalValor.Visible = false;
             // 
             // lblIvaValor
             // 
             this.lblIvaValor.AutoSize = true;
-            this.lblIvaValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIvaValor.Location = new System.Drawing.Point(429, 216);
+            this.lblIvaValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIvaValor.Location = new System.Drawing.Point(572, 266);
+            this.lblIvaValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIvaValor.Name = "lblIvaValor";
-            this.lblIvaValor.Size = new System.Drawing.Size(95, 22);
+            this.lblIvaValor.Size = new System.Drawing.Size(0, 25);
             this.lblIvaValor.TabIndex = 155;
-            this.lblIvaValor.Text = "# VALOR #";
-            this.lblIvaValor.Visible = false;
             // 
             // lblCostoUnitarioValor
             // 
             this.lblCostoUnitarioValor.AutoSize = true;
-            this.lblCostoUnitarioValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoUnitarioValor.Location = new System.Drawing.Point(429, 164);
+            this.lblCostoUnitarioValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostoUnitarioValor.Location = new System.Drawing.Point(572, 202);
+            this.lblCostoUnitarioValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCostoUnitarioValor.Name = "lblCostoUnitarioValor";
-            this.lblCostoUnitarioValor.Size = new System.Drawing.Size(95, 22);
+            this.lblCostoUnitarioValor.Size = new System.Drawing.Size(0, 25);
             this.lblCostoUnitarioValor.TabIndex = 154;
-            this.lblCostoUnitarioValor.Text = "# VALOR #";
-            this.lblCostoUnitarioValor.Visible = false;
             // 
             // lblDescripcionValor
             // 
             this.lblDescripcionValor.AutoSize = true;
-            this.lblDescripcionValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionValor.Location = new System.Drawing.Point(429, 115);
+            this.lblDescripcionValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionValor.Location = new System.Drawing.Point(572, 142);
+            this.lblDescripcionValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcionValor.Name = "lblDescripcionValor";
-            this.lblDescripcionValor.Size = new System.Drawing.Size(95, 22);
+            this.lblDescripcionValor.Size = new System.Drawing.Size(0, 25);
             this.lblDescripcionValor.TabIndex = 153;
-            this.lblDescripcionValor.Text = "# VALOR #";
-            this.lblDescripcionValor.Visible = false;
             // 
             // lblTipoValor
             // 
             this.lblTipoValor.AutoSize = true;
-            this.lblTipoValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoValor.Location = new System.Drawing.Point(429, 65);
+            this.lblTipoValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoValor.Location = new System.Drawing.Point(572, 80);
+            this.lblTipoValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoValor.Name = "lblTipoValor";
-            this.lblTipoValor.Size = new System.Drawing.Size(95, 22);
+            this.lblTipoValor.Size = new System.Drawing.Size(0, 25);
             this.lblTipoValor.TabIndex = 152;
-            this.lblTipoValor.Text = "# VALOR #";
-            this.lblTipoValor.Visible = false;
             // 
             // lblNombreValor
             // 
             this.lblNombreValor.AutoSize = true;
-            this.lblNombreValor.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreValor.Location = new System.Drawing.Point(429, 16);
+            this.lblNombreValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreValor.Location = new System.Drawing.Point(572, 20);
+            this.lblNombreValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombreValor.Name = "lblNombreValor";
-            this.lblNombreValor.Size = new System.Drawing.Size(95, 22);
+            this.lblNombreValor.Size = new System.Drawing.Size(0, 25);
             this.lblNombreValor.TabIndex = 151;
-            this.lblNombreValor.Text = "# VALOR #";
-            this.lblNombreValor.Visible = false;
             // 
             // lblRegistroNoEncontrado
             // 
             this.lblRegistroNoEncontrado.AutoSize = true;
-            this.lblRegistroNoEncontrado.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistroNoEncontrado.Location = new System.Drawing.Point(412, 51);
+            this.lblRegistroNoEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistroNoEncontrado.Location = new System.Drawing.Point(549, 63);
+            this.lblRegistroNoEncontrado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistroNoEncontrado.Name = "lblRegistroNoEncontrado";
-            this.lblRegistroNoEncontrado.Size = new System.Drawing.Size(202, 22);
+            this.lblRegistroNoEncontrado.Size = new System.Drawing.Size(215, 25);
             this.lblRegistroNoEncontrado.TabIndex = 150;
             this.lblRegistroNoEncontrado.Text = "Registro no Encontrado";
             this.lblRegistroNoEncontrado.Visible = false;
@@ -236,9 +233,10 @@
             // 
             this.lblGarantia.AutoSize = true;
             this.lblGarantia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGarantia.Location = new System.Drawing.Point(208, 327);
+            this.lblGarantia.Location = new System.Drawing.Point(277, 402);
+            this.lblGarantia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGarantia.Name = "lblGarantia";
-            this.lblGarantia.Size = new System.Drawing.Size(148, 20);
+            this.lblGarantia.Size = new System.Drawing.Size(179, 25);
             this.lblGarantia.TabIndex = 142;
             this.lblGarantia.Text = "Garantía (meses)";
             // 
@@ -246,9 +244,10 @@
             // 
             this.lblCostoTotal.AutoSize = true;
             this.lblCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoTotal.Location = new System.Drawing.Point(208, 270);
+            this.lblCostoTotal.Location = new System.Drawing.Point(277, 332);
+            this.lblCostoTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCostoTotal.Name = "lblCostoTotal";
-            this.lblCostoTotal.Size = new System.Drawing.Size(101, 20);
+            this.lblCostoTotal.Size = new System.Drawing.Size(124, 25);
             this.lblCostoTotal.TabIndex = 141;
             this.lblCostoTotal.Text = "Costo Total";
             // 
@@ -256,9 +255,10 @@
             // 
             this.lblIva.AutoSize = true;
             this.lblIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIva.Location = new System.Drawing.Point(208, 216);
+            this.lblIva.Location = new System.Drawing.Point(277, 266);
+            this.lblIva.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIva.Name = "lblIva";
-            this.lblIva.Size = new System.Drawing.Size(39, 20);
+            this.lblIva.Size = new System.Drawing.Size(48, 25);
             this.lblIva.TabIndex = 140;
             this.lblIva.Text = "IVA";
             // 
@@ -266,9 +266,10 @@
             // 
             this.lblCostoUnitario.AutoSize = true;
             this.lblCostoUnitario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoUnitario.Location = new System.Drawing.Point(208, 164);
+            this.lblCostoUnitario.Location = new System.Drawing.Point(277, 202);
+            this.lblCostoUnitario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCostoUnitario.Name = "lblCostoUnitario";
-            this.lblCostoUnitario.Size = new System.Drawing.Size(124, 20);
+            this.lblCostoUnitario.Size = new System.Drawing.Size(149, 25);
             this.lblCostoUnitario.TabIndex = 139;
             this.lblCostoUnitario.Text = "Costo Unitario";
             // 
@@ -276,9 +277,10 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(208, 115);
+            this.lblDescripcion.Location = new System.Drawing.Point(277, 142);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(103, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(125, 25);
             this.lblDescripcion.TabIndex = 138;
             this.lblDescripcion.Text = "Descripción";
             // 
@@ -286,9 +288,10 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(208, 65);
+            this.lblTipo.Location = new System.Drawing.Point(277, 80);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(43, 20);
+            this.lblTipo.Size = new System.Drawing.Size(55, 25);
             this.lblTipo.TabIndex = 137;
             this.lblTipo.Text = "Tipo";
             // 
@@ -296,9 +299,10 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(208, 16);
+            this.lblNombre.Location = new System.Drawing.Point(277, 20);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(168, 20);
+            this.lblNombre.Size = new System.Drawing.Size(206, 25);
             this.lblNombre.TabIndex = 136;
             this.lblNombre.Text = "Nombre del Servicio";
             // 
@@ -316,14 +320,15 @@
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 24;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(705, 116);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Location = new System.Drawing.Point(940, 143);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(115, 37);
             this.btnBuscar.TabIndex = 139;
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBarraBusqueda
             // 
@@ -335,15 +340,15 @@
             this.txtBarraBusqueda.BorderSize = 2;
             this.txtBarraBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarraBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBarraBusqueda.Location = new System.Drawing.Point(212, 115);
-            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBarraBusqueda.Location = new System.Drawing.Point(283, 142);
+            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtBarraBusqueda.Multiline = false;
             this.txtBarraBusqueda.Name = "txtBarraBusqueda";
-            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtBarraBusqueda.PasswordChar = false;
             this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtBarraBusqueda.PlaceholderText = "Buscar por ID";
-            this.txtBarraBusqueda.Size = new System.Drawing.Size(485, 31);
+            this.txtBarraBusqueda.Size = new System.Drawing.Size(647, 39);
             this.txtBarraBusqueda.TabIndex = 137;
             this.txtBarraBusqueda.Texts = "";
             this.txtBarraBusqueda.UnderlinedStyle = false;
@@ -352,21 +357,23 @@
             // 
             this.lblAgregarServicio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAgregarServicio.AutoSize = true;
-            this.lblAgregarServicio.Font = new System.Drawing.Font("Montserrat Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgregarServicio.ForeColor = System.Drawing.Color.Black;
-            this.lblAgregarServicio.Location = new System.Drawing.Point(67, 55);
+            this.lblAgregarServicio.Location = new System.Drawing.Point(89, 68);
+            this.lblAgregarServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgregarServicio.Name = "lblAgregarServicio";
-            this.lblAgregarServicio.Size = new System.Drawing.Size(264, 37);
+            this.lblAgregarServicio.Size = new System.Drawing.Size(289, 39);
             this.lblAgregarServicio.TabIndex = 111;
             this.lblAgregarServicio.Text = "Eliminar Servicio";
             // 
             // frmServiciosEliminar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 681);
+            this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmServiciosEliminar";
             this.Text = "frmServiciosEliminar";
             this.panel1.ResumeLayout(false);
