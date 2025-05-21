@@ -22,7 +22,8 @@ namespace capaPresentacion
             InitializeComponent();
             formularioPadre = padre;
             this.ActiveControl = txtNombre;
-            txtNombre.Focus();
+            this.AcceptButton = new Button();
+            txtNombre.Controls[0].Focus();
         }
 
         void limpiar_formulario(Control control)
@@ -68,31 +69,18 @@ namespace capaPresentacion
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                Control actual = sender as Control;
-                if (actual.Name != "txtGarantia")
-                {
-                    panel1.SelectNextControl(actual, true, true, true, false);
-
-                }
-                else
-                {
-                    btnAgregar_Click(sender, e);
-                }
-                e.Handled = true; // Para evitar beep al presionar Enter
+                e.Handled = true;
+                txtTipo.Focus();
             }
         }
 
 
         #endregion
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Servicio Agregado Exitósamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            limpiar_formulario(this);
-        }
+        classPuente objP = new classPuente();
 
 
-        #endregion
+        
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -145,6 +133,7 @@ namespace capaPresentacion
                     int iva = Convert.ToInt32(txtIVA.Texts);
                     decimal costoU = Convert.ToDecimal(txtCostoUnitario.Texts), costoT = costoU * ((Convert.ToDecimal(iva)) / 100 + 1);
                     lblCostoT.Text = costoT.ToString();
+                    e.Handled = true;
                     txtGarantia.Focus();
                 }
             }catch(Exception ex)
@@ -158,8 +147,47 @@ namespace capaPresentacion
         {
             if(e.KeyChar == (Char)Keys.Enter)
             {
+                e.Handled = true;
                 btnAgregar.PerformClick();
             }
         }
+
+        private void txtTipo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtDescripcion.Focus();
+            }
+        }
+
+        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtCostoUnitario.Focus();
+            }
+        }
+
+        private void txtCostoUnitario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtIVA.Focus();
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (Char)Keys.Enter)
+            {
+                e.Handled = true;
+                txtTipo.Focus();
+            }
+        }
+
+        
     }
 }

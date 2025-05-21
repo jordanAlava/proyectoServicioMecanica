@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCostoT = new System.Windows.Forms.Label();
             this.txtGarantia = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtIVA = new RJCodeAdvance.RJControls.RJTextBox();
             this.txtCostoUnitario = new RJCodeAdvance.RJControls.RJTextBox();
@@ -47,7 +48,6 @@
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.btnAgregar = new FontAwesome.Sharp.IconButton();
             this.lblAgregarServicio = new System.Windows.Forms.Label();
-            this.lblCostoT = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,10 +74,20 @@
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.lblAgregarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 0;
+            // 
+            // lblCostoT
+            // 
+            this.lblCostoT.AutoSize = true;
+            this.lblCostoT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostoT.Location = new System.Drawing.Point(538, 510);
+            this.lblCostoT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCostoT.Name = "lblCostoT";
+            this.lblCostoT.Size = new System.Drawing.Size(0, 25);
+            this.lblCostoT.TabIndex = 136;
             // 
             // txtGarantia
             // 
@@ -89,7 +99,7 @@
             this.txtGarantia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGarantia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtGarantia.Location = new System.Drawing.Point(543, 580);
-            this.txtGarantia.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtGarantia.Margin = new System.Windows.Forms.Padding(5);
             this.txtGarantia.Multiline = false;
             this.txtGarantia.Name = "txtGarantia";
             this.txtGarantia.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -102,29 +112,6 @@
             this.txtGarantia.UnderlinedStyle = false;
             this.txtGarantia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
-            // txtCostoTotal
-            // 
-            this.txtCostoTotal.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCostoTotal.BorderColor = System.Drawing.Color.Black;
-            this.txtCostoTotal.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtCostoTotal.BorderRadius = 0;
-            this.txtCostoTotal.BorderSize = 2;
-            this.txtCostoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCostoTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCostoTotal.Location = new System.Drawing.Point(407, 414);
-            this.txtCostoTotal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCostoTotal.Multiline = false;
-            this.txtCostoTotal.Name = "txtCostoTotal";
-            this.txtCostoTotal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCostoTotal.PasswordChar = false;
-            this.txtCostoTotal.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCostoTotal.PlaceholderText = "";
-            this.txtCostoTotal.Size = new System.Drawing.Size(380, 31);
-            this.txtCostoTotal.TabIndex = 134;
-            this.txtCostoTotal.Texts = "";
-            this.txtCostoTotal.UnderlinedStyle = false;
-            this.txtCostoTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
-            // 
             // txtIVA
             // 
             this.txtIVA.BackColor = System.Drawing.SystemColors.Window;
@@ -135,7 +122,7 @@
             this.txtIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIVA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtIVA.Location = new System.Drawing.Point(543, 443);
-            this.txtIVA.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtIVA.Margin = new System.Windows.Forms.Padding(5);
             this.txtIVA.Multiline = false;
             this.txtIVA.Name = "txtIVA";
             this.txtIVA.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -146,7 +133,7 @@
             this.txtIVA.TabIndex = 133;
             this.txtIVA.Texts = "";
             this.txtIVA.UnderlinedStyle = false;
-            this.txtIVA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            this.txtIVA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIVA_KeyPress);
             // 
             // txtCostoUnitario
             // 
@@ -158,7 +145,7 @@
             this.txtCostoUnitario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCostoUnitario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCostoUnitario.Location = new System.Drawing.Point(543, 379);
-            this.txtCostoUnitario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCostoUnitario.Margin = new System.Windows.Forms.Padding(5);
             this.txtCostoUnitario.Multiline = false;
             this.txtCostoUnitario.Name = "txtCostoUnitario";
             this.txtCostoUnitario.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -169,7 +156,7 @@
             this.txtCostoUnitario.TabIndex = 132;
             this.txtCostoUnitario.Texts = "";
             this.txtCostoUnitario.UnderlinedStyle = false;
-            this.txtCostoUnitario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
+            this.txtCostoUnitario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoUnitario_KeyPress);
             // 
             // txtDescripcion
             // 
@@ -181,7 +168,7 @@
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDescripcion.Location = new System.Drawing.Point(543, 319);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(5);
             this.txtDescripcion.Multiline = false;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -192,7 +179,7 @@
             this.txtDescripcion.TabIndex = 131;
             this.txtDescripcion.Texts = "";
             this.txtDescripcion.UnderlinedStyle = false;
-            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcion_KeyPress);
             // 
             // txtTipo
             // 
@@ -204,7 +191,7 @@
             this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTipo.Location = new System.Drawing.Point(543, 257);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(5);
             this.txtTipo.Multiline = false;
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -215,7 +202,7 @@
             this.txtTipo.TabIndex = 130;
             this.txtTipo.Texts = "";
             this.txtTipo.UnderlinedStyle = false;
-            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
+            this.txtTipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTipo_KeyPress);
             // 
             // txtNombre
             // 
@@ -227,7 +214,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNombre.Location = new System.Drawing.Point(543, 197);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombre.Multiline = false;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -238,7 +225,8 @@
             this.txtNombre.TabIndex = 129;
             this.txtNombre.Texts = "";
             this.txtNombre.UnderlinedStyle = false;
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+
             // 
             // lblGarantia
             // 
@@ -381,7 +369,7 @@
             this.btnAgregar.IconSize = 36;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(960, 689);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
             this.btnAgregar.Size = new System.Drawing.Size(281, 58);
@@ -402,16 +390,6 @@
             this.lblAgregarServicio.TabIndex = 111;
             this.lblAgregarServicio.Text = "Agregar Servicio";
             // 
-            // lblCostoT
-            // 
-            this.lblCostoT.AutoSize = true;
-            this.lblCostoT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoT.Location = new System.Drawing.Point(538, 510);
-            this.lblCostoT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCostoT.Name = "lblCostoT";
-            this.lblCostoT.Size = new System.Drawing.Size(0, 25);
-            this.lblCostoT.TabIndex = 136;
-            // 
             // frmServiciosAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -419,7 +397,7 @@
             this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmServiciosAgregar";
             this.Text = "serviciosAgregar";
             this.panel1.ResumeLayout(false);
