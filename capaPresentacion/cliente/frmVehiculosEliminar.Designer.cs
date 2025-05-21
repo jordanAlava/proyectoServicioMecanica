@@ -345,91 +345,82 @@
             // 
             this.lblPlacaValor.AutoSize = true;
             this.lblPlacaValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlacaValor.Location = new System.Drawing.Point(253, 16);
+            this.lblPlacaValor.Location = new System.Drawing.Point(256, 16);
             this.lblPlacaValor.Name = "lblPlacaValor";
-            this.lblPlacaValor.Size = new System.Drawing.Size(42, 20);
+            this.lblPlacaValor.Size = new System.Drawing.Size(0, 20);
             this.lblPlacaValor.TabIndex = 152;
-            this.lblPlacaValor.Text = "valor";
             // 
             // lblMarcaValor
             // 
             this.lblMarcaValor.AutoSize = true;
             this.lblMarcaValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarcaValor.Location = new System.Drawing.Point(253, 65);
+            this.lblMarcaValor.Location = new System.Drawing.Point(256, 65);
             this.lblMarcaValor.Name = "lblMarcaValor";
-            this.lblMarcaValor.Size = new System.Drawing.Size(42, 20);
+            this.lblMarcaValor.Size = new System.Drawing.Size(0, 20);
             this.lblMarcaValor.TabIndex = 174;
-            this.lblMarcaValor.Text = "valor";
             // 
             // lblModeloValor
             // 
             this.lblModeloValor.AutoSize = true;
             this.lblModeloValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModeloValor.Location = new System.Drawing.Point(253, 115);
+            this.lblModeloValor.Location = new System.Drawing.Point(256, 115);
             this.lblModeloValor.Name = "lblModeloValor";
-            this.lblModeloValor.Size = new System.Drawing.Size(42, 20);
+            this.lblModeloValor.Size = new System.Drawing.Size(0, 20);
             this.lblModeloValor.TabIndex = 175;
-            this.lblModeloValor.Text = "valor";
             // 
             // lblAnioFabValor
             // 
             this.lblAnioFabValor.AutoSize = true;
             this.lblAnioFabValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnioFabValor.Location = new System.Drawing.Point(253, 164);
+            this.lblAnioFabValor.Location = new System.Drawing.Point(256, 164);
             this.lblAnioFabValor.Name = "lblAnioFabValor";
-            this.lblAnioFabValor.Size = new System.Drawing.Size(42, 20);
+            this.lblAnioFabValor.Size = new System.Drawing.Size(0, 20);
             this.lblAnioFabValor.TabIndex = 176;
-            this.lblAnioFabValor.Text = "valor";
             // 
             // lblCombustibleValor
             // 
             this.lblCombustibleValor.AutoSize = true;
             this.lblCombustibleValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCombustibleValor.Location = new System.Drawing.Point(253, 378);
+            this.lblCombustibleValor.Location = new System.Drawing.Point(256, 378);
             this.lblCombustibleValor.Name = "lblCombustibleValor";
-            this.lblCombustibleValor.Size = new System.Drawing.Size(42, 20);
+            this.lblCombustibleValor.Size = new System.Drawing.Size(0, 20);
             this.lblCombustibleValor.TabIndex = 180;
-            this.lblCombustibleValor.Text = "valor";
             // 
             // lblSeguroValor
             // 
             this.lblSeguroValor.AutoSize = true;
             this.lblSeguroValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeguroValor.Location = new System.Drawing.Point(253, 322);
+            this.lblSeguroValor.Location = new System.Drawing.Point(256, 322);
             this.lblSeguroValor.Name = "lblSeguroValor";
-            this.lblSeguroValor.Size = new System.Drawing.Size(42, 20);
+            this.lblSeguroValor.Size = new System.Drawing.Size(0, 20);
             this.lblSeguroValor.TabIndex = 179;
-            this.lblSeguroValor.Text = "valor";
             // 
             // lblNoChasisValor
             // 
             this.lblNoChasisValor.AutoSize = true;
             this.lblNoChasisValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoChasisValor.Location = new System.Drawing.Point(253, 270);
+            this.lblNoChasisValor.Location = new System.Drawing.Point(256, 270);
             this.lblNoChasisValor.Name = "lblNoChasisValor";
-            this.lblNoChasisValor.Size = new System.Drawing.Size(42, 20);
+            this.lblNoChasisValor.Size = new System.Drawing.Size(0, 20);
             this.lblNoChasisValor.TabIndex = 178;
-            this.lblNoChasisValor.Text = "valor";
             // 
             // lblColorValor
             // 
             this.lblColorValor.AutoSize = true;
             this.lblColorValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColorValor.Location = new System.Drawing.Point(253, 216);
+            this.lblColorValor.Location = new System.Drawing.Point(256, 216);
             this.lblColorValor.Name = "lblColorValor";
-            this.lblColorValor.Size = new System.Drawing.Size(42, 20);
+            this.lblColorValor.Size = new System.Drawing.Size(0, 20);
             this.lblColorValor.TabIndex = 177;
-            this.lblColorValor.Text = "valor";
             // 
             // lblCilindrajeValor
             // 
             this.lblCilindrajeValor.AutoSize = true;
             this.lblCilindrajeValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCilindrajeValor.Location = new System.Drawing.Point(253, 433);
+            this.lblCilindrajeValor.Location = new System.Drawing.Point(256, 433);
             this.lblCilindrajeValor.Name = "lblCilindrajeValor";
-            this.lblCilindrajeValor.Size = new System.Drawing.Size(42, 20);
+            this.lblCilindrajeValor.Size = new System.Drawing.Size(0, 20);
             this.lblCilindrajeValor.TabIndex = 181;
-            this.lblCilindrajeValor.Text = "valor";
             // 
             // frmVehiculosEliminar
             // 
