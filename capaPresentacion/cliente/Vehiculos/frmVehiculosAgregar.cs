@@ -53,10 +53,6 @@ namespace capaPresentacion.cliente
 
         #endregion
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
 
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
