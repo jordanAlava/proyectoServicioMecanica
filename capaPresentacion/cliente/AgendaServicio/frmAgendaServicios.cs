@@ -7,31 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaLogica;
+using capaEntidad;
+using System.Net.Http.Headers;
 
 namespace capaPresentacion.cliente.AgendaServicio
 {
     public partial class frmAgendaServicios : Form
     {
         frmClientePantallaPrincipal formularioPadre;
-        public frmAgendaServicios(frmClientePantallaPrincipal padre)
+        private int id;
+        public frmAgendaServicios(frmClientePantallaPrincipal padre, int id)
         {
             InitializeComponent();
             this.formularioPadre = padre;
+            this.id = id;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            formularioPadre.abrirFormHijo(new frmAgendaAgregar(formularioPadre));
+            formularioPadre.abrirFormHijo(new frmAgendaAgregar(formularioPadre, id));
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            formularioPadre.abrirFormHijo(new frmAgendaEditar(formularioPadre));
+            formularioPadre.abrirFormHijo(new frmAgendaEditar(formularioPadre, id));
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            formularioPadre.abrirFormHijo(new frmAgendaEliminar(formularioPadre));
+            formularioPadre.abrirFormHijo(new frmAgendaEliminar(formularioPadre, id));
+        }
+
+        classPuente objP = new classPuente();
+        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            dtgvTabla.DataSource = null;
+            dtgvTabla.DataSource = objP.serviciosCliente(id);
         }
     }
 }

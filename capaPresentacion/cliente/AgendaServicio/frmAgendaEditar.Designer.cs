@@ -62,9 +62,11 @@
             this.panel1.Controls.Add(this.txtBarraBusqueda);
             this.panel1.Controls.Add(this.lblEditarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 681);
+            this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnEditar
             // 
@@ -80,11 +82,11 @@
             this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditar.IconSize = 36;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(601, 500);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Location = new System.Drawing.Point(801, 615);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnEditar.Size = new System.Drawing.Size(211, 47);
+            this.btnEditar.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnEditar.Size = new System.Drawing.Size(281, 58);
             this.btnEditar.TabIndex = 178;
             this.btnEditar.Text = "&Confirmar Cambios";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -106,10 +108,10 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(471, 505);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(628, 622);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.Size = new System.Drawing.Size(96, 47);
             this.btnAtras.TabIndex = 177;
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -123,9 +125,10 @@
             // 
             this.lblRegistroNoEncontrado.AutoSize = true;
             this.lblRegistroNoEncontrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistroNoEncontrado.Location = new System.Drawing.Point(428, 281);
+            this.lblRegistroNoEncontrado.Location = new System.Drawing.Point(571, 346);
+            this.lblRegistroNoEncontrado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegistroNoEncontrado.Name = "lblRegistroNoEncontrado";
-            this.lblRegistroNoEncontrado.Size = new System.Drawing.Size(178, 20);
+            this.lblRegistroNoEncontrado.Size = new System.Drawing.Size(215, 25);
             this.lblRegistroNoEncontrado.TabIndex = 179;
             this.lblRegistroNoEncontrado.Text = "Registro no Encontrado";
             this.lblRegistroNoEncontrado.Visible = false;
@@ -145,11 +148,12 @@
             "op 3"});
             this.cmbxFiltrarBusqueda.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxFiltrarBusqueda.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxFiltrarBusqueda.Location = new System.Drawing.Point(519, 155);
-            this.cmbxFiltrarBusqueda.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxFiltrarBusqueda.Location = new System.Drawing.Point(692, 191);
+            this.cmbxFiltrarBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxFiltrarBusqueda.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxFiltrarBusqueda.Name = "cmbxFiltrarBusqueda";
-            this.cmbxFiltrarBusqueda.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxFiltrarBusqueda.Size = new System.Drawing.Size(200, 31);
+            this.cmbxFiltrarBusqueda.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxFiltrarBusqueda.Size = new System.Drawing.Size(267, 38);
             this.cmbxFiltrarBusqueda.TabIndex = 176;
             this.cmbxFiltrarBusqueda.Texts = "Buscar por (Campo)";
             // 
@@ -158,12 +162,13 @@
             this.cmbxFecha.BorderColor = System.Drawing.Color.Black;
             this.cmbxFecha.BorderSize = 2;
             this.cmbxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.cmbxFecha.Location = new System.Drawing.Point(431, 350);
-            this.cmbxFecha.MaximumSize = new System.Drawing.Size(380, 380);
+            this.cmbxFecha.Location = new System.Drawing.Point(575, 431);
+            this.cmbxFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxFecha.MaximumSize = new System.Drawing.Size(505, 380);
             this.cmbxFecha.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.cmbxFecha.MinimumSize = new System.Drawing.Size(4, 35);
             this.cmbxFecha.Name = "cmbxFecha";
-            this.cmbxFecha.Size = new System.Drawing.Size(380, 35);
+            this.cmbxFecha.Size = new System.Drawing.Size(505, 35);
             this.cmbxFecha.SkinColor = System.Drawing.Color.White;
             this.cmbxFecha.TabIndex = 175;
             this.cmbxFecha.TextColor = System.Drawing.Color.Black;
@@ -183,11 +188,12 @@
             "op 3"});
             this.cmbxVehiculo.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxVehiculo.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxVehiculo.Location = new System.Drawing.Point(431, 300);
-            this.cmbxVehiculo.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxVehiculo.Location = new System.Drawing.Point(575, 369);
+            this.cmbxVehiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxVehiculo.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxVehiculo.Name = "cmbxVehiculo";
-            this.cmbxVehiculo.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxVehiculo.Size = new System.Drawing.Size(381, 31);
+            this.cmbxVehiculo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxVehiculo.Size = new System.Drawing.Size(508, 38);
             this.cmbxVehiculo.TabIndex = 174;
             this.cmbxVehiculo.Texts = "(Seleccionar)";
             // 
@@ -206,11 +212,12 @@
             "op 3"});
             this.cmbxServicio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxServicio.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxServicio.Location = new System.Drawing.Point(431, 251);
-            this.cmbxServicio.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxServicio.Location = new System.Drawing.Point(575, 309);
+            this.cmbxServicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxServicio.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxServicio.Name = "cmbxServicio";
-            this.cmbxServicio.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxServicio.Size = new System.Drawing.Size(381, 31);
+            this.cmbxServicio.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxServicio.Size = new System.Drawing.Size(508, 38);
             this.cmbxServicio.TabIndex = 173;
             this.cmbxServicio.Texts = "(Seleccionar)";
             // 
@@ -218,9 +225,10 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(206, 350);
+            this.lblFecha.Location = new System.Drawing.Point(275, 431);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(59, 20);
+            this.lblFecha.Size = new System.Drawing.Size(72, 25);
             this.lblFecha.TabIndex = 172;
             this.lblFecha.Text = "Fecha";
             // 
@@ -228,9 +236,10 @@
             // 
             this.lblVehiculo.AutoSize = true;
             this.lblVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehiculo.Location = new System.Drawing.Point(206, 300);
+            this.lblVehiculo.Location = new System.Drawing.Point(275, 369);
+            this.lblVehiculo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVehiculo.Name = "lblVehiculo";
-            this.lblVehiculo.Size = new System.Drawing.Size(78, 20);
+            this.lblVehiculo.Size = new System.Drawing.Size(96, 25);
             this.lblVehiculo.TabIndex = 171;
             this.lblVehiculo.Text = "Vehículo";
             // 
@@ -238,9 +247,10 @@
             // 
             this.lblServicio.AutoSize = true;
             this.lblServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServicio.Location = new System.Drawing.Point(206, 251);
+            this.lblServicio.Location = new System.Drawing.Point(275, 309);
+            this.lblServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblServicio.Name = "lblServicio";
-            this.lblServicio.Size = new System.Drawing.Size(72, 20);
+            this.lblServicio.Size = new System.Drawing.Size(90, 25);
             this.lblServicio.TabIndex = 170;
             this.lblServicio.Text = "Servicio";
             // 
@@ -258,10 +268,10 @@
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 24;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(726, 155);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Location = new System.Drawing.Point(968, 191);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(115, 37);
             this.btnBuscar.TabIndex = 169;
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -277,15 +287,15 @@
             this.txtBarraBusqueda.BorderSize = 2;
             this.txtBarraBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBarraBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBarraBusqueda.Location = new System.Drawing.Point(199, 155);
-            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBarraBusqueda.Location = new System.Drawing.Point(265, 191);
+            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtBarraBusqueda.Multiline = false;
             this.txtBarraBusqueda.Name = "txtBarraBusqueda";
-            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
             this.txtBarraBusqueda.PasswordChar = false;
             this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtBarraBusqueda.PlaceholderText = "Buscar";
-            this.txtBarraBusqueda.Size = new System.Drawing.Size(313, 31);
+            this.txtBarraBusqueda.Size = new System.Drawing.Size(417, 39);
             this.txtBarraBusqueda.TabIndex = 168;
             this.txtBarraBusqueda.Texts = "";
             this.txtBarraBusqueda.UnderlinedStyle = false;
@@ -296,19 +306,21 @@
             this.lblEditarServicio.AutoSize = true;
             this.lblEditarServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditarServicio.ForeColor = System.Drawing.Color.Black;
-            this.lblEditarServicio.Location = new System.Drawing.Point(88, 94);
+            this.lblEditarServicio.Location = new System.Drawing.Point(117, 116);
+            this.lblEditarServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEditarServicio.Name = "lblEditarServicio";
-            this.lblEditarServicio.Size = new System.Drawing.Size(285, 31);
+            this.lblEditarServicio.Size = new System.Drawing.Size(354, 39);
             this.lblEditarServicio.TabIndex = 167;
             this.lblEditarServicio.Text = "Editar Agendamiento";
             // 
             // frmAgendaEditar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 681);
+            this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAgendaEditar";
             this.Text = "frmAgendaEditar";
             this.panel1.ResumeLayout(false);

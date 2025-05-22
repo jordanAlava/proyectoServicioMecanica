@@ -47,7 +47,9 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Repuesto.cs" />
     <Compile Include="Servicio.cs" />
+    <Compile Include="serviciosCliente.cs" />
     <Compile Include="Vehiculo.cs" />
+    <Compile Include="vehiculoServicio.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
