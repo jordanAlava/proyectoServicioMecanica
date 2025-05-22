@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using capaEntidad;
+using System.Diagnostics;
 
 namespace capaPresentacion
 {
@@ -77,6 +78,16 @@ namespace capaPresentacion
         private void btnAgendarServicio_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new frmAgendaServicios(this, idCliente));
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            string ruta = "C:\\Users\\jorda\\OneDrive\\Documentos\\GitHub\\servicioMecanica\\Documentos\\Ayuda_DocumentacionMecaPro.htm";
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = ruta,
+                UseShellExecute = true // necesario para abrir con el navegador predeterminado en .NET Core o versiones modernas
+            });
         }
     }
 }
