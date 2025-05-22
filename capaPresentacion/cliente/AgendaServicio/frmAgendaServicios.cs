@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaLogica;
+using capaEntidad;
+using System.Net.Http.Headers;
 
 namespace capaPresentacion.cliente.AgendaServicio
 {
@@ -36,9 +39,12 @@ namespace capaPresentacion.cliente.AgendaServicio
             formularioPadre.abrirFormHijo(new frmAgendaEliminar(formularioPadre, id));
         }
 
+        classPuente objP = new classPuente();
+        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            dtgvTabla.DataSource = null;
+            dtgvTabla.DataSource = objP.serviciosCliente(id);
         }
     }
 }

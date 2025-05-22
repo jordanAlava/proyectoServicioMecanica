@@ -141,7 +141,7 @@ namespace capaPresentacion.cliente
                     MessageBox.Show("Asegurese de llenar todos los campos... además el cilindraje debe ser un número entero positivo");
                 }
                 
-            }catch(Exception ex)
+            }catch
             {
                 MessageBox.Show("El cilindraje debe ser un número entero");
             }

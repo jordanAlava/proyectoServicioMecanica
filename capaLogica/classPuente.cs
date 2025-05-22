@@ -107,6 +107,27 @@ namespace capaLogica
         {
             return operacion.eliminarServicion(idS);
         }
+        public List<serviciosCliente> serviciosCliente(int id)
+        {
+            return operacion.serviciosCliente(id);
+        }
+        public bool agendarServicio(vehiculoServicio vhServicio)
+        {
+            return operacion.agendarServicio(vhServicio);
+        }
+        public List<string> serviciosPlaca(string placa)
+        {
+            return operacion.serviciosPlaca(placa);
+        }
+        public List<DateTime> tenerFechas(string placa, string servicio)
+        {
+            return operacion.tenerFechas(placa, servicio);
+        }
+
+        public bool eliminarServicio(string placa, DateTime fecha)
+        {
+            return operacion.eliminarServicio(placa, fecha);
+        }
 
         /////////////// VEHICULO ///////////////////////////////
         public List<Vehiculo> listarVehiculosCliente(int idCliente)

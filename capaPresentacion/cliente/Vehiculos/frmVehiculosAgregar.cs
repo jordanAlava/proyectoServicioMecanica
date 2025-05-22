@@ -188,5 +188,10 @@ namespace capaPresentacion.cliente
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

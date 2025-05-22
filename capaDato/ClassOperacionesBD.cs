@@ -726,9 +726,158 @@ namespace capaDato
          *  5   List<Servicio> listarServicios
          *  6   list<Servicio> filtrarServicios
          *  7   bool eliminarServicio
-         *  
+         *  8   List<serviciosCliente> serviciosCliente
+         *  9   bool AgendarServicio
+         *  10  List<string> serviciosPlaca
+         *  11  List<string> tenerFechas
+         *  12  bool eliminarServicio
          */
 
+        public bool eliminarServicio(string placa, DateTime fecha)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                DELETE FROM Vehiculo_Servicio 
+                WHERE placa = @placa AND fechaServicio = @fecha", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", placa);
+                sqlC.Parameters.AddWithValue("@fecha", fecha);
+                int filaBorrada = sqlC.ExecuteNonQuery();
+                return filaBorrada == 1;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+
+        public List<DateTime> tenerFechas(string placa, string servicio)
+        {
+            List<DateTime> fechas = new List<DateTime>();
+            try
+            {
+                if (string.IsNullOrWhiteSpace(placa) || string.IsNullOrWhiteSpace(servicio))
+                    throw new Exception("La placa o el servicio están vacíos o nulos.");
+
+                objConnect.Abrir();
+
+                SqlCommand sqlC = new SqlCommand(@"
+            SELECT vs.fechaServicio
+            FROM Vehiculo_Servicio vs 
+            INNER JOIN Servicio sv ON vs.idServicio = sv.idServicio
+            WHERE vs.placa = @placa AND CAST(sv.descripcion AS NVARCHAR(MAX)) = @servicio", objConnect.conectar);
+
+                sqlC.Parameters.AddWithValue("@placa", placa);
+                sqlC.Parameters.AddWithValue("@servicio", servicio);
+
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader["fechaServicio"] != DBNull.Value)
+                        fechas.Add(Convert.ToDateTime(reader["fechaServicio"]));
+                }
+                reader.Close();
+                return fechas;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener las fechas: " + ex.Message, ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public List<string> serviciosPlaca(string placa)
+        {
+            List<string> serviciosPlaca = new List<string>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT sv.descripcion 
+                FROM Vehiculo_Servicio vs inner join Servicio sv on vs.idServicio = sv.idServicio
+                WHERE placa = @placa", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", placa);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    serviciosPlaca.Add(Convert.ToString(reader["descripcion"]));
+                }
+                reader.Close();
+                return serviciosPlaca;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+        public bool agendarServicio(vehiculoServicio vhServicio)
+        {
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                INSERT INTO Vehiculo_Servicio(placa, idServicio, fechaServicio)
+                VALUES (@placa, @id, @fecha)", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@placa", vhServicio.placa);
+                sqlC.Parameters.AddWithValue("@id", vhServicio.idServicio);
+                sqlC.Parameters.AddWithValue("@fecha", vhServicio.fechaServicio);
+                int filaAgregada = sqlC.ExecuteNonQuery();
+                return filaAgregada == 1;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
+
+        public List<serviciosCliente> serviciosCliente(int id)
+        {
+            List<serviciosCliente> servicios = new List<serviciosCliente>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT vh.placa as Placa, sr.tipo as Servicio, sr.descripcion as Descripcion, sr.costoTotal as costoTotal, vs.fechaServicio as Fecha
+                FROM Vehiculo vh inner join Vehiculo_Servicio vs on vh.placa = vs.placa
+				                 inner join Servicio sr on vs.idServicio = sr.idServicio
+                WHERE vh.idCliente = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@id", id);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    serviciosCliente servis = new serviciosCliente
+                    {
+                        placa = Convert.ToString(reader["Placa"]),
+                        servicio = Convert.ToString(reader["Servicio"]),
+                        descripcion = Convert.ToString(reader["Descripcion"]),
+                        costoTotal = Convert.ToDecimal(reader["costoTotal"]),
+                        fecha = Convert.ToDateTime(reader["Fecha"])
+                    };
+                    servicios.Add(servis);
+                }
+                reader.Close();
+                return servicios;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
         public bool eliminarServicion(int idS)
         {
             try
