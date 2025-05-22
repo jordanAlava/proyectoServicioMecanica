@@ -86,6 +86,12 @@
     <Compile Include="administrador\frmServiciosEliminar.Designer.cs">
       <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
     </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteTiposServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteTiposServicios.Designer.cs">
+      <DependentUpon>reporteTiposServicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="BDTallerMecanicoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -205,6 +211,10 @@
     <EmbeddedResource Include="administrador\frmServiciosEliminar.resx">
       <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteTiposServicios.resx">
+      <DependentUpon>reporteTiposServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\ReportesAdministrador\tiposServicios.rdlc" />
     <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaAgregar.resx">
       <DependentUpon>frmAgendaAgregar.cs</DependentUpon>
     </EmbeddedResource>

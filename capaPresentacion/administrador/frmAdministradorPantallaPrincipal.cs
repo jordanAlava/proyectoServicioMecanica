@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaPresentacion.administrador.ReportesAdministrador;
 
 namespace capaPresentacion
 {
@@ -83,6 +84,12 @@ namespace capaPresentacion
                 FileName = ruta,
                 UseShellExecute = true // necesario para abrir con el navegador predeterminado en .NET Core o versiones modernas
             });
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            reporteTiposServicios obj = new reporteTiposServicios();
+            obj.Show();
         }
     }
 }
