@@ -88,7 +88,31 @@ namespace capaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            reporteTiposServicios obj = new reporteTiposServicios();
+            reporteTipoServicios obj = new reporteTipoServicios();
+            obj.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            reporteServiciosPendiente obj = new reporteServiciosPendiente();
+            obj.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            reporteGeneral obj = new reporteGeneral();
+            obj.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            reporteClientesRegistrados obj = new reporteClientesRegistrados();
+            obj.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            reporteProvincias obj = new reporteProvincias();
             obj.Show();
         }
     }

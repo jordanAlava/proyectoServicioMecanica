@@ -86,11 +86,35 @@
     <Compile Include="administrador\frmServiciosEliminar.Designer.cs">
       <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
     </Compile>
-    <Compile Include="administrador\ReportesAdministrador\reporteTiposServicios.cs">
+    <Compile Include="administrador\ReportesAdministrador\reporteClientesRegistrados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="administrador\ReportesAdministrador\reporteTiposServicios.Designer.cs">
-      <DependentUpon>reporteTiposServicios.cs</DependentUpon>
+    <Compile Include="administrador\ReportesAdministrador\reporteClientesRegistrados.Designer.cs">
+      <DependentUpon>reporteClientesRegistrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteGeneral.Designer.cs">
+      <DependentUpon>reporteGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteProvincias.Designer.cs">
+      <DependentUpon>reporteProvincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteServiciosPendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteServiciosPendiente.Designer.cs">
+      <DependentUpon>reporteServiciosPendiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteTipoServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\ReportesAdministrador\reporteTipoServicios.Designer.cs">
+      <DependentUpon>reporteTipoServicios.cs</DependentUpon>
     </Compile>
     <Compile Include="BDTallerMecanicoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -107,6 +131,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BDTallerMecanicoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BDTallerMecanicoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDTallerMecanicoDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="cliente\AgendaServicio\frmAgendaAgregar.cs">
       <SubType>Form</SubType>
@@ -137,6 +166,12 @@
     </Compile>
     <Compile Include="cliente\frmClientePantallaPrincipal.Designer.cs">
       <DependentUpon>frmClientePantallaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cliente\ReportesCliente\reporteServiciosRealizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente\ReportesCliente\reporteServiciosRealizados.Designer.cs">
+      <DependentUpon>reporteServiciosRealizados.cs</DependentUpon>
     </Compile>
     <Compile Include="cliente\Vehiculos\frmVehiculos.cs">
       <SubType>Form</SubType>
@@ -216,10 +251,26 @@
     <EmbeddedResource Include="administrador\frmServiciosEliminar.resx">
       <DependentUpon>frmServiciosEliminar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteTiposServicios.resx">
-      <DependentUpon>reporteTiposServicios.cs</DependentUpon>
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteProvincias.rdlc" />
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteClientesRegistrados.rdlc" />
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteClientesRegistrados.resx">
+      <DependentUpon>reporteClientesRegistrados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="administrador\ReportesAdministrador\tiposServicios.rdlc" />
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteGeneral.rdlc" />
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteGeneral.resx">
+      <DependentUpon>reporteGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteProvincias.resx">
+      <DependentUpon>reporteProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteServiciosPendiente.rdlc" />
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteServiciosPendiente.resx">
+      <DependentUpon>reporteServiciosPendiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteTipoServicios.rdlc" />
+    <EmbeddedResource Include="administrador\ReportesAdministrador\reporteTipoServicios.resx">
+      <DependentUpon>reporteTipoServicios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cliente\AgendaServicio\frmAgendaAgregar.resx">
       <DependentUpon>frmAgendaAgregar.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +286,10 @@
     <EmbeddedResource Include="cliente\frmClientePantallaPrincipal.resx">
       <DependentUpon>frmClientePantallaPrincipal.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente\ReportesCliente\reporteServiciosRealizados.rdlc" />
+    <EmbeddedResource Include="cliente\ReportesCliente\reporteServiciosRealizados.resx">
+      <DependentUpon>reporteServiciosRealizados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cliente\Vehiculos\frmVehiculos.resx">
       <DependentUpon>frmVehiculos.cs</DependentUpon>
@@ -296,6 +351,17 @@
     </None>
     <None Include="BDTallerMecanicoDataSet1.xss">
       <DependentUpon>BDTallerMecanicoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BDTallerMecanicoDataSet2.xsc">
+      <DependentUpon>BDTallerMecanicoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BDTallerMecanicoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDTallerMecanicoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDTallerMecanicoDataSet2.xss">
+      <DependentUpon>BDTallerMecanicoDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
