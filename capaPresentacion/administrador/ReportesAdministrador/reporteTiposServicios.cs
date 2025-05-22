@@ -19,6 +19,8 @@ namespace capaPresentacion.administrador.ReportesAdministrador
 
         private void reporteTiposServicios_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'bDTallerMecanicoDataSet1.Servicio' Puede moverla o quitarla según sea necesario.
+            this.servicioTableAdapter1.Fill(this.bDTallerMecanicoDataSet1.Servicio);
             // TODO: esta línea de código carga datos en la tabla 'bDTallerMecanicoDataSet.Servicio' Puede moverla o quitarla según sea necesario.
             this.servicioTableAdapter.Fill(this.bDTallerMecanicoDataSet.Servicio);
 

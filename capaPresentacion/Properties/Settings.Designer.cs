@@ -33,5 +33,16 @@ namespace capaPresentacion.Properties {
                 return ((string)(this["BDTallerMecanicoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MSI;Initial Catalog=BDTallerMecanico;Integrated Security=True;TrustSe" +
+            "rverCertificate=True")]
+        public string BDTallerMecanicoConnectionString_GONZALO {
+            get {
+                return ((string)(this["BDTallerMecanicoConnectionString_GONZALO"]));
+            }
+        }
     }
 }
