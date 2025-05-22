@@ -7,7 +7,7 @@
     <ProjectGuid>{C05A822E-EEE8-40D6-8AA1-003981E61784}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>capaPresentacion</RootNamespace>
-    <AssemblyName>capaPresentacion</AssemblyName>
+    <AssemblyName>MechPro_App</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>isotipo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
@@ -388,6 +391,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="isotipo.ico" />
     <Content Include="Recursos\Imagenes\carroFondo1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
