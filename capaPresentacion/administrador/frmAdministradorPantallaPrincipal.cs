@@ -74,5 +74,15 @@ namespace capaPresentacion
                 UseShellExecute = true // necesario para abrir con el navegador predeterminado en .NET Core o versiones modernas
             });
         }
+
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+            string ruta = "C:\\Users\\jorda\\OneDrive\\Documentos\\GitHub\\servicioMecanica\\Documentos\\Acerca_de_MECAPRO_nuevo[1].htm";
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = ruta,
+                UseShellExecute = true // necesario para abrir con el navegador predeterminado en .NET Core o versiones modernas
+            });
+        }
     }
 }

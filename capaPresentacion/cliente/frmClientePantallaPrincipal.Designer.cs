@@ -125,6 +125,7 @@
             this.btnAcercaDe.Text = "Acerca de";
             this.btnAcercaDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcercaDe.UseVisualStyleBackColor = false;
+            this.btnAcercaDe.Click += new System.EventHandler(this.btnAcercaDe_Click);
             // 
             // btnAyuda
             // 
