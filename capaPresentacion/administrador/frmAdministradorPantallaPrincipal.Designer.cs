@@ -209,7 +209,7 @@
             this.button1.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(352, 62);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Reporte";
+            this.button1.Text = "Reporte de servicios";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
