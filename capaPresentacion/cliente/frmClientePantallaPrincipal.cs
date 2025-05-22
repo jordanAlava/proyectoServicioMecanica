@@ -82,7 +82,7 @@ namespace capaPresentacion
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            string ruta = "C:\\Users\\jorda\\OneDrive\\Documentos\\GitHub\\servicioMecanica\\Documentos\\Ayuda_DocumentacionMecaPro.htm";
+            string ruta = "Recursos\\PaginasWeb\\Ayuda_DocumentacionMecaPro.htm";
             System.Diagnostics.Process.Start(new ProcessStartInfo
             {
                 FileName = ruta,
@@ -92,7 +92,7 @@ namespace capaPresentacion
 
         private void btnAcercaDe_Click(object sender, EventArgs e)
         {
-            string ruta = "C:\\Users\\jorda\\OneDrive\\Documentos\\GitHub\\servicioMecanica\\Documentos\\Acerca_de_MECAPRO_nuevo[1].htm";
+            string ruta = "Recursos\\PaginasWeb\\Acerca_de_MECAPRO_nuevo[1].htm";
             System.Diagnostics.Process.Start(new ProcessStartInfo
             {
                 FileName = ruta,
