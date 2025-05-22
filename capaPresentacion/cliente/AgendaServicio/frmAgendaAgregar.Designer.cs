@@ -54,21 +54,24 @@
             this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(this.lblAgendarServicio);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 681);
+            this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbxFecha
             // 
             this.cmbxFecha.BorderColor = System.Drawing.Color.Black;
             this.cmbxFecha.BorderSize = 2;
             this.cmbxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.cmbxFecha.Location = new System.Drawing.Point(419, 348);
-            this.cmbxFecha.MaximumSize = new System.Drawing.Size(380, 380);
+            this.cmbxFecha.Location = new System.Drawing.Point(559, 428);
+            this.cmbxFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxFecha.MaximumSize = new System.Drawing.Size(505, 380);
             this.cmbxFecha.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.cmbxFecha.MinimumSize = new System.Drawing.Size(4, 35);
             this.cmbxFecha.Name = "cmbxFecha";
-            this.cmbxFecha.Size = new System.Drawing.Size(380, 35);
+            this.cmbxFecha.Size = new System.Drawing.Size(505, 35);
             this.cmbxFecha.SkinColor = System.Drawing.Color.White;
             this.cmbxFecha.TabIndex = 134;
             this.cmbxFecha.TextColor = System.Drawing.Color.Black;
@@ -88,11 +91,12 @@
             "op 3"});
             this.cmbxVehiculo.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxVehiculo.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxVehiculo.Location = new System.Drawing.Point(419, 298);
-            this.cmbxVehiculo.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxVehiculo.Location = new System.Drawing.Point(559, 367);
+            this.cmbxVehiculo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxVehiculo.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxVehiculo.Name = "cmbxVehiculo";
-            this.cmbxVehiculo.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxVehiculo.Size = new System.Drawing.Size(381, 31);
+            this.cmbxVehiculo.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxVehiculo.Size = new System.Drawing.Size(508, 38);
             this.cmbxVehiculo.TabIndex = 133;
             this.cmbxVehiculo.Texts = "(Seleccionar)";
             // 
@@ -111,11 +115,12 @@
             "op 3"});
             this.cmbxServicio.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cmbxServicio.ListTextColor = System.Drawing.Color.Black;
-            this.cmbxServicio.Location = new System.Drawing.Point(419, 249);
-            this.cmbxServicio.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxServicio.Location = new System.Drawing.Point(559, 306);
+            this.cmbxServicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbxServicio.MinimumSize = new System.Drawing.Size(267, 37);
             this.cmbxServicio.Name = "cmbxServicio";
-            this.cmbxServicio.Padding = new System.Windows.Forms.Padding(2);
-            this.cmbxServicio.Size = new System.Drawing.Size(381, 31);
+            this.cmbxServicio.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbxServicio.Size = new System.Drawing.Size(508, 38);
             this.cmbxServicio.TabIndex = 132;
             this.cmbxServicio.Texts = "(Seleccionar)";
             // 
@@ -123,9 +128,10 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(194, 348);
+            this.lblFecha.Location = new System.Drawing.Point(259, 428);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(59, 20);
+            this.lblFecha.Size = new System.Drawing.Size(72, 25);
             this.lblFecha.TabIndex = 121;
             this.lblFecha.Text = "Fecha";
             // 
@@ -133,9 +139,10 @@
             // 
             this.lblVehiculo.AutoSize = true;
             this.lblVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehiculo.Location = new System.Drawing.Point(194, 298);
+            this.lblVehiculo.Location = new System.Drawing.Point(259, 367);
+            this.lblVehiculo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVehiculo.Name = "lblVehiculo";
-            this.lblVehiculo.Size = new System.Drawing.Size(78, 20);
+            this.lblVehiculo.Size = new System.Drawing.Size(96, 25);
             this.lblVehiculo.TabIndex = 120;
             this.lblVehiculo.Text = "Vehículo";
             // 
@@ -143,9 +150,10 @@
             // 
             this.lblServicio.AutoSize = true;
             this.lblServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServicio.Location = new System.Drawing.Point(194, 249);
+            this.lblServicio.Location = new System.Drawing.Point(259, 306);
+            this.lblServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblServicio.Name = "lblServicio";
-            this.lblServicio.Size = new System.Drawing.Size(72, 20);
+            this.lblServicio.Size = new System.Drawing.Size(90, 25);
             this.lblServicio.TabIndex = 119;
             this.lblServicio.Text = "Servicio";
             // 
@@ -165,10 +173,10 @@
             this.btnAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAtras.IconSize = 24;
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtras.Location = new System.Drawing.Point(584, 480);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Location = new System.Drawing.Point(779, 591);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(72, 38);
+            this.btnAtras.Size = new System.Drawing.Size(96, 47);
             this.btnAtras.TabIndex = 118;
             this.btnAtras.Text = "&Atrás";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -190,11 +198,11 @@
             this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAgregar.IconSize = 36;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(714, 473);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(952, 582);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(211, 47);
+            this.btnAgregar.Padding = new System.Windows.Forms.Padding(36, 0, 0, 0);
+            this.btnAgregar.Size = new System.Drawing.Size(281, 58);
             this.btnAgregar.TabIndex = 117;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -204,19 +212,21 @@
             this.lblAgendarServicio.AutoSize = true;
             this.lblAgendarServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgendarServicio.ForeColor = System.Drawing.Color.Black;
-            this.lblAgendarServicio.Location = new System.Drawing.Point(69, 129);
+            this.lblAgendarServicio.Location = new System.Drawing.Point(92, 159);
+            this.lblAgendarServicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAgendarServicio.Name = "lblAgendarServicio";
-            this.lblAgendarServicio.Size = new System.Drawing.Size(236, 31);
+            this.lblAgendarServicio.Size = new System.Drawing.Size(293, 39);
             this.lblAgendarServicio.TabIndex = 111;
             this.lblAgendarServicio.Text = "Agendar Servicio";
             // 
             // frmAgendaAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 681);
+            this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAgendaAgregar";
             this.Text = "frmAgendaAgregar";
             this.panel1.ResumeLayout(false);

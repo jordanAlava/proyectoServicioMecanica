@@ -76,7 +76,7 @@ namespace capaPresentacion
 
         private void btnAgendarServicio_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new frmAgendaServicios(this));
+            abrirFormHijo(new frmAgendaServicios(this, idCliente));
         }
     }
 }

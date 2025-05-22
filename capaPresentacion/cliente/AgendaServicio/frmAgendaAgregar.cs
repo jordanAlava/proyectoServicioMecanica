@@ -13,10 +13,12 @@ namespace capaPresentacion.cliente.AgendaServicio
     public partial class frmAgendaAgregar : Form
     {
         frmClientePantallaPrincipal formularioPadre;
-        public frmAgendaAgregar(frmClientePantallaPrincipal padre)
+        private int id;
+        public frmAgendaAgregar(frmClientePantallaPrincipal padre, int id)
         {
             InitializeComponent();
             this.formularioPadre = padre;
+            this.id = id;
         }
 
         #region D I S E Ñ O
@@ -39,9 +41,14 @@ namespace capaPresentacion.cliente.AgendaServicio
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            formularioPadre.abrirFormHijo(new frmAgendaServicios(formularioPadre));
+            formularioPadre.abrirFormHijo(new frmAgendaServicios(formularioPadre, id));
 
         }
         #endregion
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

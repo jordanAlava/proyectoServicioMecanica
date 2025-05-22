@@ -45,9 +45,13 @@ namespace capaPresentacion.cliente
             formularioPadre.abrirFormHijo(new frmVehiculos(formularioPadre, id));
         }
 
+
+
         #endregion
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

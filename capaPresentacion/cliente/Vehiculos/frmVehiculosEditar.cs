@@ -45,5 +45,10 @@ namespace capaPresentacion.cliente
         }
 
         #endregion
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
