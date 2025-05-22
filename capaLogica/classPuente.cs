@@ -133,5 +133,9 @@ namespace capaLogica
         {
             return operacion.ingresarVehiculo(vehiculo);
         }
+        public List<string> placasCliente(int id)
+        {
+            return operacion.placasCliente(id);
+        }
     }
 }

@@ -55,8 +55,8 @@
             this.btnAtras = new FontAwesome.Sharp.IconButton();
             this.lblRegistroNoEncontrado = new System.Windows.Forms.Label();
             this.btnBuscar = new FontAwesome.Sharp.IconButton();
-            this.txtBarraBusqueda = new RJCodeAdvance.RJControls.RJTextBox();
             this.lblEliminarVehiculo = new System.Windows.Forms.Label();
+            this.cmbBuscar = new RJCodeAdvance.RJControls.RJComboBox();
             this.panel1.SuspendLayout();
             this.pnlIngresoDatos.SuspendLayout();
             this.grpFoto.SuspendLayout();
@@ -66,15 +66,16 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.cmbBuscar);
             this.panel1.Controls.Add(this.pnlIngresoDatos);
             this.panel1.Controls.Add(this.btnBuscar);
-            this.panel1.Controls.Add(this.txtBarraBusqueda);
             this.panel1.Controls.Add(this.lblEliminarVehiculo);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1333, 838);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pnlIngresoDatos
             // 
@@ -103,7 +104,7 @@
             this.pnlIngresoDatos.Controls.Add(this.btnAtras);
             this.pnlIngresoDatos.Controls.Add(this.lblRegistroNoEncontrado);
             this.pnlIngresoDatos.Location = new System.Drawing.Point(0, 188);
-            this.pnlIngresoDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlIngresoDatos.Margin = new System.Windows.Forms.Padding(4);
             this.pnlIngresoDatos.Name = "pnlIngresoDatos";
             this.pnlIngresoDatos.Size = new System.Drawing.Size(1333, 646);
             this.pnlIngresoDatos.TabIndex = 140;
@@ -213,7 +214,7 @@
             this.btnEliminar.IconSize = 36;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Location = new System.Drawing.Point(960, 518);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
             this.btnEliminar.Size = new System.Drawing.Size(280, 58);
@@ -221,14 +222,15 @@
             this.btnEliminar.Text = "&Confirmar Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // grpFoto
             // 
             this.grpFoto.Controls.Add(this.pctrFoto);
             this.grpFoto.Location = new System.Drawing.Point(787, 48);
-            this.grpFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpFoto.Margin = new System.Windows.Forms.Padding(4);
             this.grpFoto.Name = "grpFoto";
-            this.grpFoto.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpFoto.Padding = new System.Windows.Forms.Padding(4);
             this.grpFoto.Size = new System.Drawing.Size(455, 265);
             this.grpFoto.TabIndex = 172;
             this.grpFoto.TabStop = false;
@@ -236,7 +238,7 @@
             // pctrFoto
             // 
             this.pctrFoto.Location = new System.Drawing.Point(25, 22);
-            this.pctrFoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pctrFoto.Margin = new System.Windows.Forms.Padding(4);
             this.pctrFoto.Name = "pctrFoto";
             this.pctrFoto.Size = new System.Drawing.Size(403, 220);
             this.pctrFoto.TabIndex = 147;
@@ -407,8 +409,8 @@
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscar.IconSize = 24;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(940, 143);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnBuscar.Location = new System.Drawing.Point(447, 143);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(5);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 37);
             this.btnBuscar.TabIndex = 139;
@@ -416,29 +418,6 @@
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // txtBarraBusqueda
-            // 
-            this.txtBarraBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBarraBusqueda.BackColor = System.Drawing.SystemColors.Window;
-            this.txtBarraBusqueda.BorderColor = System.Drawing.Color.Black;
-            this.txtBarraBusqueda.BorderFocusColor = System.Drawing.Color.Firebrick;
-            this.txtBarraBusqueda.BorderRadius = 0;
-            this.txtBarraBusqueda.BorderSize = 2;
-            this.txtBarraBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarraBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBarraBusqueda.Location = new System.Drawing.Point(283, 142);
-            this.txtBarraBusqueda.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.txtBarraBusqueda.Multiline = false;
-            this.txtBarraBusqueda.Name = "txtBarraBusqueda";
-            this.txtBarraBusqueda.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
-            this.txtBarraBusqueda.PasswordChar = false;
-            this.txtBarraBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtBarraBusqueda.PlaceholderText = "Buscar por ID";
-            this.txtBarraBusqueda.Size = new System.Drawing.Size(647, 39);
-            this.txtBarraBusqueda.TabIndex = 137;
-            this.txtBarraBusqueda.Texts = "";
-            this.txtBarraBusqueda.UnderlinedStyle = false;
             // 
             // lblEliminarVehiculo
             // 
@@ -453,6 +432,26 @@
             this.lblEliminarVehiculo.TabIndex = 111;
             this.lblEliminarVehiculo.Text = "Eliminar Vehículo";
             // 
+            // cmbBuscar
+            // 
+            this.cmbBuscar.BackColor = System.Drawing.Color.White;
+            this.cmbBuscar.BorderColor = System.Drawing.Color.Black;
+            this.cmbBuscar.BorderSize = 2;
+            this.cmbBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbBuscar.ForeColor = System.Drawing.Color.Black;
+            this.cmbBuscar.IconColor = System.Drawing.Color.Black;
+            this.cmbBuscar.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cmbBuscar.ListTextColor = System.Drawing.Color.Black;
+            this.cmbBuscar.Location = new System.Drawing.Point(98, 142);
+            this.cmbBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbBuscar.MinimumSize = new System.Drawing.Size(267, 37);
+            this.cmbBuscar.Name = "cmbBuscar";
+            this.cmbBuscar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbBuscar.Size = new System.Drawing.Size(320, 38);
+            this.cmbBuscar.TabIndex = 182;
+            this.cmbBuscar.Texts = "Seleccionar";
+            // 
             // frmVehiculosEliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -460,7 +459,7 @@
             this.ClientSize = new System.Drawing.Size(1333, 838);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVehiculosEliminar";
             this.Text = "frmVehiculosEliminar";
             this.panel1.ResumeLayout(false);
@@ -492,7 +491,6 @@
         private FontAwesome.Sharp.IconButton btnAtras;
         private System.Windows.Forms.Label lblRegistroNoEncontrado;
         private FontAwesome.Sharp.IconButton btnBuscar;
-        private RJCodeAdvance.RJControls.RJTextBox txtBarraBusqueda;
         private System.Windows.Forms.Label lblEliminarVehiculo;
         private FontAwesome.Sharp.IconButton btnEliminar;
         private System.Windows.Forms.Label lblCilindrajeValor;
@@ -504,5 +502,6 @@
         private System.Windows.Forms.Label lblModeloValor;
         private System.Windows.Forms.Label lblMarcaValor;
         private System.Windows.Forms.Label lblPlacaValor;
+        private RJCodeAdvance.RJControls.RJComboBox cmbBuscar;
     }
 }

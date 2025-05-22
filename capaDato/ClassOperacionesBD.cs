@@ -497,7 +497,36 @@ namespace capaDato
          *  4   bool existeVehiculo
          *  5   Vehiculo buscarVehiculo
          *  6   List<Vehiculo> listarVehiculosCliente
+         *  7   List<string> PlacasCliente
          */
+
+        public List<string> placasCliente(int id)
+        {
+            List<string> placas = new List<string>();
+            try
+            {
+                objConnect.Abrir();
+                SqlCommand sqlC = new SqlCommand(@"
+                SELECT placa
+                FROM Vehiculo
+                WHERE idCliente = @id", objConnect.conectar);
+                sqlC.Parameters.AddWithValue("@id", id);
+                SqlDataReader reader = sqlC.ExecuteReader();
+                while (reader.Read())
+                {
+                    placas.Add(Convert.ToString(reader["placa"]));
+                }
+                reader.Close();
+                return placas;
+            }catch(Exception ex)
+            {
+                throw new Exception("Error: ", ex);
+            }
+            finally
+            {
+                objConnect.Cerrar();
+            }
+        }
 
         public List<Vehiculo> listarVehiculosCliente(int idCliente)
         {

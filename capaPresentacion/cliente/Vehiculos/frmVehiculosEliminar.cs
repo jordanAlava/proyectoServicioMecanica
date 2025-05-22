@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaEntidad;
+using capaLogica;
 
 namespace capaPresentacion.cliente
 {
@@ -21,7 +24,7 @@ namespace capaPresentacion.cliente
             this.id = id;
         }
 
-
+        classPuente objP = new classPuente();
         #region D I S E Ñ O
         private void btnAtras_MouseEnter(object sender, EventArgs e)
         {
@@ -51,7 +54,41 @@ namespace capaPresentacion.cliente
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string placa = cmbBuscar.Texts;
+                Vehiculo vehiculo = objP.buscarVehiculo(placa);
+                lblPlacaValor.Text = placa;
+                lblMarcaValor.Text = vehiculo.marcaVehiculo;
+                lblModeloValor.Text = vehiculo.modeloVehiculo;
+                lblNoChasisValor.Text = vehiculo.numChasisVehiculo;
+                lblAnioFabValor.Text = vehiculo.fechaFabricacionVehiculo.ToString();
+                lblColorValor.Text = vehiculo.colorVehiculo;
+                lblSeguroValor.Text = vehiculo.aseguradoVehiculo.ToString();
+                lblCombustibleValor.Text = vehiculo.combustibleVehiculo;
+                lblCilindrajeValor.Text = vehiculo.cilindrajeVehiculo;
+                MemoryStream ms = new MemoryStream(vehiculo.fotoVehiculo);
+                pctrFoto.Image = Image.FromStream(ms);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (objP.eliminarVehiculo(cmbBuscar.Texts))
+            {
+                MessageBox.Show("Vehículo eliminado correctamente");
+                btnAtras.PerformClick();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            cmbBuscar.Items.Clear();
+            cmbBuscar.Items.AddRange(objP.placasCliente(id).ToArray());
         }
     }
 }
